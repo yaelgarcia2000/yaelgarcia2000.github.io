@@ -172,10 +172,8 @@
       disable WASD controls attached to default camera -->
     <a-scene keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
         <a-sky src="https://cdn.glitch.com/7e18fbf8-9686-4cf7-91f9-4a6bbdb54f5e%2Fsky.jpg?1544174075054"></a-sky>
+        <a-entity id="camera" camera="" look-controls="" position="235.59157 4 281.5049" extended-wasd-controls="" twoway-motion="speed: 20" wasd-controls="acceleration: 100" rotation="-0.9144406410287937 9.459533197609892 4.968689999374499" data-aframe-inspector-original-camera=""></a-entity>
 
-        <a-entity  id="camera" camera look-controls position="-165.12347 4.5 461.43102" extended-wasd-controls="flyEnabled: true;"  twoway-motion="speed: 20" wasd-controls="acceleration: 100" >
-            <!--<a-camera rotation="0 5 0" position="285.07368 4.5 -322.07356"></a-camera>-->
-        </a-entity>
 
         <!-- --------------------IMPORTACIÓN DE ISLAS----------------------- -->
         <a-assets>
@@ -184,7 +182,7 @@
         </a-assets>
         <!-- --------------------COLOCACIÓN----------------------- -->
         <!--ISLA-->
-        <a-gltf-model src="#escenario" position="0 -18.5 108.03" rotation="" scale=""></a-gltf-model>
+        <a-gltf-model src="#escenario" position="0 -18.5 108.03" ></a-gltf-model>
         <!-- --------------------IMPORTACIÓN DE STANDS----------------------- -->
         <a-assets>
             <!--stand 1-->
