@@ -3,24 +3,26 @@
 <head>
     <title>EDUMARK</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
+    <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/twoway-motion/twoway-motion.js"></script> 
     <script src="main.js"></script>
 </head>
 
 <body>
 
-    <a-scene loading-screen="dotsColor: white; backgroundColor: yellow" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
-        <a-sky src="imagenes/Fondo6.jpg" material="" geometry="" scale="3 3 3"></a-sky>
+    <a-scene  cursor="rayOrigin: mouse" loading-screen="dotsColor: white; backgroundColor: yellow" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+        <a-sky src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/sky/Fondo6.jpg"></a-sky>
         <a-entity position="-165.12347 1 461.43102" rotation="" visible="">
-            <a-camera wasd-controls="acceleration: 100" camera="" rotation="0 5 0" look-controls="" data-aframe-inspector-original-camera="" position="285.07368 4.5 -322.07356"><a-cursor material="" raycaster="" cursor="" geometry=""></a-cursor></a-camera>
+            <a-camera twoway-motion="speed: 35" wasd-controls="acceleration: 100" camera="" rotation="0 5 0" look-controls="" data-aframe-inspector-original-camera="" position="285.07368 4.5 -322.07356"><a-cursor material="" raycaster="" cursor="" geometry=""></a-cursor></a-camera>
         </a-entity>
         <!-- --------------------IMPORTACIÓN DE ISLAS----------------------- -->
-        <a-assets>
+        <!--<a-assets>-->
             <!--ISLA-->
-            <a-asset-item id="escenario" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/escenario.glb"></a-asset-item>
-        </a-assets>
+            <!--<a-asset-item id="escenario" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/escenario.glb">-->
+        <!--</a-assets>-->
         <!-- --------------------COLOCACIÓN----------------------- -->
         <!--ISLA-->
-        <a-gltf-model src="#escenario" position="0 -18.5 108.03" rotation="" scale=""></a-gltf-model>-->
+        <!--<a-gltf-model src="#escenario" position="0 -18.5 108.03" rotation="" scale=""></a-gltf-model>-->
         <!-- --------------------IMPORTACIÓN DE STANDS----------------------- -->
         <a-assets>
             <!--stand 1-->
@@ -38,129 +40,7 @@
         </a-assets>
         <!-- --------------------COLOCACIÓN DE STANDS----------------------- -->
         <!-- --------------------ZONA ESTE----------------------- -->
-        <!--SECCIÓN A -->
-        <!--Stand grandes - Secc A -->
-        <!--stand 1-O -->
-        <a-gltf-model src="#platino1" position="-47.58477 0 -17.12651" rotation="0 75 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 2-O -->
-        <a-gltf-model src="#diamante1" position="-126.68083 0 -23.72496" rotation="0 10 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 3-0 -->
-        <a-gltf-model src="#platino2" position="-164.43053 0 -5.29187" rotation="0 50 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 4-0 -->
-        <a-gltf-model src="#platino1" position="-168.90931 0 47.32205" rotation="0 75 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 5-0 -->
-        <a-gltf-model src="#platino2" position="-189.20635 0 87.11701" rotation="0 119.99999999999999 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 6-0 -->
-        <a-gltf-model src="#diamante1" position="-164.58415 0 130.46258" rotation="0 150 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand pequeños  - Secc A -->
-        <!--Stand 7-0 -->
-        <a-gltf-model src="#oro1" position="-103.77157 0 -6.76675" rotation="0 -200 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 8-0 -->
-        <a-gltf-model src="#oro2" position="-143.29391 0 2.17949" rotation="0 -110 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 9-0 -->
-        <a-gltf-model src="#diamante2" position="-156.59728 0 32.74412" rotation="0 59.99999999999999 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 10-0 -->
-        <a-gltf-model src="#oro2" position="-174.6915 0 68.34755" rotation="0 -40 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 11-0 -->
-        <a-gltf-model src="#diamante2" position="-150.96667 0 90.66084" rotation="0 125.00000000000001 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand grandes  - Secc A -->
-        <!--Stand 12-0 -->
-        <a-gltf-model src="#platino2" position="-122.0615 0 105.71562" rotation="0 200 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 13-0 -->
-        <a-gltf-model src="#platino1" position="-162.35741 0 83.07835" rotation="0 280 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 14-0 -->
-        <a-gltf-model src="#diamante1" position="-111.3648 0 42.19999" rotation="0 45 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 15-0 -->
-        <a-gltf-model src="#platino2" position="-81.57448 0 34.01441" rotation="0 -14 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand pequeños  - Secc A -->
-        <!--Stand 16-0 -->
-        <a-gltf-model src="#diamante2" position="-84.52683 0 95.05117" rotation="0 115 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 17-0 -->
-        <a-gltf-model src="#oro1" position="-83.9511 0 73.04526" rotation="0 59.99999999999999 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 18-0 -->
-        <a-gltf-model src="#diamante2" position="-63.80953 0 59.66664" rotation="0 14.999999999999998 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 19-0 -->
-        <a-gltf-model src="#oro1" position="-62.57697 0 93.40039" rotation="0 100 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 20-0 -->
-        <a-gltf-model src="#oro2" position="-56.54899 0 79.01386" rotation="0 12.000000000000002 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--SECCIÓN B -->
-        <!--Stand grandes - Secc B -->
-        <!--stand 1-O -->
-        <a-gltf-model src="#platino1" position="-84.44118 0 157.65523" rotation="0 100 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 2-O -->
-        <a-gltf-model src="#diamante1" position="-91.20736 0 195.51774" rotation="0 130 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 3-0 -->
-        <a-gltf-model src="#platino2" position="-60.82233 0 205.61156" rotation="0 196 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 4-0 -->
-        <a-gltf-model src="#platino1" position="7.22033 0 184.27564" rotation="0 125.00000000000001 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand pequeños  - Secc B -->
-        <!--stand 5-O -->
-        <a-gltf-model src="#diamante2" position="-84.85039 0 147.78669" rotation="0 115 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 6-0 -->
-        <a-gltf-model src="#oro1" position="-63.70684 0 176.67047" rotation="0 115 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 7-0 -->
-        <a-gltf-model src="#diamante2" position="-42.10049 0 170.78086" rotation="0 204 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 8-0 -->
-        <a-gltf-model src="#diamante2" position="-54.36435 0 149.86128" rotation="0 157 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand grandes - Secc B -->
-        <!--Stand 9-0 -->
-        <a-gltf-model src="#diamante1" position="-68.94585 0 126.13481" rotation="0 90 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 10-0 -->
-        <a-gltf-model src="#diamante1" position="-28.94164 0 142.61162" rotation="0 220 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand pequeños  - Secc B -->
-        <!--stand 11-O -->
-        <a-gltf-model src="#oro1" position="-47.63706 0 115.64704" rotation="0 100 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 11-O -->
-        <a-gltf-model src="#oro2" position="-37.41228 0 121.6936" rotation="0 -127.00000000000001 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--SECCIÓN C -->
-        <!--Stand grandes - Secc C -->
-        <!--stand 1-O -->
-        <a-gltf-model src="#diamante1" position="20.52027 0 214.03579" rotation="0 192.00000000000003 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 2-0 -->
-        <a-gltf-model src="#platino2" position="60.91625 0 190.01832" rotation="0 218 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand pequeños  - Secc C -->
-        <!--stand 3-O -->
-        <a-gltf-model src="#diamante2" position="29.70413 0 182.22133" rotation="0 213.54875 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 4-0 -->
-        <a-gltf-model src="#oro1" position="2.32785 0 193.44544" rotation="0 -12.000000000000002 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 5-O -->
-        <a-gltf-model src="#oro2" position="43.43004 0 158.57463" rotation="0 163 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 6-O -->
-        <a-gltf-model src="#oro1" position="16.51323 0 153.24229" rotation="0 186 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 7-O -->
-        <a-gltf-model src="#diamante2" position="-2.20133 0 137.72536" rotation="0 298 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--SECCIÓN D -->
-        <!--Stand grandes - Secc D -->
-        <!--stand 1-O -->
-        <a-gltf-model src="#platino1" position="93.29916 0 84.10844" rotation="0 97 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 2-O -->
-        <a-gltf-model src="#diamante1" position="36.90683 0 53.42668" rotation="0 -53 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand pequeños  - Secc D -->
-        <!--stand 3-O -->
-        <a-gltf-model src="#diamante2" position="20.75029 0 79.21966" rotation="0 -67 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand 4-0 -->
-        <a-gltf-model src="#oro1" position="21.13035 0 96.32899" rotation="0 130 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 5-O -->
-        <a-gltf-model src="#oro2" position="0.38936 0 71.59099" rotation="0 180 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--SECCIÓN E -->
-        <!--Stand grandes - Secc E -->
-        <!--stand 1-O -->
-        <a-gltf-model src="#platino1" position="58.59343 0 -25.52692" rotation="0 135 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 2-O -->
-        <a-gltf-model src="#platino2" position="-21.5704 0 -3.10664" rotation="0 27 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand pequeños - Secc E -->
-        <!--Stand 3-0 -->
-        <a-gltf-model src="#oro1" position="7.20831 0 51.63914" rotation="0 -50 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 4-O -->
-        <a-gltf-model src="#diamante2" position="-8.75789 0 34.38483" rotation="0 -8 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--stand 5-O -->
-        <a-gltf-model src="#oro2" position="-32.45472 0 41.69684" rotation="0 28 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand grandes - Secc E -->
-        <!--stand 6-O -->
-        <a-gltf-model src="#diamante1" position="-13.25929 0 63.20911" rotation="0 -8.3245 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--Stand pequeños - Secc E -->
-        <!--Stand 3-0 -->
-        <a-gltf-model src="#oro1" position="-31.25205 0 84.17161" rotation="0 -9.543 0" scale="" material="" obj-model="" ></a-gltf-model>
+        
         <!--******************************     Zone este     ******************************-->
         <!--####################        Seccion A        ####################-->
         <!--1--------1a--------Platino 2-->
@@ -168,72 +48,76 @@
         <a-assets>
             <!--<img id="play1" src="imagenes/play.png"></img>
             <img id="pause1" src="imagenes/pausa.png"></img>-->
-            <video id="video1" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
-            <video id="video2" autoplay="false" loop="true" src="videos/video3.mp4"></video>    
+            <video id="video1" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video2" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+            <video id="video3" autoplay="true" loop="true" src="videos/video3.mp4"></video>    
+            <video id="video4" autoplay="true" loop="true" src="videos/video3.mp4"></video>    
+            <video id="video5" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video6" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+            <video id="video7" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video8" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+            <video id="video9" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+            <video id="video10" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+            <video id="video11" autoplay="true" loop="true" src="videos/video3.mp4"></video>
         </a-assets>
         <a-video src="#video1" width="8.3" height="4.1" position="219.01006 6.8116 151.11136" material="" geometry="" visible="" rotation="0 -119.74474143557127 0" opacity="1"></a-video>
-        <a-video src="#video2" position="216.26411 5.23175 148.77629" material="" geometry="width: 1.325; height: 0.985" visible="" rotation="0 -176.3695873705554 0" opacity="1"></a-video>       
-        <a-video src="#video3" position="216.26411 5.23175 148.77629" material="" geometry="width: 1.325; height: 0.985" visible="" rotation="0 -176.3695873705554 0" opacity="1"></a-video>       
+        <a-video src="#video2" position="216.26641 5.23404 148.77614" material="" geometry="width: 1.335; height: 0.99" visible="" rotation="0 -176.3695873705554 0" opacity="1"></a-video>        
+        <a-video src="#video3" position="221.78333 4.08648 140.73448" material="" geometry="width: 0.725; height: 0.392" visible="" rotation="-25.291502992664796 -91.02809674361441 0.03552338329811104" opacity="1"></a-video>
+        <a-video src="#video4" position="216.39344 2.72739 141.43461" material="" geometry="width: 0.725; height: 0.392" visible="" rotation="-25.291502992664796 -91.02809674361441 0.03552338329811104" opacity="1"></a-video>
+        <a-video src="#video5" position="210.12958 2.73718 139.92193" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.001586348328605 94.03727108364149 -0.057868737308213146" opacity="1"></a-video>
+        <a-video src="#video6" position="209.08216 3.92574 157.22037" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-54.778775919072615 118.59137739397292 -0.006302535746439056" opacity="1"></a-video>
+        <a-video src="#video7" position="207.48826 3.92546 160.09412" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-55.0555145341208 30.216075241814224 -0.0813600069085769" opacity="1"></a-video>
+        <a-video src="#video8" position="206.9044 4.91875 144.72413" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -179.03212224452832 0" opacity="1"></a-video>
+        <a-video src="#video9" position="204.71606 4.91874 148.59079" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -179.03212224452832 0" opacity="1"></a-video>
+        <a-video src="#video10" position="202.371 4.91874 152.71393" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -179.03212224452832 0" opacity="1"></a-video>
+        <a-video src="#video11" position="199.92467 4.91874 157.01244" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -179.03212224452832 0" opacity="1"></a-video>
         <!--<a-image id="videoControls1" src="#play1" position="5.598 2.627 5.5" scale="0.5 0.5 1" play-pause1></a-image>-->
         <!--2--------2a--------Diamante 1-->
         <a-gltf-model src="#diamante1" position="172.15717 0 164.50464" rotation="0 178.83559772079846 0" scale="" material="" obj-model=""  visible=""></a-gltf-model>
+        <a-assets>
+            <!--<img id="play1" src="imagenes/play.png"></img>
+            <img id="pause1" src="imagenes/pausa.png"></img>-->
+            <video id="video12" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video13" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+            <video id="video14" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video15" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video16" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+            <video id="video17" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video18" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+            <video id="video19" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video20" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+        </a-assets>
+        <a-video src="#video12" position="186.26149 2.64791 166.73739" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.81892505656171 -91.50651650254864 0.7465640070554627" opacity="1"></a-video>
+        <a-video src="#video13" position="186.19796 2.64908 169.80799" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.81892505656171 -91.50651650254864 0.5133701844372176" opacity="1"></a-video>
+        <a-video src="#video14" position="183.22921 5.94047 176.74043" material="" geometry="width: 5.44; height: 2.79" visible="" rotation="0 178.82814926946176 0" opacity="1"></a-video>
+        <a-video src="#video15" position="175.36167 7.11766 176.02785" material="" geometry="width: 6.18; height: 3.18" visible="" rotation="0 178.82814926946176 0" opacity="1"></a-video>
+        <a-video src="#video16" position="170.15959 7.07609 174.05088" material="" geometry="width: 4.975; height: 2.55" visible="" rotation="0 -91.1002894258009 0" opacity="1"></a-video>
+        <a-video src="#video17" position="162.09836 4.22517 173.50806" material="" geometry="width: 1.325; height: 0.99" visible="" rotation="0 134.9842728704609 0" opacity="1"></a-video>
+        <a-video src="#video18" position="166.85253 2.72751 173.50097" material="" geometry="width: 0.64; height: 0.34" visible="" rotation="-24.854336194979982 -152.4995926676102 0.009167324722093173" opacity="1"></a-video>
+        <a-video src="#video19" position="166.96005 2.73085 168.16679" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.308118768723592 119.8862620109686 -0.004583662361046586" opacity="1"></a-video>
+        <a-video src="#video20" position="175.36616 2.48631 171.55291" material="" geometry="width: 1.12; height: 0.61" visible="" rotation="-24.87438971780956 -152.52537576839106 0.05328507494716656" opacity="1"></a-video>
         <!--3--------3a--------Oro 2-->
         <a-gltf-model src="#oro2" position="185.45691 0 121.88144" rotation="0 -120.61277249519448 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--4--------4a--------Oro 1-->
+        <a-assets>
+            <!--<img id="play1" src="imagenes/play.png"></img>
+            <img id="pause1" src="imagenes/pausa.png"></img>-->
+            <video id="video21" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+            <video id="video22" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video23" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+            <video id="video24" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+
+        </a-assets>
+        <a-video src="#video21" position="177.28841 5.27642 144.20054" material="" geometry="width: 4.999; height: 2.459" visible="" rotation="0 -72.18637965073728 0" opacity="1"></a-video>
+        <a-video src="#video22" position="173.75478 4.85155 152.15501" material="" geometry="width: 5.24; height: 2.185" visible="" rotation="0 -162.34701829252361 0" opacity="1"></a-video>
+        <a-video src="#video23" position="171.86633 4.03313 150.12939" material="" geometry="width: 1.335" visible="" rotation="0 -174.48398326677986 0" opacity="1"></a-video>
+        <a-video src="#video24" position="167.84406 3.9133 151.44173" material="" geometry="width: 1.127; height: 0.62" visible="" rotation="-25.052006634300117 -43.66396765132978 -0.1059971920992023" opacity="1"></a-video>
+                <!--4--------4a--------Oro 1-->
         <a-gltf-model src="#oro1" position="170.40964 0 138.51354" rotation="0 -162.34701829252361 0" scale="" material="" obj-model="" ></a-gltf-model>
         <!--5--------5a--------Diamante 2-->
         <a-gltf-model src="#diamante2" position="163.80247 0 111.27146" rotation="0 -117.11314628253541 0" scale="" material="" obj-model=""  visible=""></a-gltf-model>
-        <!--####################        Seccion B        ####################-->
-        <!--6--------1b--------Platino 2-->
-        <a-gltf-model src="#platino2" position="260.93636 0 50.59301" rotation="0 -25.235353128741977 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--7--------2b--------Diamante 1-->
-        <a-gltf-model src="#diamante1" position="286.3436 0 74.93332" rotation="0 -63.995947969342176 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--8--------3b--------Platino 1-->
-        <a-gltf-model src="#platino1" position="328.81332 0 128.00311" rotation="0 69.18408080425178 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--9--------4b--------Platino 2-->
-        <a-gltf-model src="#platino2" position="266.39417 0 145.67817" rotation="0 -130.68880828036512 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--10--------5b--------Oro 1-->
-        <a-gltf-model src="#oro1" position="241.46442 0 72.26358" rotation="0 -29.781000000000002 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--11--------6b--------Diamante 2-->
-        <a-gltf-model src="#diamante2" position="263.49067 0 91.40393" rotation="0 -79.62623662051102 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--12--------7b--------Oro 2-->
-        <a-gltf-model src="#oro2" position="256.15603 0 123.58313" rotation="0 -117.17502572440954 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--13--------8b--------Diamante 1-->
-        <a-gltf-model src="#diamante1" position="235.88634 0 93.28284" rotation="0 -29.781000000000002 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--14--------9b--------Platino 1-->
-        <a-gltf-model src="#platino1" position="212.85378 0 142.5204" rotation="0 -29.780627317514796 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--15--------10b--------Oro 1-->
-        <a-gltf-model src="#oro1" position="209.18918 0 52.05704" rotation="0 -111.859 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--16--------11b--------Diamante 2-->
-        <a-gltf-model src="#diamante2" position="197.6369 0 84.06736" rotation="0 -111.85855034339062 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--####################        Seccion C        ####################-->
-        <!--17--------1c--------Platino 2-->
-        <a-gltf-model src="#platino2" position="158.59465 0 -8.01083" rotation="0 42.985585621894884 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--18--------2c--------Diamante 1-->
-        <a-gltf-model src="#diamante1" position="193.70354 0 -15.13564" rotation="0 -26.52565408337659 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--19--------3c--------Platino 1-->
-        <a-gltf-model src="#platino1" position="256.28471 0 10.04411" rotation="0 106.51743777718109 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--20--------4c--------Oro 2-->
-        <a-gltf-model src="#oro2" position="172.06955 0 15.70189" rotation="0 42.986 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--21--------5c--------Diamante 2-->
-        <a-gltf-model src="#diamante2" position="199.83128 0 11.3687" rotation="0 106.517 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--22--------6c--------Platino 1-->
-        <a-gltf-model src="#platino1" position="134.1212 0 63.26062" rotation="0 -27.258 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--23--------7c--------Platino 2-->
-        <a-gltf-model src="#platino2" position="182.72982 0 60.83206" rotation="0 -27.258467103348917 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--24--------8c--------Diamante 2-->
-        <a-gltf-model src="#diamante2" position="165.18006 0 83.19218" rotation="0 -27.258 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--####################        Seccion D        ####################-->    
-        <!--25--------1d--------Platino 1-->
-        <a-gltf-model src="#platino1" position="83.50671 0 -32.57571" rotation="0 -151.61952949428922 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--26--------2d--------Oro 1-->
-        <a-gltf-model src="#oro1" position="93.99496 0 39.93244" rotation="0 33.02700618472604 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--27--------3d--------Diamante 2-->
-        <a-gltf-model src="#diamante2" position="121.60122 0 21.60255" rotation="0 36.52777831297538 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--28--------4d--------Diamante 1-->
-        <a-gltf-model src="#diamante1" position="110.90634 0 54.77375" rotation="0 28.737844130376697 0" scale="" material="" obj-model="" ></a-gltf-model>
-        <!--29--------5d--------Oro 2-->
-        <a-gltf-model src="#oro2" position="146.075 0 63.96158" rotation="0 63.44017890806527 0" scale="" material="" obj-model="" ></a-gltf-model>
+      
+
+
     </a-scene>
 
 </body>
