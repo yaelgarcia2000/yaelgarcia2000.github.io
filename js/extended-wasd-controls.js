@@ -29,7 +29,7 @@ AFRAME.registerComponent('extended-wasd-controls', {
   		maxLookEnabled: {type: 'boolean', default: true},
   		maxLookAngle:   {type: 'number',  default: 60},
 
-  		moveSpeed: {type: 'number', default: 21},  // A-Frame units/second  Velocidad de buttons wasd
+  		moveSpeed: {type: 'number', default: 10},  // A-Frame units/second  Velocidad de buttons wasd
 		turnSpeed: {type: 'number', default: 30}, // degrees/second
 		lookSpeed: {type: 'number', default: 30},  // degrees/second
 
