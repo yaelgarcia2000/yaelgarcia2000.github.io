@@ -170,7 +170,7 @@
   
       <!-- disable press "F" to enter fullscreen mode
       disable WASD controls attached to default camera -->
-    <a-scene renderer="antialias: false; colorManagement: true; sortObjects: true; physicallyCorrectLights: true; maxCanvasWidth: 1280; maxCanvasHeight: 720;" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+    <a-scene renderer="maxCanvasWidth: 1280; maxCanvasHeight: 720;" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
         
         <a-sky src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748"></a-sky>
        
@@ -336,17 +336,17 @@
         <a-assets>
           <!--<img id="play1" src="imagenes/play.png"></img>
           <img id="pause1" src="imagenes/pausa.png"></img>-->
-          <video id="video1" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video2" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video3" autoplay="true" loop="true" src="videos/video3.mp4"></video>    
-          <video id="video4" autoplay="true" loop="true" src="videos/video3.mp4"></video>    
-          <video id="video5" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video6" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video7" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video8" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video9" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video10" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video11" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+          <video id="video1" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video2" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video3" autoplay="false" loop="true" src="videos/video3.mp4"></video>    
+          <video id="video4" autoplay="false" loop="true" src="videos/video3.mp4"></video>    
+          <video id="video5" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video6" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video7" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video8" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video9" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video10" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video11" autoplay="false" loop="true" src="videos/video3.mp4"></video>
         </a-assets>
         <a-video src="#video1" width="8.3" height="4.1" position="219.01039 6.83626 151.1275" material="" geometry="height: 4.11" visible="" rotation="0 -119.745 0" opacity="1"></a-video>
         <a-video src="#video2" position="216.26641 5.23404 148.77614" material="" geometry="width: 1.335; height: 0.99" visible="" rotation="0 -176.3695873705554 0" opacity="1"></a-video>        
@@ -365,15 +365,15 @@
         <a-assets>
           <!--<img id="play1" src="imagenes/play.png"></img>
           <img id="pause1" src="imagenes/pausa.png"></img>-->
-          <video id="video12" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video13" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video14" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video15" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video16" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video17" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video18" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video19" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video20" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video12" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video13" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video14" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video15" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video16" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video17" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video18" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video19" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video20" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
         </a-assets>
         <a-video src="#video12" position="186.26149 2.64791 166.73739" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.81892505656171 -91.50651650254864 0.7465640070554627" opacity="1"></a-video>
         <a-video src="#video13" position="186.19796 2.64908 169.80799" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.81892505656171 -91.50651650254864 0.5133701844372176" opacity="1"></a-video>
@@ -389,10 +389,10 @@
         <a-assets>
           <!--<img id="play1" src="imagenes/play.png"></img>
           <img id="pause1" src="imagenes/pausa.png"></img>-->
-          <video id="video21" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video22" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video23" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video24" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+          <video id="video21" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video22" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video23" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video24" autoplay="false" loop="true" src="videos/video3.mp4"></video>
         </a-assets>
         <a-video src="#video21" position="198.8866 4.48495 124.84147" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="-0.08708958485988513 -120.57839502748664 -0.05156620156177409" opacity="1"></a-video>
         <a-video src="#video22" position="185.9813 4.48911 128.79673" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="-0.014 149.36723240162996 0.037242256683503505" opacity="1"></a-video>
@@ -403,10 +403,10 @@
         <a-assets>
           <!--<img id="play1" src="imagenes/play.png"></img>
           <img id="pause1" src="imagenes/pausa.png"></img>-->
-          <video id="video25" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video26" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video27" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
-          <video id="video28" autoplay="true" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video25" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video26" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video27" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
+          <video id="video28" autoplay="false" loop="true" src="videos/video3.mp4"></video> 
       </a-assets>
       <a-video src="#video25" position="177.28841 5.27642 144.20054" material="" geometry="width: 4.999; height: 2.459" visible="" rotation="0 -72.18637965073728 0" opacity="1"></a-video>
       <a-video src="#video26" position="173.75478 4.85155 152.15501" material="" geometry="width: 5.24; height: 2.185" visible="" rotation="0 -162.34701829252361 0" opacity="1"></a-video>
@@ -417,15 +417,15 @@
       <a-assets>
           <!--<img id="play1" src="imagenes/play.png"></img>
           <img id="pause1" src="imagenes/pausa.png"></img>-->
-          <video id="video29" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video30" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video31" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video32" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video33" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video34" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video35" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video36" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-          <video id="video37" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+          <video id="video29" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video30" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video31" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video32" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video33" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video34" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video35" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video36" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+          <video id="video37" autoplay="false" loop="true" src="videos/video3.mp4"></video>
       </a-assets>
       <a-video src="#video29" position="175.05251 3.37363 106.92854" material="" geometry="width: 0.998; height: 0.738" visible="" rotation="0 -110.81462124066226 0" opacity="1"></a-video>
       <a-video src="#video30" position="172.1883 2.59843 103.74431" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.019348039977658 -54.814872260165856 -0.07677634454753031" opacity="1"></a-video>
@@ -442,18 +442,18 @@
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video38" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video39" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video40" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video41" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video42" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video43" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video44" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video45" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video46" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video47" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video48" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video49" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+      <video id="video38" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video39" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video40" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video41" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video42" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video43" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video44" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video45" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video46" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video47" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video48" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video49" autoplay="false" loop="true" src="videos/video3.mp4"></video>
     </a-assets>
     <a-video src="#video38" width="8.3" height="4.1" position="265.7637 6.84397 33.29509" material="" geometry="height: 4.11" visible="" rotation="0 -25.232 0" opacity="1"></a-video>
     <a-video src="#video39" position="263.61762 5.23404 36.21254" material="" geometry="width: 1.335; height: 0.99" visible="" rotation="0 -82.02635682431405 0" opacity="1"></a-video>
@@ -472,15 +472,15 @@
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video50" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video51" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video52" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video53" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video54" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video55" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video56" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video57" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video58" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+      <video id="video50" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video51" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video52" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video53" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video54" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video55" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video56" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video57" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video58" autoplay="false" loop="true" src="videos/video3.mp4"></video>
     </a-assets>
     <a-video src="#video50" position="281.88649 2.6422 61.37005" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.85616731324522 25.943528963523676 0.10828902327972559" opacity="1"></a-video>
     <a-video src="#video51" position="284.6499 2.64391 60.01944" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.85616731324522 25.943528963523676 0.10828902327972559" opacity="1"></a-video>
@@ -496,14 +496,14 @@
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video59" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video60" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video61" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video62" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video63" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video64" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video65" autoplay="true" loop="true" src="videos/video3.mp4"></video>
-      <video id="video66" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+      <video id="video59" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video60" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video61" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video62" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video63" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video64" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video65" autoplay="false" loop="true" src="videos/video3.mp4"></video>
+      <video id="video66" autoplay="false" loop="true" src="videos/video3.mp4"></video>
     </a-assets>
     <a-video src="#video59" position="298.4751 8.74157 97.71837" material="" geometry="width: 6.24; height: 3.26" visible="" rotation="0 -20.87177 0" opacity="1"></a-video>
     <a-video src="#video60" position="306.14824 10.27289 119.07117" material="" geometry="width: 10.31; height: 5.05" visible="" rotation="0 -110.8043080003499 0" opacity="1"></a-video>
@@ -518,7 +518,7 @@
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video67" autoplay="true" loop="true" src="videos/video3.mp4"></video>
+      <video id="video67" autoplay="false" loop="true" src="videos/video3.mp4"></video>
     </a-assets>
     <a-video src="#video67" width="8.3" height="4.1" position="265.7637 6.84397 33.29509" material="" geometry="height: 4.11" visible="" rotation="0 -25.232 0" opacity="1"></a-video>
     <!--10--------5b--------Oro 1-->
