@@ -170,20 +170,25 @@
   
       <!-- disable press "F" to enter fullscreen mode
       disable WASD controls attached to default camera -->
-    <a-scene keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+    <a-scene renderer="antialias: false; colorManagement: true; sortObjects: true; physicallyCorrectLights: true; maxCanvasWidth: 1280; maxCanvasHeight: 720;" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
         
         <a-sky src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748"></a-sky>
        
-        <a-entity id="camera" camera="" look-controls="" position="116.45514 3.87992 182.70526" extended-wasd-controls="" twoway-motion="speed: 10" wasd-controls="acceleration: 50" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
+        <a-entity id="camera" camera="" look-controls="gyroEnabled:false" position="116.45514 5.87992 182.70526" extended-wasd-controls="" twoway-motion="speed: 10" wasd-controls="acceleration: 50" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
 
         <!-- --------------------IMPORTACIÓN DE ISLAS----------------------- -->
         <!--ISLA-->
         <a-assets>
           <a-asset-item id="escenario" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/Islas.glb"></a-asset-item>
+          
         </a-assets>
         <!-- --------------------COLOCACIÓN----------------------- -->
         <!--ISLA-->
         <a-gltf-model src="#escenario" position="0 -18.5 108.03" ></a-gltf-model>
+
+    
+
+        <a-plane color="#525252" position="121.631 0.000 152.181" rotation="-90 90 0" width="200" height="200" material="" geometry=""></a-plane>
         <!-- --------------------IMPORTACIÓN DE STANDS----------------------- -->
         <a-assets>
           <!--stand 1-->
