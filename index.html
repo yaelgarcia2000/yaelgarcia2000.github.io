@@ -173,20 +173,18 @@
         
         <a-sky src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748"></a-sky>
        
-        <a-entity id="camera" camera="" look-controls="gyroEnabled:false" position="116.45514 4.57992 182.70526" extended-wasd-controls="" twoway-motion="speed: 10" wasd-controls="acceleration: 50" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
+        <a-entity id="camera" camera="" look-controls="gyroEnabled:false" position="116.45514 4.57992 182.70526" extended-wasd-controls="" twoway-motion="speed: 10" wasd-controls="acceleration: 20" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
 
         <!-- --------------------IMPORTACIÓN DE ISLAS----------------------- -->
-        <!--ISLA
+        <!--ISLA-->
         <a-assets>
-          <a-asset-item id="escenario" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/islas1.glb"></a-asset-item>
+          <a-asset-item id="escenario" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/sin_arboles.glb"></a-asset-item>
           
-        </a-assets>-->
+        </a-assets>
         <!-- --------------------COLOCACIÓN----------------------- -->
-        <!--ISLA
-        <a-gltf-model src="#escenario" position="0 -18.5 108.03" ></a-gltf-model>-->
-
-    
-
+        <!--ISLA-->
+        <a-gltf-model src="#escenario" position="0 -18.5 108.03" ></a-gltf-model>
+      
         <!--<a-plane color="#525252" position="121.631 0.000 152.181" rotation="-90 90 0" width="200" height="200" material="" geometry=""></a-plane>-->
         <!-- --------------------IMPORTACIÓN DE STANDS----------------------- -->
         <a-assets>
@@ -202,16 +200,47 @@
           <a-asset-item id="diamante1" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/diamante1.glb"></a-asset-item>
           <!--stand 6-->
           <a-asset-item id="diamante2" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/diamante2.glb"></a-asset-item>
+          <!--PANTALLA CUBO-->
+          <a-asset-item id="pantalla_cubo" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/pantalla_cubo.glb"></a-asset-item>
+          <!--Pantalla curva-->
+          <a-asset-item id="pantalla_curva" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/pantalla_curva.glb"></a-asset-item>
         </a-assets>
-
-        <!--PANTALLA CUBO-->
-        <a-asset-item id="pantalla_cubo" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/pantalla_cubo.glb"></a-asset-item>
-
         <!--PANTALLA CUBO-->
         <!-- Zona Este-->
         <a-gltf-model src="#pantalla_cubo" position="-24.0589 0 99.92863" rotation="" scale="" material="" obj-model=""></a-gltf-model>
 
         <!-- Zona Oeste-->
+        
+        <!-- Zona Este-->
+        <!--1-->
+        <a-gltf-model src="#pantalla_curva" position="-127.09149 21.84471 -45.75228" rotation="0 270 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
+
+        <!--2-->
+        <a-gltf-model src="#pantalla_curva" position="-199.23107 21.84471 115.83191" rotation="0 33 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
+
+        <!--3-->
+        <a-gltf-model src="#pantalla_curva" position="-202.04251 21.84471 9.93819" rotation="0 -35 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
+
+        <!--4-->
+        <a-gltf-model src="#pantalla_curva" position="9.16022 15.14395 -35.20073" rotation="0 -100 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
+
+        <!--5-->
+        <a-gltf-model src="#pantalla_curva" position="-130.7499 17.49472 194.8831" rotation="0 14.999999999999998 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
+
+        <!--6-->
+        <a-gltf-model src="#pantalla_curva" position="310.62804 15.93316 124.1174" rotation="0 160 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
+
+        <!--7-->
+        <a-gltf-model src="#pantalla_curva" position="289.13952 15.93316 43.77093" rotation="0 222 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
+
+        <!--8-->
+        <a-gltf-model src="#pantalla_curva" position="226.08427 6.26716 -23.86884" rotation="0 222 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
+
+        <!--9-->
+        <a-gltf-model src="#pantalla_curva" position="158.31783 6.26716 -35.33016" rotation="0 -63 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
+
+        <!--10-->
+        <a-gltf-model src="#pantalla_curva" position="92.30297 11.6129 -20.70148" rotation="0 -59.99999999999999 0" scale="1.5 1 1.5" material="" obj-model="" gltf-model="#pantalla_curva"></a-gltf-model>
         
         <a-gltf-model src="#pantalla_cubo" position="139.12654 0 94.01318" rotation="" scale="" material="" obj-model="" ></a-gltf-model>
         <a-assets>
@@ -771,7 +800,7 @@
       <img id="pause1" src="imagenes/pausa.png"></img>--> 
       <video id="video193" autoplay="false" loop="false" src="videos/video3.mp4"></video>   
       <video id="video194" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
-      <video id="video195" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
+      <video id="video195" autoplay="false" loop="false" src="videos/video3.mp4"></video>     
       <video id="video196" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
       <video id="video197" autoplay="false" loop="false" src="videos/video3.mp4"></video>  
       <video id="video198" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
