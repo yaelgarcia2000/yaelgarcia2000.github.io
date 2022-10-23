@@ -76,9 +76,51 @@ AFRAME.registerComponent("play-pause5", {
 
 AFRAME.registerComponent("play-curve", {
   init: function () {
-    var myVideo1 = document.querySelector("#video1");
-    if (myVideo1.paused) {
+    var myVideo1 = document.querySelector("#myvideo1");
+    var myVideo2 = document.querySelector("#myvideo2");
+    var myVideo3 = document.querySelector("#myvideo3");
+    var myVideo4 = document.querySelector("#myvideo4");
+    var myVideo5 = document.querySelector("#myvideo5");
+    var myVideo6 = document.querySelector("#myvideo6");
+    var myVideo7 = document.querySelector("#myvideo7");
+    var myVideo8 = document.querySelector("#myvideo8");
+    var myVideo9 = document.querySelector("#myvideo9");
+    var myVideo10 = document.querySelector("#myvideo10");
+    var myVideo11 = document.querySelector("#myvideo11");
+    var myVideo12 = document.querySelector("#myvideo12");
+    var myVideo13 = document.querySelector("#myvideo13");
+    var myVideo14 = document.querySelector("#myvideo14");
+    if (
+      myVideo1.paused &&
+      myVideo2.paused &&
+      myVideo3.paused &&
+      myVideo4.paused &&
+      myVideo5.paused &&
+      myVideo6.paused &&
+      myVideo7.paused &&
+      myVideo8.paused &&
+      myVideo9.paused &&
+      myVideo10.paused &&
+      myVideo11.paused &&
+      myVideo12.paused &&
+      myVideo13.paused &&
+      myVideo14.paused
+    ) {
       myVideo1.play();
+      myVideo2.play();
+      myVideo3.play();
+      myVideo4.play();
+      myVideo5.play();
+      myVideo6.play();
+      myVideo7.play();
+      myVideo8.play();
+      myVideo9.play();
+      myVideo10.play();
+      myVideo11.play();
+      myVideo12.play();
+      myVideo13.play();
+      myVideo14.play();
+
     }
   },
 });
