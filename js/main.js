@@ -73,6 +73,20 @@ AFRAME.registerComponent("play-pause5", {
     });
   },
 });
+
+AFRAME.registerComponent("play-curve", {
+  init: function () {
+  
+        myVideo1.play();
+      
+
+  },
+});
+
+
+
+
+
 document.querySelector("a-scene").object3D;
 
 AFRAME.registerComponent("foo", {
