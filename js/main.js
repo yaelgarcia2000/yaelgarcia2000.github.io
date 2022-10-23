@@ -76,6 +76,7 @@ AFRAME.registerComponent("play-pause5", {
 
 AFRAME.registerComponent("play-curve", {
   init: function () {
+    var myVideo1 = document.querySelector("#myVideo1");
         myVideo1.play();
   },
 });
