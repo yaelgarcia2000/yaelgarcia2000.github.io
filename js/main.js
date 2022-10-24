@@ -76,14 +76,9 @@ AFRAME.registerComponent("play-pause5", {
 
 AFRAME.registerComponent("play-curve", {
   init: function () {
-    var pantallacurva1 = document.querySelector("#pantallacurva");
-    
-    if (
-      pantallacurva1.paused
-     
-    ) {
+    var pantallacurva1 = document.querySelector("#pantallacurva1");
+    if (pantallacurva1.paused) {
       pantallacurva1.play();
-     
     }
   },
 });
