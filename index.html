@@ -3,11 +3,16 @@
 <head>
     <title>Entorno Virtual</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <!--<script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
-    <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/twoway-motion/twoway-motion.js"></script>-->
+    <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
+  
+    
+    
+   
+    <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/twoway-motion/twoway-motion.js"></script>
     <script src="https://raw.githubusercontent.com/MrCaro/aframe-samples/master/js/aframe-master-v1.3.0.min.js"></script>
     <script src="js/aframe-environment-component.min.js"></script>
     <script src="js/extended-wasd-controls.js"></script>
+
 
     <script src="js/main.js"></script>
     
@@ -167,11 +172,11 @@
   
       <!-- disable press "F" to enter fullscreen mode
       disable WASD controls attached to default camera -->
-    <a-scene  stats renderer="maxCanvasWidth: 1920; maxCanvasHeight: 1920; sortObjects: false; foveationLevel:1" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+    <a-scene  stats cursor="rayOrigin: mouse"  renderer="maxCanvasWidth: 1920; maxCanvasHeight: 1920; sortObjects: false; foveationLevel:1" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
         
         <a-sky src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748"></a-sky>
        
-        <a-entity id="camera" camera="" look-controls="gyroEnabled:false" position="116.45514 4.57992 182.70526" extended-wasd-controls="" twoway-motion="speed: 5" wasd-controls="acceleration: 10" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
+        <a-entity id="camera" camera="" look-controls="gyroEnabled:false" look-controls mouse-cursor position="116.45514 4.57992 182.70526" extended-wasd-controls="" twoway-motion="speed: 5" wasd-controls="acceleration: 10" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
 
         <!-- --------------------IMPORTACIÓN DE ISLAS----------------------- -->
         <!--ISLA-->
@@ -205,7 +210,7 @@
         <!--PANTALLA CUBO-->
         <!-- Zona Este-->
         <a-gltf-model src="#pantalla_cubo" position="-24.0589 0 99.92863" rotation="" scale="" material="" obj-model=""></a-gltf-model>
-        <!-- Zona Oeste-->
+      
         
         <!-- Zona Este-->
         <a-assets>
@@ -274,22 +279,7 @@
         <a-cylinder color="black" height="3" radius="1.5" material="" geometry="height: 30; radius: 0.2" position="-55.13809 15 -84.51473"></a-cylinder>
         <a-cylinder color="black" height="3" radius="1.5" material="" geometry="height: 30; radius: 0.2" position="-68.57988 15 -93.70388"></a-cylinder>
         <a-image src="#pancarta1" material="" geometry="height: 25; width: 16" position="-61.8451 17.51823 -89.06331" rotation="0 -34.434763487362474 0"></a-image>
-        
-        
-
-        
-
-        
-
-
-       
       
-
-
-
-
-
-
 
         <a-gltf-model src="#pantalla_cubo" position="139.12654 0 94.01318" rotation="" scale="" material="" obj-model="" ></a-gltf-model>
         <a-assets>
@@ -305,321 +295,326 @@
         <a-video src="#videocubo7" position="145.07198 8.22899 93.76225" material="" geometry="width: 11.14; height: 9.9" visible="" rotation="0 90 0" opacity="1"></a-video>
         <a-video src="#videocubo8" position="138.72699 8.213 87.38942" material="" geometry="width: 11.14; height: 9.9" visible="" rotation="0 180 0" opacity="1"></a-video>
         <!-- --------------------COLOCACIÓN DE STANDS----------------------- -->
-        <!--******************************     Zone este     ******************************-->
+        <!--******************************     Zone Oeste     ******************************-->
         <!--####################        Seccion A        ####################-->
-        <!--2--------2a--------Diamante 1-->
+        <!--1--------1A--------Diamante 1-->
         <a-gltf-model src="#diamante1" position="172.15717 0 164.50464" rotation="0 178.83559772079846 0" scale="" material="" obj-model=""  visible=""></a-gltf-model>
         <a-assets>
-          <!--<img id="play1" src="imagenes/play.png"></img>
-          <img id="pause1" src="imagenes/pausa.png"></img>-->
-          <video id="video12" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
-          <video id="video13" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-          <video id="video14" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
-          <video id="video15" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
-          <video id="video16" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-          <video id="video17" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
-          <video id="video18" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-          <video id="video19" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
-          <video id="video20" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
+          <video id="a1-1a-d1-v1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+          <img id="a1-1a-d1-v1-i-play" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/sky/play.png"></img>
+          <img id="a1-1a-d1-v1-i-pause" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/sky/pausa.png"></img>
+          
+          <video id="1-1A-D1-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+          <video id="1-1A-D1-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
+          <video id="1-1A-D1-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
+          <video id="1-1A-D1-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+          <video id="1-1A-D1-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
+          <video id="1-1A-D1-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+          <video id="1-1A-D1-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
+          <video id="1-1A-D1-V9" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
         </a-assets>
-        <a-video src="#video12" position="186.26149 2.64791 166.73739" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.81892505656171 -91.50651650254864 0.7465640070554627" opacity="1"></a-video>
-        <a-video src="#video13" position="186.19796 2.64908 169.80799" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.81892505656171 -91.50651650254864 0.5133701844372176" opacity="1"></a-video>
-        <a-video src="#video14" position="183.2382 5.92874 176.71888" material="" geometry="width: 5.14; height: 2.65" visible="" rotation="0 178.82814926946176 0" opacity="1"></a-video>
-        <a-video src="#video15" position="175.37103 7.10844 176.03264" material="" geometry="width: 5.87; height: 3.02" visible="" rotation="0 178.82814926946176 0" opacity="1"></a-video>
-        <a-video src="#video16" position="170.1893 7.06146 174.05941" material="" geometry="width: 4.67; height: 2.41" visible="" rotation="0 -91.16000000000001 0" opacity="1"></a-video>
-        <a-video src="#video17" position="162.09836 4.22517 173.50806" material="" geometry="width: 1.325; height: 0.99" visible="" rotation="0 134.9842728704609 0" opacity="1"></a-video>
-        <a-video src="#video18" position="166.85355 2.7308 173.50295" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.011326630845826 -152.48985238509295 0.009167324722093173" opacity="1"></a-video>
-        <a-video src="#video19" position="166.96005 2.73085 168.16679" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.308118768723592 119.8862620109686 -0.004583662361046586" opacity="1"></a-video>
-        <a-video src="#video20" position="175.36616 2.48631 171.55291" material="" geometry="width: 1.12; height: 0.61" visible="" rotation="-24.87438971780956 -152.52537576839106 0.05328507494716656" opacity="1"></a-video>
-        <!--3--------3a--------Oro 2-->
+        <a-video src="#a1-1a-d1-v1" position="186.26149 2.64791 166.73739" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.81892505656171 -91.50651650254864 0.7465640070554627" opacity="1"></a-video>
+        <a-image id="a1-1a-d1-v1-controls" src="#a1-1a-d1-v1-i-play" position="186.26149 2.70648 166.73739" rotation="-72.81892505656171 -91.50651650254864 0.7465640070554627" scale="0.5 0.5 1" material="" geometry="" a1-1a-d1-v1-f-pp ></a-image>
+      
+
+        <a-video src="#1-1A-D1-V2" position="186.19796 2.64908 169.80799" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.81892505656171 -91.50651650254864 0.5133701844372176" opacity="1"></a-video>
+        <a-video src="#1-1A-D1-V3" position="183.2382 5.92874 176.71888" material="" geometry="width: 5.14; height: 2.65" visible="" rotation="0 178.82814926946176 0" opacity="1"></a-video>
+        <a-video src="#1-1A-D1-V4" position="175.37103 7.10844 175.9375" material="" geometry="width: 5.87; height: 3.02" visible="" rotation="0 178.82814926946176 0" opacity="1"></a-video>
+        <a-video src="#1-1A-D1-V5" position="170.1893 7.06146 174.05941" material="" geometry="width: 4.67; height: 2.41" visible="" rotation="0 -91.16000000000001 0" opacity="1"></a-video>
+        <a-video src="#1-1A-D1-V6" position="162.09836 4.22517 173.50806" material="" geometry="width: 1.325; height: 0.99" visible="" rotation="0 134.9842728704609 0" opacity="1"></a-video>
+        <a-video src="#1-1A-D1-V7" position="166.85355 2.7308 173.50295" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.011326630845826 -152.48985238509295 0.009167324722093173" opacity="1"></a-video>
+        <a-video src="#1-1A-D1-V8" position="166.96005 2.73085 168.16679" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.308118768723592 119.8862620109686 -0.004583662361046586" opacity="1"></a-video>
+        <a-video src="#1-1A-D1-V9" position="175.36616 2.48631 171.55291" material="" geometry="width: 1.12; height: 0.61" visible="" rotation="-24.87438971780956 -152.52537576839106 0.05328507494716656" opacity="1"></a-video>
+        <!--2--------2A--------Oro 2-->
         <a-gltf-model src="#oro2" position="185.45691 0 121.88144" rotation="0 -120.61277249519448 0" scale="" material="" obj-model="" ></a-gltf-model>
         <a-assets>
           <!--<img id="play1" src="imagenes/play.png"></img>
           <img id="pause1" src="imagenes/pausa.png"></img>-->
-          <video id="video21" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-          <video id="video22" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-          <video id="video23" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-          <video id="video24" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+          <video id="2-1A-O2-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+          <video id="2-1A-O2-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+          <video id="2-1A-O2-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+          <video id="2-1A-O2-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
         </a-assets>
-        <a-video src="#video21" position="198.8866 4.48495 124.84147" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="-0.08708958485988513 -120.57839502748664 -0.05156620156177409" opacity="1"></a-video>
-        <a-video src="#video22" position="185.9813 4.48911 128.79673" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="-0.014 149.36723240162996 0.037242256683503505" opacity="1"></a-video>
-        <a-video src="#video23" position="193.43506 4.00623 120.51081" material="" geometry="width: 1.35" visible="" rotation="-0.03896113006889598 -132.89927945397983 -0.005729577951308232" opacity="1"></a-video>
-        <a-video src="#video24" position="193.8126 3.92073 129.25634" material="" geometry="width: 1.125; height: 0.62" visible="" rotation="-25.058882127841688 -1.9337325585665286 -0.017188733853924696" opacity="1"></a-video>
+        <a-video src="#2-1A-O2-V1" position="198.8866 4.48495 124.84147" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="-0.08708958485988513 -120.57839502748664 -0.05156620156177409" opacity="1"></a-video>
+        <a-video src="#2-1A-O2-V2" position="185.9813 4.48911 128.79673" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="-0.014 149.36723240162996 0.037242256683503505" opacity="1"></a-video>
+        <a-video src="#2-1A-O2-V3" position="193.43506 4.00623 120.51081" material="" geometry="width: 1.35" visible="" rotation="-0.03896113006889598 -132.89927945397983 -0.005729577951308232" opacity="1"></a-video>
+        <a-video src="#2-1A-O2-V4" position="193.8126 3.92073 129.25634" material="" geometry="width: 1.125; height: 0.62" visible="" rotation="-25.058882127841688 -1.9337325585665286 -0.017188733853924696" opacity="1"></a-video>
     <!--####################        Seccion B        ####################-->
-    <!--6--------1b--------Platino 2-->
+    <!--3--------1B--------Platino 2-->
     <a-gltf-model src="#platino2" position="260.93636 0 50.59301" rotation="0 -25.235353128741977 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video38" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video39" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video40" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video41" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video42" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video43" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video44" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video45" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video46" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video47" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video48" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V9" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V10" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="3-1B-P2-V11" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video38" width="8.3" height="4.1" position="265.7637 6.84397 33.29509" material="" geometry="height: 4.11" visible="" rotation="0 -25.232 0" opacity="1"></a-video>
-    <a-video src="#video39" position="263.61762 5.23404 36.21254" material="" geometry="width: 1.335; height: 0.99" visible="" rotation="0 -82.02635682431405 0" opacity="1"></a-video>
-    <a-video src="#video40" position="255.17832 4.08733 31.3235" material="" geometry="width: 0.725; height: 0.392" visible="" rotation="-24.980386909908763 3.4262876148823227 -0.2091295952227505" opacity="1"></a-video>  
-    <a-video src="#video41" position="256.29088 2.72762 36.6478" material="" geometry="width: 0.725; height: 0.392" visible="" rotation="-25.05601733886603 3.44519522212164 0.04411775022507339" opacity="1"></a-video>
-    <a-video src="#video42" position="255.25827 2.73544 43.00754" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.001586348328605 -171.435 -0.057868737308213146" opacity="1"></a-video>
-    <a-video src="#video43" position="275.57624 3.92512 44.09475" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-54.988478472090506 124.707 -0.132926208470351" opacity="1"></a-video>
-    <a-video src="#video44" position="272.58961 3.92511 42.72861" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-54.98332185193432 -146.95966374649024 0.028647889756541162" opacity="1"></a-video>
-    <a-video src="#video45" position="260.30561 4.91896 45.85045" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -84.70608043214091 0.03896113006889598" opacity="1"></a-video>
-    <a-video src="#video46" position="264.308 4.92049 47.74143" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="-0.0005729577951308233 -84.655 0.03781521447863433" opacity="1"></a-video>
-    <a-video src="#video47" position="268.61012 4.91841 49.76464" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="-0.0005729577951308233 -84.655 0.03781521447863433" opacity="1"></a-video>
-    <a-video src="#video48" position="273.07764 4.92003 51.87423" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="-0.0005729577951308233 -84.655 0.03781521447863433" opacity="1"></a-video>  
-    <!--8--------3b--------Platino 1-->
+    <a-video src="#3-1B-P2-V1" width="8.3" height="4.1" position="265.7637 6.84397 33.29509" material="" geometry="height: 4.11" visible="" rotation="0 -25.232 0" opacity="1"></a-video>
+    <a-video src="#3-1B-P2-V2" position="263.61762 5.23404 36.21254" material="" geometry="width: 1.335; height: 0.99" visible="" rotation="0 -82.02635682431405 0" opacity="1"></a-video>
+    <a-video src="#3-1B-P2-V3" position="255.17832 4.08733 31.3235" material="" geometry="width: 0.725; height: 0.392" visible="" rotation="-24.980386909908763 3.4262876148823227 -0.2091295952227505" opacity="1"></a-video>  
+    <a-video src="#3-1B-P2-V4" position="256.29088 2.72762 36.6478" material="" geometry="width: 0.725; height: 0.392" visible="" rotation="-25.05601733886603 3.44519522212164 0.04411775022507339" opacity="1"></a-video>
+    <a-video src="#3-1B-P2-V5" position="255.25827 2.73544 43.00754" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.001586348328605 -171.435 -0.057868737308213146" opacity="1"></a-video>
+    <a-video src="#3-1B-P2-V6" position="275.57624 3.92512 44.09475" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-54.988478472090506 124.707 -0.132926208470351" opacity="1"></a-video>
+    <a-video src="#3-1B-P2-V7" position="272.58961 3.92511 42.72861" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-54.98332185193432 -146.95966374649024 0.028647889756541162" opacity="1"></a-video>
+    <a-video src="#3-1B-P2-V8" position="260.30561 4.91896 45.85045" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -84.70608043214091 0.03896113006889598" opacity="1"></a-video>
+    <a-video src="#3-1B-P2-V9" position="264.308 4.92049 47.74143" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="-0.0005729577951308233 -84.655 0.03781521447863433" opacity="1"></a-video>
+    <a-video src="#3-1B-P2-V10" position="268.61012 4.91841 49.76464" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="-0.0005729577951308233 -84.655 0.03781521447863433" opacity="1"></a-video>
+    <a-video src="#3-1B-P2-V11" position="273.07764 4.92003 51.87423" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="-0.0005729577951308233 -84.655 0.03781521447863433" opacity="1"></a-video>  
+    <!--4--------2B--------Platino 1-->
     <a-gltf-model src="#platino1" position="328.81332 0 128.00311" rotation="0 69.18408080425178 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video58" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video59" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video60" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video61" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video62" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video63" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video64" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video65" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="4-2B-P1-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="4-2B-P1-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="4-2B-P1-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="4-2B-P1-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="4-2B-P1-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="4-2B-P1-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="4-2B-P1-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="4-2B-P1-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video58" position="298.4751 8.74157 97.71837" material="" geometry="width: 6.24; height: 3.26" visible="" rotation="0 -20.87177 0" opacity="1"></a-video>
-    <a-video src="#video59" position="306.14824 10.27289 119.07117" material="" geometry="width: 10.31; height: 5.05" visible="" rotation="0 -110.8043080003499 0" opacity="1"></a-video>
-    <a-video src="#video60" position="286.74092 8.74002 123.50205" material="" geometry="width: 6.25; height: 3.26" visible="" rotation="0.012605071492878112 88.32200000000002 -0.038388172273765155" opacity="1"></a-video>
-    <a-video src="#video61" position="302.41892 5.56057 118.86833" material="" geometry="width: 1.34" visible="" rotation="0 -162.16373 0" opacity="1"></a-video>
-    <a-video src="#video62" position="309.4353 4.3036 104.73575" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-24.970073669596406 -175.295 0.022345354010102104" opacity="1"></a-video>
-    <a-video src="#video63" position="300.64406 4.18178 102.25547" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-24.970073669596406 139.793 0.022345354010102104" opacity="1"></a-video>
-    <a-video src="#video64" position="296.99797 2.8116 130.48046" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.008 173.1988389323014 0.022345354010102104" opacity="1"></a-video>
-    <a-video src="#video65" position="288.90723 2.81907 122.75548" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.007888884075044 94.348 0.022345354010102104" opacity="1"></a-video>
-    <!--9--------4b--------Platino 2-->
+    <a-video src="#4-2B-P1-V1" position="298.4751 8.74157 97.71837" material="" geometry="width: 6.24; height: 3.26" visible="" rotation="0 -20.87177 0" opacity="1"></a-video>
+    <a-video src="#4-2B-P1-V2" position="306.14824 10.27289 119.07117" material="" geometry="width: 10.31; height: 5.05" visible="" rotation="0 -110.8043080003499 0" opacity="1"></a-video>
+    <a-video src="#4-2B-P1-V3" position="286.74092 8.74002 123.50205" material="" geometry="width: 6.25; height: 3.26" visible="" rotation="0.012605071492878112 88.32200000000002 -0.038388172273765155" opacity="1"></a-video>
+    <a-video src="#4-2B-P1-V4" position="302.41892 5.56057 118.86833" material="" geometry="width: 1.34" visible="" rotation="0 -162.16373 0" opacity="1"></a-video>
+    <a-video src="#4-2B-P1-V5" position="309.4353 4.3036 104.73575" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-24.970073669596406 -175.295 0.022345354010102104" opacity="1"></a-video>
+    <a-video src="#4-2B-P1-V6" position="300.64406 4.18178 102.25547" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-24.970073669596406 139.793 0.022345354010102104" opacity="1"></a-video>
+    <a-video src="#4-2B-P1-V7" position="296.99797 2.8116 130.48046" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.008 173.1988389323014 0.022345354010102104" opacity="1"></a-video>
+    <a-video src="#4-2B-P1-V8" position="288.90723 2.81907 122.75548" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.007888884075044 94.348 0.022345354010102104" opacity="1"></a-video>
+    <!--5--------3B--------Platino 2-->
     <a-gltf-model src="#platino2" position="266.39417 0 145.67817" rotation="0 -130.68880828036512 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video66" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video67" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video68" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video69" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video70" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video71" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video72" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video73" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video74" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video75" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video76" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V9" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V10" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="5-3B-P2-V11" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video66" width="8.3" height="4.1" position="281.78726 6.84619 154.92838" material="" geometry="height: 4.11" visible="" rotation="0 -130.715 0" opacity="1"></a-video>   
-    <a-video src="#video67" position="279.54106 5.23404 152.09237" material="" geometry="width: 1.335; height: 0.99" visible="" rotation="0 172.525 0" opacity="1"></a-video>
-    <a-video src="#video68" position="286.499 4.08807 145.26183" material="" geometry="width: 0.725; height: 0.392" visible="" rotation="-25.07435198831022 -102.04779401736553 0.13808282862652838" opacity="1"></a-video>
-    <a-video src="#video69" position="281.07525 2.72738 144.91749" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-24.980386909908763 -102.01227063406742 0.08651662706475431" opacity="1"></a-video>
-    <a-video src="#video70" position="275.21763 2.73725 142.22752" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.001586348328605 83.09900000000002 -0.057868737308213146" opacity="1"></a-video>
-    <a-video src="#video71" position="270.87111 3.92618 159.00507" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-54.98561368311484 107.56881533124614 0.10542423430407148" opacity="1"></a-video>
-    <a-video src="#video72" position="268.75647 3.92519 161.51706" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-55.054941576325675 19.155125006813684 -0.08250592249883855" opacity="1"></a-video>
-    <a-video src="#video73" position="271.1327 4.91875 146.32758" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 169.893 0" opacity="1"></a-video>  
-    <a-video src="#video74" position="268.24281 4.91875 149.68952" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 169.893 0" opacity="1"></a-video>
-    <a-video src="#video75" position="265.15046 4.91875 153.28231" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 169.893 0" opacity="1"></a-video>
-    <a-video src="#video76" position="261.92582 4.91875 157.0363" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 169.893 0" opacity="1"></a-video>
-    <!--10--------5b--------Oro 1-->
+    <a-video src="#5-3B-P2-V1" width="8.3" height="4.1" position="281.78726 6.84619 154.92838" material="" geometry="height: 4.11" visible="" rotation="0 -130.715 0" opacity="1"></a-video>   
+    <a-video src="#5-3B-P2-V2" position="279.54106 5.23404 152.09237" material="" geometry="width: 1.335; height: 0.99" visible="" rotation="0 172.525 0" opacity="1"></a-video>
+    <a-video src="#5-3B-P2-V3" position="286.499 4.08807 145.26183" material="" geometry="width: 0.725; height: 0.392" visible="" rotation="-25.07435198831022 -102.04779401736553 0.13808282862652838" opacity="1"></a-video>
+    <a-video src="#5-3B-P2-V4" position="281.07525 2.72738 144.91749" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-24.980386909908763 -102.01227063406742 0.08651662706475431" opacity="1"></a-video>
+    <a-video src="#5-3B-P2-V5" position="275.21763 2.73725 142.22752" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.001586348328605 83.09900000000002 -0.057868737308213146" opacity="1"></a-video>
+    <a-video src="#5-3B-P2-V6" position="270.87111 3.92618 159.00507" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-54.98561368311484 107.56881533124614 0.10542423430407148" opacity="1"></a-video>
+    <a-video src="#5-3B-P2-V7" position="268.75647 3.92519 161.51706" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-55.054941576325675 19.155125006813684 -0.08250592249883855" opacity="1"></a-video>
+    <a-video src="#5-3B-P2-V8" position="271.1327 4.91875 146.32758" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 169.893 0" opacity="1"></a-video>  
+    <a-video src="#5-3B-P2-V9" position="268.24281 4.91875 149.68952" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 169.893 0" opacity="1"></a-video>
+    <a-video src="#5-3B-P2-V10" position="265.15046 4.91875 153.28231" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 169.893 0" opacity="1"></a-video>
+    <a-video src="#5-3B-P2-V11" position="261.92582 4.91875 157.0363" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 169.893 0" opacity="1"></a-video>
+    <!--6--------4B--------Oro 1-->
     <a-gltf-model src="#oro1" position="241.46442 0 72.26358" rotation="0 -29.781000000000002 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video77" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video78" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video79" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video80" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="6-4B-O1-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="6-4B-O1-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="6-4B-O1-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="6-4B-O1-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video77" position="240.99963 5.27642 63.35544" material="" geometry="width: 4.999; height: 2.459" visible="" rotation="0 60.18500000000001 0" opacity="1"></a-video>
-    <a-video src="#video78" position="249.24412 4.85155 60.57555" material="" geometry="width: 5.24; height: 2.185" visible="" rotation="0 -29.779 0" opacity="1"></a-video>
-    <a-video src="#video79" position="249.03371 4.03313 63.33509" material="" geometry="width: 1.335" visible="" rotation="0 -41.992 0" opacity="1"></a-video>
-    <a-video src="#video80" position="252.72399 3.9133 65.40522" material="" geometry="width: 1.127; height: 0.62" visible="" rotation="-24.98554353006494 88.895 -0.10771606548459477" opacity="1"></a-video>
-     <!--11--------6b--------Diamante 2-->
+    <a-video src="#6-4B-O1-V1" position="240.99963 5.27642 63.35544" material="" geometry="width: 4.999; height: 2.459" visible="" rotation="0 60.18500000000001 0" opacity="1"></a-video>
+    <a-video src="#6-4B-O1-V2" position="249.24412 4.85155 60.57555" material="" geometry="width: 5.24; height: 2.185" visible="" rotation="0 -29.779 0" opacity="1"></a-video>
+    <a-video src="#6-4B-O1-V3" position="249.03371 4.03313 63.33509" material="" geometry="width: 1.335" visible="" rotation="0 -41.992 0" opacity="1"></a-video>
+    <a-video src="#6-4B-O1-V4" position="252.72399 3.9133 65.40522" material="" geometry="width: 1.127; height: 0.62" visible="" rotation="-24.98554353006494 88.895 -0.10771606548459477" opacity="1"></a-video>
+     <!--7--------5B--------Diamante 2-->
     <a-gltf-model src="#diamante2" position="263.49067 0 91.40393" rotation="0 -79.62623662051102 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video81" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video82" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video83" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video84" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video85" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video86" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video87" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video88" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video89" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="7-5B-D2-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="7-5B-D2-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="7-5B-D2-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="7-5B-D2-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="7-5B-D2-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="7-5B-D2-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="7-5B-D2-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="7-5B-D2-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="7-5B-D2-V9" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video81" position="269.77468 3.37363 81.11384" material="" geometry="width: 0.998; height: 0.738" visible="" rotation="0 -73.251 0" opacity="1"></a-video>
-    <a-video src="#video82" position="265.56354 2.59894 80.32756" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.984000000000005 -17.322805977985308 -0.07734930234266114" opacity="1"></a-video>
-    <a-video src="#video83" position="267.12583 2.23082 88.08724" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.995283812582166 1.315 -0.017188733853924696" opacity="1"></a-video>
-    <a-video src="#video84" position="271.92047 2.23095 86.90141" material="" geometry="width: 0.459; height: 0.251" visible="" rotation="-24.995 -55.442 -0.03666929888837269" opacity="1"></a-video>
-    <a-video src="#video85" position="274.15315 2.45042 90.12634" material="" geometry="width: 1.555; height: 0.82" visible="" rotation="-70.28415977090296 -118.56559429319204 0.17818987428568603" opacity="1"></a-video>
-    <a-video src="#video86" position="267.08621 2.44969 91.79602" material="" geometry="width: 1.555; height: 0.822" visible="" rotation="-70.22399920241422 176.0091969174181 0.06531718864491384" opacity="1"></a-video>
-    <a-video src="#video87" position="267.76924 2.59868 96.89444" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.995283812582166 -17.33770288065871 -0.016615776058793875" opacity="1"></a-video>
-    <a-video src="#video88" position="273.8458 1.88486 97.40173" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.002159306123737 -124.72400000000002 0.17" opacity="1"></a-video>
-    <a-video src="#video89" position="274.01509 1.8838 98.30728" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.006170010689647 -17.353745698922374 -0.005156620156177409" opacity="1"></a-video>
-    <!--14--------9b--------Platino 1-->
+    <a-video src="#7-5B-D2-V1" position="269.77468 3.37363 81.11384" material="" geometry="width: 0.998; height: 0.738" visible="" rotation="0 -73.251 0" opacity="1"></a-video>
+    <a-video src="#7-5B-D2-V2" position="265.56354 2.59894 80.32756" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.984000000000005 -17.322805977985308 -0.07734930234266114" opacity="1"></a-video>
+    <a-video src="#7-5B-D2-V3" position="267.12583 2.23082 88.08724" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.995283812582166 1.315 -0.017188733853924696" opacity="1"></a-video>
+    <a-video src="#7-5B-D2-V4" position="271.92047 2.23095 86.90141" material="" geometry="width: 0.459; height: 0.251" visible="" rotation="-24.995 -55.442 -0.03666929888837269" opacity="1"></a-video>
+    <a-video src="#7-5B-D2-V5" position="274.15315 2.45042 90.12634" material="" geometry="width: 1.555; height: 0.82" visible="" rotation="-70.28415977090296 -118.56559429319204 0.17818987428568603" opacity="1"></a-video>
+    <a-video src="#7-5B-D2-V6" position="267.08621 2.44969 91.79602" material="" geometry="width: 1.555; height: 0.822" visible="" rotation="-70.22399920241422 176.0091969174181 0.06531718864491384" opacity="1"></a-video>
+    <a-video src="#7-5B-D2-V7" position="267.76924 2.59868 96.89444" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.995283812582166 -17.33770288065871 -0.016615776058793875" opacity="1"></a-video>
+    <a-video src="#7-5B-D2-V8" position="273.8458 1.88486 97.40173" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.002159306123737 -124.72400000000002 0.17" opacity="1"></a-video>
+    <a-video src="#7-5B-D2-V9" position="274.01509 1.8838 98.30728" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.006170010689647 -17.353745698922374 -0.005156620156177409" opacity="1"></a-video>
+    <!--8--------6B--------Platino 1-->
     <a-gltf-model src="#platino1" position="212.85378 0 142.5204" rotation="0 -29.780627317514796 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video103" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video104" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video105" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video106" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video107" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video108" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video109" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video110" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="8-6B-P1-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="8-6B-P1-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="8-6B-P1-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="8-6B-P1-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="8-6B-P1-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="8-6B-P1-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="8-6B-P1-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="8-6B-P1-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video103" position="247.4951 8.74157 117.27448" material="" geometry="width: 6.24; height: 3.26" visible="" rotation="0 -119.8157882021675 0" opacity="1"></a-video>
-    <a-video src="#video104" position="225.22012 10.27289 121.53313" material="" geometry="width: 10.31; height: 5.05" visible="" rotation="0 150.26333839321458 0" opacity="1"></a-video>
-    <a-video src="#video105" position="223.84779 8.74056 101.70219" material="" geometry="width: 6.25; height: 3.26" visible="" rotation="0.057295779513082325 -10.649566538096611 -0.006302535746439056" opacity="1"></a-video>
-    <a-video src="#video106" position="225.9905 5.56057 117.86925" material="" geometry="width: 1.34" visible="" rotation="0 98.87532670572617 0" opacity="1"></a-video>
-    <a-video src="#video107" position="238.85976 4.3047 127.00399" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.01361846202635 85.75688502841084 0.058441695103343974" opacity="1"></a-video>
-    <a-video src="#video108" position="242.67607 4.18463 118.70748" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-24.991273108016248 40.767093039148335 0.018334649444186345" opacity="1"></a-video>
-    <a-video src="#video109" position="215.36156 2.81076 110.70783" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.002732263918862 74.23413081053485 -0.04526366581533504" opacity="1"></a-video>
-    <a-video src="#video110" position="224.2483 2.81907 103.9186" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.007888884075044 -4.662157578979508 0.022345354010102104" opacity="1"></a-video>
-    <!--15--------10b--------Oro 1-->
+    <a-video src="#8-6B-P1-V1" position="247.4951 8.74157 117.27448" material="" geometry="width: 6.24; height: 3.26" visible="" rotation="0 -119.8157882021675 0" opacity="1"></a-video>
+    <a-video src="#8-6B-P1-V2" position="225.22012 10.27289 121.53313" material="" geometry="width: 10.31; height: 5.05" visible="" rotation="0 150.26333839321458 0" opacity="1"></a-video>
+    <a-video src="#8-6B-P1-V3" position="223.84779 8.74056 101.70219" material="" geometry="width: 6.25; height: 3.26" visible="" rotation="0.057295779513082325 -10.649566538096611 -0.006302535746439056" opacity="1"></a-video>
+    <a-video src="#8-6B-P1-V4" position="225.9905 5.56057 117.86925" material="" geometry="width: 1.34" visible="" rotation="0 98.87532670572617 0" opacity="1"></a-video>
+    <a-video src="#8-6B-P1-V5" position="238.85976 4.3047 127.00399" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.01361846202635 85.75688502841084 0.058441695103343974" opacity="1"></a-video>
+    <a-video src="#8-6B-P1-V6" position="242.67607 4.18463 118.70748" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-24.991273108016248 40.767093039148335 0.018334649444186345" opacity="1"></a-video>
+    <a-video src="#8-6B-P1-V7" position="215.36156 2.81076 110.70783" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.002732263918862 74.23413081053485 -0.04526366581533504" opacity="1"></a-video>
+    <a-video src="#8-6B-P1-V8" position="224.2483 2.81907 103.9186" material="" geometry="width: 1.126; height: 0.62" visible="" rotation="-25.007888884075044 -4.662157578979508 0.022345354010102104" opacity="1"></a-video>
+    <!--9--------7B--------Oro 1-->
     <a-gltf-model src="#oro1" position="209.18918 0 52.05704" rotation="0 -111.859 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video111" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video112" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video113" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video114" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="9-7B-01-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="9-7B-01-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="9-7B-01-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="9-7B-01-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video111" position="217.94741 5.27642 50.36726" material="" geometry="width: 4.999; height: 2.459" visible="" rotation="0 -21.857 0" opacity="1"></a-video>
-    <a-video src="#video112" position="221.84338 4.85155 58.16045" material="" geometry="width: 5.24; height: 2.185" visible="" rotation="0 -111.86 0" opacity="1"></a-video>
-    <a-video src="#video113" position="219.07547 4.03739 58.322" material="" geometry="width: 1.335" visible="" rotation="0 -124.04400000000001 0" opacity="1"></a-video>
-    <a-video src="#video114" position="217.53228 3.91517 62.26065" material="" geometry="width: 1.127; height: 0.62" visible="" rotation="-25.002732263918862 6.816 0.16673071838306955" opacity="1"></a-video>
+    <a-video src="#9-7B-01-V1" position="217.94741 5.27642 50.36726" material="" geometry="width: 4.999; height: 2.459" visible="" rotation="0 -21.857 0" opacity="1"></a-video>
+    <a-video src="#9-7B-01-V2" position="221.84338 4.85155 58.16045" material="" geometry="width: 5.24; height: 2.185" visible="" rotation="0 -111.86 0" opacity="1"></a-video>
+    <a-video src="#9-7B-01-V3" position="219.07547 4.03739 58.322" material="" geometry="width: 1.335" visible="" rotation="0 -124.04400000000001 0" opacity="1"></a-video>
+    <a-video src="#9-7B-01-V4" position="217.53228 3.91517 62.26065" material="" geometry="width: 1.127; height: 0.62" visible="" rotation="-25.002732263918862 6.816 0.16673071838306955" opacity="1"></a-video>
     <!--####################        Seccion C        ####################-->
-    <!--17--------1c--------Platino 2-->
+    <!--10--------1C--------Platino 2-->
     <a-gltf-model src="#platino2" position="158.59465 0 -8.01083" rotation="0 42.985585621894884 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video124" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video125" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video126" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video127" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video128" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video129" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video130" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video131" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video132" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video133" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video134" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V9" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V10" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="10-1C-P2-V11" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video124" width="8.3" height="4.1" position="144.32504 6.84397 -18.907" material="" geometry="height: 4.11" visible="" rotation="0 42.982 0" opacity="1"></a-video>
-    <a-video src="#video125" position="146.2434 5.23404 -15.833" material="" geometry="width: 1.335; height: 0.99" visible="" rotation="0 -13.814 0" opacity="1"></a-video>
-    <a-video src="#video126" position="138.56506 4.08648 -9.81237" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.003000000000004 71.635 0.10657014989433312" opacity="1"></a-video>
-    <a-video src="#video127" position="143.92087 2.72737 -8.87166" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.006 71.661 0.04411775022507339" opacity="1"></a-video>
-    <a-video src="#video128" position="149.44389 2.73541 -5.55288" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.001586348328605 -103.201 -0.057868737308213146" opacity="1"></a-video>
-    <a-video src="#video129" position="157.99086 3.92815 -24.01684" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-54.9959269234272 -167.17189588532028 0.03781521447863433" opacity="1"></a-video>
-    <a-video src="#video130" position="155.61387 3.92827 -21.75008" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-55.003 -78.74 0.028647889756541162" opacity="1"></a-video>
-    <a-video src="#video131" position="153.95849 4.91896 -9.18352" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -16.436 0.03896113006889598" opacity="1"></a-video>
-    <a-video src="#video132" position="157.19823 4.9205 -12.20036" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -16.436 0.03896113006889598" opacity="1"></a-video>
-    <a-video src="#video133" position="160.67002 4.92215 -15.43067" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -16.436 0.03896113006889598" opacity="1"></a-video>
-    <a-video src="#video134" position="164.28735 4.91865 -18.80579" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -16.436 0.03896113006889598" opacity="1"></a-video>
-    <!--18--------2c--------Diamante 1-->
+    <a-video src="#10-1C-P2-V1" width="8.3" height="4.1" position="144.32504 6.84397 -18.907" material="" geometry="height: 4.11" visible="" rotation="0 42.982 0" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V2" position="146.2434 5.23404 -15.833" material="" geometry="width: 1.335; height: 0.99" visible="" rotation="0 -13.814 0" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V3" position="138.56506 4.08648 -9.81237" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.003000000000004 71.635 0.10657014989433312" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V4" position="143.92087 2.72737 -8.87166" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.006 71.661 0.04411775022507339" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V5" position="149.44389 2.73541 -5.55288" material="" geometry="width: 0.725; height: 0.395" visible="" rotation="-25.001586348328605 -103.201 -0.057868737308213146" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V6" position="157.99086 3.92815 -24.01684" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-54.9959269234272 -167.17189588532028 0.03781521447863433" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V7" position="155.61387 3.92827 -21.75008" material="" geometry="width: 1.14; height: 0.885" visible="" rotation="-55.003 -78.74 0.028647889756541162" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V8" position="153.95849 4.91896 -9.18352" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -16.436 0.03896113006889598" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V9" position="157.19823 4.9205 -12.20036" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -16.436 0.03896113006889598" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V10" position="160.67002 4.92215 -15.43067" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -16.436 0.03896113006889598" opacity="1"></a-video>
+    <a-video src="#10-1C-P2-V11" position="164.28735 4.91865 -18.80579" material="" geometry="width: 2.168; height: 1.61" visible="" rotation="0 -16.436 0.03896113006889598" opacity="1"></a-video>
+    <!--11--------2C--------Diamante 1-->
     <a-gltf-model src="#diamante1" position="193.70354 0 -15.13564" rotation="0 -26.52565408337659 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video135" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video136" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video137" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video138" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video139" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video140" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video141" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video142" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video143" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="11-2C-D1-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="11-2C-D1-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="11-2C-D1-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="11-2C-D1-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="11-2C-D1-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="11-2C-D1-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="11-2C-D1-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="11-2C-D1-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="11-2C-D1-V9" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video135" position="181.91673 2.64859 -23.1924" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.837 63.472 0.05328507494716656" opacity="1"></a-video>
-    <a-video src="#video136" position="183.29035 2.647 -25.9429" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.837 63.472 0.05328507494716656" opacity="1"></a-video>
-    <a-video src="#video137" position="188.92418 5.92874 -30.9295" material="" geometry="width: 5.14; height: 2.65" visible="" rotation="0 -26.50273577157136 0" opacity="1"></a-video>
-    <a-video src="#video138" position="195.71738 7.10316 -26.90357" material="" geometry="width: 5.87; height: 3.02" visible="" rotation="0 -26.519 0" opacity="1"></a-video>
-    <a-video src="#video139" position="199.57143 7.06146 -22.92851" material="" geometry="width: 4.67; height: 2.41" visible="" rotation="0 63.50600000000001 0" opacity="1"></a-video>
-    <a-video src="#video140" position="206.65765 4.22459 -18.96078" material="" geometry="width: 1.325; height: 0.99" visible="" rotation="0 -70.45 0" opacity="1"></a-video>
-    <a-video src="#video141" position="202.34498 2.73077 -20.99889" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.001013390533473 2.181250326063044 0.009167324722093173" opacity="1"></a-video>
-    <a-video src="#video142" position="199.9683 2.73114 -16.22362" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.001013390533473 -85.49666 0.009167324722093173" opacity="1"></a-video>
-    <a-video src="#video143" position="193.81881 2.48941 -22.87558" material="" geometry="width: 1.12; height: 0.61" visible="" rotation="-25.006 2.193 -0.013750987083139758" opacity="1"></a-video>
-    <!--20--------4c--------Oro 2-->  
+    <a-video src="#11-2C-D1-V1" position="181.91673 2.64859 -23.1924" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.837 63.472 0.05328507494716656" opacity="1"></a-video>
+    <a-video src="#11-2C-D1-V2" position="183.29035 2.647 -25.9429" material="" geometry="width: 2.1; height: 1.1" visible="" rotation="-72.837 63.472 0.05328507494716656" opacity="1"></a-video>
+    <a-video src="#11-2C-D1-V3" position="188.92418 5.92874 -30.9295" material="" geometry="width: 5.14; height: 2.65" visible="" rotation="0 -26.50273577157136 0" opacity="1"></a-video>
+    <a-video src="#11-2C-D1-V4" position="195.71738 7.10316 -26.90357" material="" geometry="width: 5.87; height: 3.02" visible="" rotation="0 -26.519 0" opacity="1"></a-video>
+    <a-video src="#11-2C-D1-V5" position="199.57143 7.06146 -22.92851" material="" geometry="width: 4.67; height: 2.41" visible="" rotation="0 63.50600000000001 0" opacity="1"></a-video>
+    <a-video src="#11-2C-D1-V6" position="206.65765 4.22459 -18.96078" material="" geometry="width: 1.325; height: 0.99" visible="" rotation="0 -70.45 0" opacity="1"></a-video>
+    <a-video src="#11-2C-D1-V7" position="202.34498 2.73077 -20.99889" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.001013390533473 2.181250326063044 0.009167324722093173" opacity="1"></a-video>
+    <a-video src="#11-2C-D1-V8" position="199.9683 2.73114 -16.22362" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.001013390533473 -85.49666 0.009167324722093173" opacity="1"></a-video>
+    <a-video src="#11-2C-D1-V9" position="193.81881 2.48941 -22.87558" material="" geometry="width: 1.12; height: 0.61" visible="" rotation="-25.006 2.193 -0.013750987083139758" opacity="1"></a-video>
+    <!--12--------3C--------Oro 2-->  
     <a-gltf-model src="#oro2" position="172.06955 0 15.70189" rotation="0 42.986 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video152" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video153" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video154" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video155" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="12-3C-O2-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="12-3C-O2-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="12-3C-O2-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="12-3C-O2-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
     </a-assets>
-    <a-video src="#video152" position="160.02892 4.48491 9.07084" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="0.003 42.983 -0.0515662015617741" opacity="1"></a-video>
-    <a-video src="#video153" position="173.52283 4.48918 8.92424" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="0.004 -47.047000000000004 0.03609634109324186" opacity="1"></a-video>
-    <a-video src="#video154" position="164.02719 4.00622 14.7656" material="" geometry="width: 1.35" visible="" rotation="0 30.809 0" opacity="1"></a-video>
-    <a-video src="#video155" position="166.13655 3.92066 6.2647" material="" geometry="width: 1.125; height: 0.62" visible="" rotation="-24.999 161.67 -0.017188733853924696" opacity="1"></a-video>
-    <!--21--------5c--------Diamante 2-->
+    <a-video src="#12-3C-O2-V1" position="160.02892 4.48491 9.07084" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="0.003 42.983 -0.0515662015617741" opacity="1"></a-video>
+    <a-video src="#12-3C-O2-V2" position="173.52283 4.48918 8.92424" material="" geometry="width: 4.45; height: 2.2" visible="" rotation="0.004 -47.047000000000004 0.03609634109324186" opacity="1"></a-video>
+    <a-video src="#12-3C-O2-V3" position="164.02719 4.00622 14.7656" material="" geometry="width: 1.35" visible="" rotation="0 30.809 0" opacity="1"></a-video>
+    <a-video src="#12-3C-O2-V4" position="166.13655 3.92066 6.2647" material="" geometry="width: 1.125; height: 0.62" visible="" rotation="-24.999 161.67 -0.017188733853924696" opacity="1"></a-video>
+    <!--13--------4C--------Diamante 2-->
     <a-gltf-model src="#diamante2" position="199.83128 0 11.3687" rotation="0 106.517 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>-->
-      <video id="video156" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video157" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video158" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video159" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video160" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video161" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video162" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video163" autoplay="false" loop="false" src="videos/video3.mp4"></video>
-      <video id="video164" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
+      <video id="13-4C-D2-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="13-4C-D2-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="13-4C-D2-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="13-4C-D2-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="13-4C-D2-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="13-4C-D2-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="13-4C-D2-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="13-4C-D2-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+      <video id="13-4C-D2-V9" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
     </a-assets>
-    <a-video src="#video156" position="194.68513 3.37363 22.27165" material="" geometry="width: 0.998; height: 0.738" visible="" rotation="0 112.92400000000002 0" opacity="1"></a-video>
-    <a-video src="#video157" position="198.9554 2.59928 22.60272" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.007 168.792 0.11287268564077217" opacity="1"></a-video>
-    <a-video src="#video158" position="196.57154 2.2314 15.05484" material="" geometry="width: 0.459; height: 0.251" visible="" rotation="-24.996 -172.54 -0.054" opacity="1"></a-video>
-    <a-video src="#video159" position="191.9323 2.23114 16.74736" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.99814860155782 130.707 -0.022345354010102104" opacity="1"></a-video>
-    <a-video src="#video160" position="189.36619 2.45 13.77934" material="" geometry="width: 1.555; height: 0.82" visible="" rotation="-70.19019469250149 67.81070096932318 -0.1650118449976771" opacity="1"></a-video>
-    <a-video src="#video161" position="196.21636 2.44784 11.36251" material="" geometry="width: 1.555; height: 0.822" visible="" rotation="-70.193 2.249 0.07391155557187619" opacity="1"></a-video>
-    <a-video src="#video162" position="194.98974 2.5987 6.36734" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.997000000000003 168.821 -0.16902254956359286" opacity="1"></a-video>
-    <a-video src="#video163" position="188.89375 1.88341 6.51371" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.002732263918862 61.43500000000001 0.07677634454753031" opacity="1"></a-video>
-    <a-video src="#video164" position="188.6285 1.88344 5.63157" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.002732263918862 168.818 0.006302535746439056" opacity="1"></a-video>
-    <!--24--------8c--------Diamante 2-->
+    <a-video src="#13-4C-D2-V1" position="194.68513 3.37363 22.27165" material="" geometry="width: 0.998; height: 0.738" visible="" rotation="0 112.92400000000002 0" opacity="1"></a-video>
+    <a-video src="#13-4C-D2-V2" position="198.9554 2.59928 22.60272" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.007 168.792 0.11287268564077217" opacity="1"></a-video>
+    <a-video src="#13-4C-D2-V3" position="196.57154 2.2314 15.05484" material="" geometry="width: 0.459; height: 0.251" visible="" rotation="-24.996 -172.54 -0.054" opacity="1"></a-video>
+    <a-video src="#13-4C-D2-V4" position="191.9323 2.23114 16.74736" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.99814860155782 130.707 -0.022345354010102104" opacity="1"></a-video>
+    <a-video src="#13-4C-D2-V5" position="189.36619 2.45 13.77934" material="" geometry="width: 1.555; height: 0.82" visible="" rotation="-70.19019469250149 67.81070096932318 -0.1650118449976771" opacity="1"></a-video>
+    <a-video src="#13-4C-D2-V6" position="196.21636 2.44784 11.36251" material="" geometry="width: 1.555; height: 0.822" visible="" rotation="-70.193 2.249 0.07391155557187619" opacity="1"></a-video>
+    <a-video src="#13-4C-D2-V7" position="194.98974 2.5987 6.36734" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.997000000000003 168.821 -0.16902254956359286" opacity="1"></a-video>
+    <a-video src="#13-4C-D2-V8" position="188.89375 1.88341 6.51371" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.002732263918862 61.43500000000001 0.07677634454753031" opacity="1"></a-video>
+    <a-video src="#13-4C-D2-V9" position="188.6285 1.88344 5.63157" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.002732263918862 168.818 0.006302535746439056" opacity="1"></a-video>
+    <!--14--------5C--------Diamante 2-->
     <a-gltf-model src="#diamante2" position="165.18006 0 83.19218" rotation="0 -27.258 0" scale="" material="" obj-model="" ></a-gltf-model>
     <a-assets>
       <!--<img id="play1" src="imagenes/play.png"></img>
       <img id="pause1" src="imagenes/pausa.png"></img>--> 
-      <video id="video184" autoplay="false" loop="false" src="videos/video3.mp4"></video>   
-      <video id="video185" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
-      <video id="video186" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
-      <video id="video187" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
-      <video id="video188" autoplay="false" loop="false" src="videos/video3.mp4"></video>  
-      <video id="video189" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
-      <video id="video190" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
-      <video id="video191" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
-      <video id="video192" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
+      <video id="14-5C-D2-V1" autoplay="false" loop="false" src="videos/video3.mp4"></video>   
+      <video id="14-5C-D2-V2" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
+      <video id="14-5C-D2-V3" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
+      <video id="14-5C-D2-V4" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
+      <video id="14-5C-D2-V5" autoplay="false" loop="false" src="videos/video3.mp4"></video>  
+      <video id="14-5C-D2-V6" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
+      <video id="14-5C-D2-V7" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
+      <video id="14-5C-D2-V8" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
+      <video id="14-5C-D2-V9" autoplay="false" loop="false" src="videos/video3.mp4"></video>    
     </a-assets>
-    <a-video src="#video184" position="160.86555 3.37363 71.93727" material="" geometry="width: 0.998; height: 0.738" visible="" rotation="0 -20.886 0" opacity="1"></a-video>
-    <a-video src="#video185" position="157.67433 2.59892 74.78809" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.999 35.042 -0.07677634454753031" opacity="1"></a-video>
-    <a-video src="#video186" position="164.77376 2.23125 78.28808" material="" geometry="width: 0.459; height: 0.251" visible="" rotation="-25 53.684 -0.04411775022507339" opacity="1"></a-video>
-    <a-video src="#video187" position="166.76096 2.23155 73.76747" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25 -3.076 -0.017188733853924696" opacity="1"></a-video>
-    <a-video src="#video188" position="170.6797 2.44664 73.96797" material="" geometry="width: 1.555; height: 0.82" visible="" rotation="-70.191 -66.04 0.37070369344964266" opacity="1"></a-video>
-    <a-video src="#video189" position="167.68502 2.44777 80.58444" material="" geometry="width: 1.555; height: 0.822" visible="" rotation="-70.161 -131.52131595669022 -0.05328507494716656" opacity="1"></a-video>
-    <a-video src="#video190" position="172.14048 2.59938 83.15721" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25 35.042 -0.016615776058793875" opacity="1"></a-video>
-    <a-video src="#video191" position="176.25138 1.88353 78.65398" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.998721559352948 -72.345 0.07677634454753031" opacity="1"></a-video>
-    <a-video src="#video192" position="177.07312 1.88405 79.07236" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.003000000000004 35.079 -0.12605071492878112" opacity="1"></a-video>
+    <a-video src="#14-5C-D2-V1" position="160.86555 3.37363 71.93727" material="" geometry="width: 0.998; height: 0.738" visible="" rotation="0 -20.886 0" opacity="1"></a-video>
+    <a-video src="#14-5C-D2-V2" position="157.67433 2.59892 74.78809" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.999 35.042 -0.07677634454753031" opacity="1"></a-video>
+    <a-video src="#14-5C-D2-V3" position="164.77376 2.23125 78.28808" material="" geometry="width: 0.459; height: 0.251" visible="" rotation="-25 53.684 -0.04411775022507339" opacity="1"></a-video>
+    <a-video src="#14-5C-D2-V4" position="166.76096 2.23155 73.76747" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25 -3.076 -0.017188733853924696" opacity="1"></a-video>
+    <a-video src="#14-5C-D2-V5" position="170.6797 2.44664 73.96797" material="" geometry="width: 1.555; height: 0.82" visible="" rotation="-70.191 -66.04 0.37070369344964266" opacity="1"></a-video>
+    <a-video src="#14-5C-D2-V6" position="167.68502 2.44777 80.58444" material="" geometry="width: 1.555; height: 0.822" visible="" rotation="-70.161 -131.52131595669022 -0.05328507494716656" opacity="1"></a-video>
+    <a-video src="#14-5C-D2-V7" position="172.14048 2.59938 83.15721" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25 35.042 -0.016615776058793875" opacity="1"></a-video>
+    <a-video src="#14-5C-D2-V8" position="176.25138 1.88353 78.65398" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-24.998721559352948 -72.345 0.07677634454753031" opacity="1"></a-video>
+    <a-video src="#14-5C-D2-V9" position="177.07312 1.88405 79.07236" material="" geometry="width: 0.458; height: 0.251" visible="" rotation="-25.003000000000004 35.079 -0.12605071492878112" opacity="1"></a-video>
     <!--####################        Seccion D        ####################-->
-    <!--26--------2d--------Oro 1-->
+    <!--15--------1D--------Oro 1-->
     <a-gltf-model src="#oro1" position="93.99496 0 39.93244" rotation="0 33.02700618472604 0" scale="" material="" obj-model="" ></a-gltf-model>
    
-    <!--28--------4d--------Diamante 1-->
+    <!--16--------2D--------Diamante 1-->
     <a-gltf-model src="#diamante1" position="110.90634 0 54.77375" rotation="0 28.737844130376697 0" scale="" material="" obj-model="" ></a-gltf-model>
-    <!--29--------5d--------Oro 2-->
+
+    <!--17--------3D--------Oro 2-->
     <a-gltf-model src="#oro2" position="146.075 0 63.96158" rotation="0 63.44017890806527 0" scale="" material="" obj-model="" ></a-gltf-model>
 
  

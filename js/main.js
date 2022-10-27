@@ -1,14 +1,18 @@
-AFRAME.registerComponent("play-pause1", {
+
+
+
+
+AFRAME.registerComponent("a1-1a-d1-v1-f-pp", {
   init: function () {
-    var myVideo1 = document.querySelector("#video1");
-    var videoControls1 = document.querySelector("#videoControls1");
+    var Video1 = document.querySelector("#a1-1a-d1-v1");
+    var Controls1 = document.querySelector("#a1-1a-d1-v1-controls");
     this.el.addEventListener("click", function () {
-      if (myVideo1.paused) {
-        myVideo1.play();
-        videoControls1.setAttribute("src", "#pause1");
+      if (Video1.paused) {
+        Video1.play();
+        Controls1.setAttribute("src", "#a1-1a-d1-v1-i-play");
       } else {
-        myVideo1.pause();
-        videoControls1.setAttribute("src", "#play1");
+        Video1.pause();
+        Controls1.setAttribute("src", "#a1-1a-d1-v1-i-pause");
       }
     });
   },
