@@ -10,49 +10,8 @@
 
 
     <script src="js/main.js"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
     
-    <style>
-        body {
-          /* disable long press in iOS? */
-          -webkit-touch-callout: none;
-        }
-        .mainUI {
-          border: 0px solid pink;
-          position: fixed;
-          top: 0px;
-          width: 99%;
-          height: 99%;
-          z-index: 1;
-          pointer-events: none; /* allow click-through in transparent areas */
-        }
-        .regionUI {
-          border: 0px solid yellow;
-          position: absolute;
-          display: flex;
-          flex-direction: row;
-          pointer-events: none;
-        }
-        .buttonUI {
-          border: 0px solid lime;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          pointer-events: auto;
-          filter: drop-shadow(0px 0px 20px white);
-        }
-        .skyColor {
-          filter: hue-rotate(240deg) saturate(100%) brightness(100%)
-            drop-shadow(0px 0px 20px white);
-        }
-        .baseColor {
-          filter: hue-rotate(24deg) saturate(68%) brightness(100%)
-            drop-shadow(0px 0px 20px white);
-        }
-        .grayColor {
-          filter: hue-rotate(0deg) saturate(0%) brightness(100%)
-            drop-shadow(0px 0px 20px white);
-        }
-      </style>
     </head>
   
     <body>
@@ -93,80 +52,6 @@
         </div>
       </div>
   
-      <script>
-        function haltEvent(event) {
-          event.preventDefault && event.preventDefault();
-          event.stopPropagation && event.stopPropagation();
-          event.cancelBubble = true;
-          event.returnValue = false;
-          return false;
-        }
-        // prevent right-click menus from appearing
-        document.addEventListener("contextmenu", haltEvent);
-        // more attempts to prevent right-click menus from appearing -- avoid; they block touchscreen/iPad controls
-        // document.addEventListener("touchmove", haltEvent );
-        // document.addEventListener("touchcancel", haltEvent );
-  
-        // add events for both touch and mouse controls
-        function addButtonEventListeners(
-          buttonElementID,
-          startFunction,
-          endFunction
-        ) {
-          let element = document.getElementById(buttonElementID);
-          element.addEventListener("touchstart", startFunction);
-          element.addEventListener("mousedown", startFunction);
-          element.addEventListener("touchend", endFunction);
-          element.addEventListener("mouseup", endFunction);
-        }
-        function associateMovementControls(buttonElementID, component, keyName) {
-          addButtonEventListeners(
-            buttonElementID,
-            function (event) {
-              component.registerKeyDown(keyName);
-              return haltEvent(event);
-            },
-            function (event) {
-              component.registerKeyUp(keyName);
-              return haltEvent(event);
-            }
-          );
-        }
-        // need to run javascript code after a-scene entities and components are loaded
-        AFRAME.registerComponent("screen-controls", {
-          init: function () {
-            let component =
-              document.getElementById("camera").components[
-                "extended-wasd-controls"
-              ];
-  
-            associateMovementControls(
-              "buttonMoveForward",
-              component,
-              component.data.moveForwardKey
-            );
-            associateMovementControls(
-              "buttonMoveBackward",
-              component,
-              component.data.moveBackwardKey
-            );
-            associateMovementControls(
-              "buttonMoveLeft",
-              component,
-              component.data.moveLeftKey
-            );
-            associateMovementControls(
-              "buttonMoveRight",
-              component,
-              component.data.moveRightKey
-            );
-          },
-          tick: function (time, deltaTime) {},
-        });
-      </script>
-  
-      <!-- disable press "F" to enter fullscreen mode
-      disable WASD controls attached to default camera -->
     <a-scene  stats cursor="rayOrigin: mouse"  renderer="maxCanvasWidth: 1920; maxCanvasHeight: 1920; sortObjects: false; foveationLevel:1" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
         
         <a-sky src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748"></a-sky>
@@ -326,7 +211,7 @@
 
         <a-video src="#a1-1a-d1-v5" position="170.1893 7.06146 174.05941" material="" geometry="width: 4.67; height: 2.41" visible="" rotation="0 -91.16000000000001 0" opacity="1"></a-video>
 
-        <a-image id="a1-1a-d1-v5-controls" src="#pause" position="170.48044 5.33608 174.0653" rotation="0 -91.16000000000001 0" scale="0.5 0.5 1" material="" geometry="" a1-1a-d1-v5-f-pp=""></a-image>
+        <a-image id="a1-1a-d1-v5-controls" src="#play" position="170.48044 5.33608 174.0653" rotation="0 -91.16000000000001 0" scale="0.5 0.5 1" material="" geometry="" a1-1a-d1-v5-f-pp=""></a-image>
 
         <a-video src="#a1-1a-d1-v6" position="162.09836 4.22517 173.50806" material="" geometry="width: 1.325; height: 0.99" visible="" rotation="0 134.9842728704609 0" opacity="1"></a-video>
         <a-video src="#a1-1a-d1-v7" position="166.85355 2.7308 173.50295" material="" geometry="width: 0.64; height: 0.35" visible="" rotation="-25.011326630845826 -152.48985238509295 0.009167324722093173" opacity="1"></a-video>
