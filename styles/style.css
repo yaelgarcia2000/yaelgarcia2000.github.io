@@ -1,7 +1,9 @@
 body {
     /* disable long press in iOS? */
     -webkit-touch-callout: none;
+
   }
+
   .mainUI {
     border: 0px solid pink;
     position: fixed;

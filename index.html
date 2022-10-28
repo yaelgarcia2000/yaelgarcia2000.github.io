@@ -7,52 +7,84 @@
     <script src="https://raw.githubusercontent.com/MrCaro/aframe-samples/master/js/aframe-master-v1.3.0.min.js"></script>
     <script src="js/aframe-environment-component.min.js"></script>
     <script src="js/extended-wasd-controls.js"></script>
-
-
     <script src="js/main.js"></script>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />  
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
   
     <body>
       <!-- note: by using red base images for buttons, can tint (HSV) using filter: hue-rotate(); etc. -->
       <div class="mainUI" id="uiDiv" oncontextmenu="return false;">
+        <div class="d-flex justify-content-end p-4">
+          <button style="pointer-events: fill;" type="button" class="btn btn-primary btn-lg justify-content-md-end"
+            data-bs-toggle="modal" data-bs-target="#contenedor-modal">
+            Busqueda
+          </button>
+        </div>
+        <!--Modal content-->
+        <div style="pointer-events: fill;" class="modal fade" id="contenedor-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Búsqueda rápida</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3">
+                  <div>
+                    <p>Seleccione un filtrado por país</p>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Seleccionar una opción</option>
+                      <option value="1">México</option>
+                      <option value="2">Perú</option>
+                      <option value="3">Ecuador</option>
+                      <option value="4">Colombia</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p>Seleccione un filtrado por sector</p>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Seleccionar una opción</option>
+                      <option value="1">Sector educativo</option>
+                      <option value="2">Sector industrial</option>
+                      <option value="3">Sector inmobiliario</option>
+                      <option value="4">Sector salud</option>
+                    </select>
+                  </div>
+      
+                </form>
+              </div>
+      
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Guardar cambios
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- bottom-right -->
+      
         <div class="regionUI baseColor" style="bottom: 10px; right: 10px">
           <div class="buttonUI">
-            <img
-              src="images/buttons/left.png"
-              id="buttonMoveLeft"
-              width="60px"
-              height="60px"
-            />
+            <img src="images/buttons/left.png" id="buttonMoveLeft" width="60px" height="60px" />
           </div>
           <div class="buttonUI">
-            <img
-              src="images/buttons/up.png"
-              id="buttonMoveForward"
-              width="60px"
-              height="60px"
-            /><br />
-            <img
-              src="images/buttons/down.png"
-              id="buttonMoveBackward"
-              width="60px"
-              height="60px"
-            />
+            <img src="images/buttons/up.png" id="buttonMoveForward" width="60px" height="60px" /><br />
+            <img src="images/buttons/down.png" id="buttonMoveBackward" width="60px" height="60px" />
           </div>
           <div class="buttonUI">
-            <img
-              src="images/buttons/right.png"
-              id="buttonMoveRight"
-              width="60px"  
-              height="60px"
-            />
+            <img src="images/buttons/right.png" id="buttonMoveRight" width="60px" height="60px" />
           </div>
         </div>
       </div>
   
-    <a-scene  stats cursor="rayOrigin: mouse"  renderer="maxCanvasWidth: 1920; maxCanvasHeight: 1920; sortObjects: false; foveationLevel:1" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+    <a-scene stats cursor="rayOrigin: mouse"  renderer="maxCanvasWidth: 1920; maxCanvasHeight: 1920; sortObjects: false; foveationLevel:1" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
         
         <a-sky src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748"></a-sky>
        
@@ -123,18 +155,17 @@
         <a-curvedimage src="#pantallacurva12" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 -49.23254446220625 0" position="36.56482 15.5238 80.02034" visible="" ></a-curvedimage>
         <a-curvedimage src="#pantallacurva13" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 -140.1907403548147 0" position="29.15227 27.86609 184.81845" visible="" ></a-curvedimage>
         <a-curvedimage src="#pantallacurva14" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 5.998868115019719 0" position="0.98983 25.88519 7.22671" ></a-curvedimage>
-        
-       
-        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 25.6; radius: 50; segmentsRadial: 100; thetaLength: 125.17; thetaStart: 50; segmentsHeight: 100" rotation="0 -86.80138708893432 0" position="181.31085 15.1413 136.76818" visible=""></a-curvedimage>
-        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 39.4; radius: 40.17; segmentsRadial: 100; thetaLength: 129.23; thetaStart: 50; segmentsHeight: 100" rotation="0 -15.344382711398577 0" position="234.56745 21.70696 103.34859" scale="2 1 2.19" visible=""></a-curvedimage>
+
+        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 25.87; radius: 50; segmentsRadial: 100; thetaLength: 126.83; thetaStart: 50.27; segmentsHeight: 100" rotation="0 -86.80138708893432 0" position="180.9727 14.98567 138.84502" visible="" scale="0.95 1 1"></a-curvedimage>
+        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 40.28; radius: 90.5; segmentsRadial: 100; thetaLength: 123.13; thetaStart: 29.79; segmentsHeight: 100" rotation="0 6.0189216378492985 0" position="226.09617 21.70696 101.35609" scale="0.999 1 1" visible=""></a-curvedimage>
         <a-plane position="243.73043 14.99652 14.27373" scale="" width="10" height="10" rotation="0 -92.401 0" material="metalness: 1; roughness: 0; transparent: true; opacity: 0.7; color: #faaf52; side: double" geometry="width: 18.75; height: 28.75"></a-plane>
-        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 25.6; radius: 50; segmentsRadial: 100; thetaLength: 125.17; thetaStart: 50; segmentsHeight: 100" rotation="0 45.559884995417676 0" position="190.48357 15.1413 3.22105" visible=""></a-curvedimage>
-        
-
-
-
-
-        <!-- Panacartas -->
+        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 27.2; radius: 60; segmentsRadial: 100; thetaLength: 140; thetaStart: 49.37; segmentsHeight: 100" rotation="0 49.26864080329949 0" position="184.42616 14.9597 13.40142" visible=""></a-curvedimage>
+        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 32; radius: 70; segmentsRadial: 100; thetaLength: 58.41; thetaStart: 50.15; segmentsHeight: 100" rotation="0 129.7107693240768 0" position="124.21681 17.92869 36.89479" visible="" scale=""></a-curvedimage>       
+        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 55.4; radius: 112.5; segmentsRadial: 100; thetaLength: 178.08; thetaStart: 49.68; segmentsHeight: 100" rotation="0 107.77393422190299 0" position="-106.33347 29.49353 58.93391" scale="" visible=""></a-curvedimage>
+        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 38.5; radius: 72.5; segmentsRadial: 100; thetaLength: 162.07; thetaStart: 36.2; segmentsHeight: 100" rotation="0 -141.6741280864084 0" position="-63.2543 20.52701 173.87622" scale="" visible=""></a-curvedimage>
+        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 42; radius: 85; segmentsRadial: 100; thetaLength: 57.9; thetaStart: 71.36; segmentsHeight: 100" rotation="0 -75.30556188742949 0" position="15.77179 24.47423 150.53115" visible="" scale=""></a-curvedimage>        
+        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 25.87; radius: 47; segmentsRadial: 100; thetaLength: 125.62; thetaStart: 80.71; segmentsHeight: 100" rotation="0 -26.839634955108284 0" position="38.99427 14.98567 78.3715" visible="" scale=""></a-curvedimage>
+        <a-curvedimage height="6.5907" radius="5" theta-length="90" theta-start="135" material="color: #020202; opacity: 0.5" geometry="height: 38; radius: 63.5; segmentsRadial: 100; thetaLength: 125.26; thetaStart: 86.9; segmentsHeight: 100" rotation="0 23.45001663911433 0" position="1.26353 20.93701 22.56308" visible="" scale="0.98 1 1"></a-curvedimage>        <!-- Panacartas -->
         <!--A zona este-->
         <!--B zona este-->
         <a-assets>

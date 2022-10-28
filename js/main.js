@@ -64,6 +64,7 @@ AFRAME.registerComponent("screen-controls", {
       component,
       component.data.moveRightKey
     );
+   
   },
   tick: function (time, deltaTime) {},
 });

@@ -202,6 +202,7 @@ AFRAME.registerComponent('extended-wasd-controls', {
 			// need to reset movePercent values
 			//   when querying which keys are currently pressed
 			this.movePercent.set(0,0,0)
+		
 
 			if (this.isKeyPressed(this.data.moveForwardKey))
 				this.movePercent.z += 1;
@@ -220,6 +221,7 @@ AFRAME.registerComponent('extended-wasd-controls', {
 				if (this.isKeyPressed(this.data.moveDownKey))
 					this.movePercent.y -= 1;
 			}
+		
 		}
 		else // other, e.g. "joystick"
 		{
