@@ -12,6 +12,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />  
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
+    <script src="js/sphereexpand.js"></script>
+    <script src="js/backhome.js"></script>
+    <script src="js/examplefunctions.js"></script>
+    <script src="js/disappear.js"></script>
     </head>
   
     <body>
@@ -85,15 +90,40 @@
       </div>
   
     <a-scene stats cursor="rayOrigin: mouse"  renderer="maxCanvasWidth: 1920; maxCanvasHeight: 1920; sortObjects: false; foveationLevel:1" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
-        
-        <a-sky src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748"></a-sky>
-       
-        <a-entity id="camera" camera="" look-controls="gyroEnabled:false" look-controls mouse-cursor position="116.45514 4.57992 182.70526" extended-wasd-controls="" wasd-controls="acceleration: 10" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
+     
+      <a-entity id="camera" camera="" look-controls mouse-cursor position="116.45514 4.57992 182.70526" extended-wasd-controls="" wasd-controls="acceleration: 10" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
 
+      <a-assets>
+        <img id="starsky" src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748">
+        <img id="bordeauxtheater" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FOp%C3%A9ra_National_de_Bordeaux%20(1).jpg?1547235572572">
+      </a-assets>
+      
+     
+      <a-sky id="sky" src="#starsky"></a-sky>
+      
+      <a-entity id="photospheredisplay" class="homeworld" position="-10 0 -12">
+          <a-box position="115.16479 1 144.68136" color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
+          <a-sphere position="115.16479 4.07931 144.68136" radius=".7" src="#bordeauxtheater" sphereexpand="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: NaN; elasticity: 0" material="" geometry="" rotation="0 196.327153000559 0" scale="3 3 3"></a-sphere>
+          <a-plane id="photospherecaption" position="115.63825 1 145.74526" rotation="-25 35 0" height=".6" width="auto" color="#191817" text="value: Escenario; width: 2; wrapCount: 30; align: center" material="" geometry="width: 2"></a-plane>
+      </a-entity>
+      
+      <a-circle id="homebutton" position="115.16479 1 144.68136" rotation="-90 0 0" backhome></a-circle>
+
+    
+      <a-sphere link="href: https://www.google.com.mx/;" position="115.16479 6.07931 144.68136" radius=".7" componentstarter animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: NaN; elasticity: 0" material="" geometry="" rotation="0 196.327153000559 0" scale="3 3 3"></a-sphere>
+
+
+      
+       
+       
+
+
+        
         <!-- --------------------IMPORTACIÓN DE ISLAS----------------------- -->
         <!--ISLA-->
         <a-assets>
-          <a-asset-item id="escenario" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/sin_arboles.glb"></a-asset-item>
+          <a-asset-item id="escenario" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/sin_arboles%20y%20vidrios.glb"></a-asset-item>
+        
         </a-assets>
         <!-- --------------------COLOCACIÓN----------------------- -->
         <!--ISLA-->

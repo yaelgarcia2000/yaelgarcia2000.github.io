@@ -71,6 +71,8 @@ AFRAME.registerComponent("screen-controls", {
 // disable press "F" to enter fullscreen mode
 //disable WASD controls attached to default camera -->
 
+
+
 AFRAME.registerComponent("a1-1a-d1-v1-f-pp", {
   init: function () {
     var Video = document.querySelector("#a1-1a-d1-v1");
@@ -146,6 +148,7 @@ AFRAME.registerComponent("a1-1a-d1-v5-f-pp", {
     });
   },
 });
+
 
 
 
