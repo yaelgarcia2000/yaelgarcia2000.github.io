@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <title>Auditorio</title>
+</head>
+<body>
+    <a-scene cursor="rayOrigin: mouse"  renderer="maxCanvasWidth: 1920; maxCanvasHeight: 1920; sortObjects: false; foveationLevel:1" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+        
+        <a-entity camera="" position="-0.86828 4.5 19.45512" wasd-controls="" rotation="" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+        <a-sky src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748"></a-sky>
+        <a-gltf-model position="0 -5.100 108.03" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/glb/auditorio.glb"></a-gltf-model>
+        <a-assets>
+            <video id="pantallacentro1" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+            <video id="pantallacentro2" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+            <video id="pantallacentro3" autoplay="false" loop="false" src="videos/video3.mp4"></video>
+        </a-assets>
+       
+        <a-video src="#pantallacentro1" transparent="false" width="5" height="2.45" position="-0.5148 9.48579 -7.28258" geometry="primitive: box; width: 11.8; height: 4.8; depth: 0.5" visible="" rotation="" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+        <a-video src="#pantallacentro2" transparent="false" width="5" height="2.45" position="-25.92105 8.7732 -7.01948" geometry="primitive: box; width: 5.5; height: 5.5; depth: 5.5" visible="" rotation="0 135.29939965778286 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>        
+        <a-video src="#pantallacentro3" transparent="false" width="5" height="2.45" position="24.83692 8.7732 -7.02132" geometry="primitive: box; width: 5.5; height: 5.5; depth: 5.5" visible="" rotation="0 135.0364120298178 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+    </a-scene>
+</body>
+</html>
