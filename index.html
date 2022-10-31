@@ -96,6 +96,7 @@
       <a-assets>
         <img id="starsky" src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748">
         <img id="bordeauxtheater" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FOp%C3%A9ra_National_de_Bordeaux%20(1).jpg?1547235572572">
+        <img id="google" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/sky/Fondo1.jpg" >
       </a-assets>
       
      
@@ -110,7 +111,7 @@
       <a-circle id="homebutton" position="115.16479 1 144.68136" rotation="-90 0 0" backhome></a-circle>
 
     
-      <a-sphere link="href: https://www.google.com.mx/;" position="115.16479 6.07931 144.68136" radius=".7" componentstarter animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: NaN; elasticity: 0" material="" geometry="" rotation="0 196.327153000559 0" scale="3 3 3"></a-sphere>
+      <a-sphere src="#google" link="href: https://www.google.com.mx/;" position="115.16479 6.07931 144.68136" radius=".7" componentstarter animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: NaN; elasticity: 0" material="" geometry="" rotation="0 196.327153000559 0" scale="3 3 3"></a-sphere>
 
 
       
@@ -231,20 +232,49 @@
         <a-cylinder color="black" height="3" radius="1.5" material="" geometry="height: 30; radius: 0.2" position="-68.57988 15 -93.70388"></a-cylinder>
         <a-image src="#pancarta1" transparent="false" geometry="height: 25; width: 16" position="-61.8451 17.51823 -89.06331" rotation="0 -34.434763487362474 0"></a-image>
       
-
-        <a-gltf-model src="#pantalla_cubo" position="139.12654 0 94.01318" rotation="" scale="" material="" obj-model="" ></a-gltf-model>
         <a-assets>
-          <!--<img id="play1" src="imagenes/play.png"></img>
-          <img id="pause1" src="imagenes/pausa.png"></img>-->
-          <video id="videocubo5" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
-          <video id="videocubo6" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
-          <video id="videocubo7" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
-          <video id="videocubo8" autoplay="false" loop="false" src="videos/video3.mp4"></video> 
+          <video id="videocubo1" autoplay="false" loop="true" src="videos/video2.mp4"></video>
         </a-assets>
-        <a-video src="#videocubo5" position="132.30868 8.21297 93.81429" material="" geometry="width: 11.14; height: 9.9" visible="" rotation="0 -90 0" opacity="1"></a-video>
-        <a-video src="#videocubo6" position="138.74263 8.22899 100.08441" material="" geometry="width: 11.14; height: 9.9" visible="" rotation="0 0 0" opacity="1"></a-video>
-        <a-video src="#videocubo7" position="145.07198 8.22899 93.76225" material="" geometry="width: 11.14; height: 9.9" visible="" rotation="0 90 0" opacity="1"></a-video>
-        <a-video src="#videocubo8" position="138.72699 8.213 87.38942" material="" geometry="width: 11.14; height: 9.9" visible="" rotation="0 180 0" opacity="1"></a-video>
+       
+      
+       
+
+  
+       
+          
+
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="207.629 1.640 151.71458"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="207.60091 8.981 151.79087" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+        
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="164.33722 1.640 135.59718"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="164.3216 8.981 135.62908" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+        
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="128.7529 1.640 99.30171"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="128.7538 8.98128 99.41393" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5"></a-video>     
+
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="293.01407 1.640 69.32321"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="293.0145 8.98128 69.36524" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+        
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.300; radius: 5" position="263.63263 1.640 124.15201"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="263.62405 8.98128 124.07903" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="240.0687 1.640 87.28325"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="240.03103 8.98128 87.25518" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="199.9548 1.640 89.87281"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="200.09873 8.98128 89.54129" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="221.9362 1.64 13.91136"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="221.92052 8.98128 13.94016" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="180.71496 1.64 49.47306"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="180.63495 8.98128 49.57382" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="140.7922 1.64 28.29171"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="140.93252 8.98128 28.42711" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>
+
+        <a-cylinder color="crimson" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="108.71212 1.64 2.80204"></a-cylinder>
+        <a-video src="#videocubo1" transparent="false" width="5" height="2.45" position="108.76137 8.98128 2.89797" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 90 0" opacity="1" scale="2.5 2.5 2.5" material=""></a-video>        
+        
         <!-- --------------------COLOCACIÓN DE STANDS----------------------- -->
         <!--******************************     Zone Oeste     ******************************-->
         <a-assets>
