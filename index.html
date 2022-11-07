@@ -96,7 +96,7 @@
       <a-assets>
         <img id="starsky" src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748">
         <img id="bordeauxtheater" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FOp%C3%A9ra_National_de_Bordeaux%20(1).jpg?1547235572572">
-        <img id="google" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/sky/Fondo1.jpg" >
+        <img id="img-auditorio" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/sky/auditorio.png">
       </a-assets>
       
      
@@ -110,12 +110,21 @@
       </a-entity>
       
       <a-circle id="homebutton" position="115.16479 1 144.68136" rotation="-90 0 0" backhome></a-circle>
+
+      <a-sphere src="#google" link="href: auditorio.html" position="94.75019 6.07931 132.83592" radius=".7" componentstarter="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: NaN; elasticity: 0" material="" geometry="" rotation="0 232.5785750694836 0" scale="5 5 5"></a-sphere>
+      <a-plane id="photospherecaption" position="96.37634 1.92153 135.45316" rotation="-25 35 0" height=".6" width="auto" color="#191817" text="value: Escenario; width: 2; wrapCount: 30; align: center" material="" geometry="height: 2; width: 4"></a-plane>      
+       
     -->
     
-<a-sphere src="#google" link="href: auditorio.html" position="94.75019 6.07931 132.83592" radius=".7" componentstarter="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: NaN; elasticity: 0" material="" geometry="" rotation="0 232.5785750694836 0" scale="5 5 5"></a-sphere>
-<a-plane id="photospherecaption" position="96.37634 1.92153 135.45316" rotation="-25 35 0" height=".6" width="auto" color="#191817" text="value: Escenario; width: 2; wrapCount: 30; align: center" material="" geometry="height: 2; width: 4"></a-plane>      
-       
-       
+        
+
+        <a-image src="#img-auditorio" link="href: auditorio.html" position="97.52489 8.93586 125.91017" componentstarter="" material="" geometry="height: 11; width: 6" rotation="14.993159582983383 177.87818524513486 -0.4509177847679579" scale=""></a-image>
+        <a-image src="#img-auditorio" link="href: auditorio.html" position="97.52489 8.93586 122.49768" componentstarter="" material="" geometry="height: 11; width: 6" rotation="14.993159582983383 -2.605812052254984 -0.4509177847679579" scale=""></a-image>
+        <a-cylinder color="black" height="3" radius="1.5" material="" geometry="height: 15; radius: 0.2" position="94.43254 7.02 126.19292" rotation="-14.999999999999998 0 0"></a-cylinder>
+        <a-cylinder color="black" height="3" radius="1.5" material="" geometry="height: 15; radius: 0.2" position="100.57421 7.02 126.48654" rotation="-14.999999999999998 0 0"></a-cylinder>
+        <a-cylinder color="black" height="3" radius="1.5" material="" geometry="height: 15; radius: 0.2" position="100.60973 7.02 122.22728" rotation="14.999999999999998 0 0"></a-cylinder>
+        <a-cylinder color="black" height="3" radius="1.5" material="" geometry="height: 15; radius: 0.2" position="94.43076 7.02 121.92627" rotation="14.999999999999998 0 0"></a-cylinder>
+    
 
 
         
