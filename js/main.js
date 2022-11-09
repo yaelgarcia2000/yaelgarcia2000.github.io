@@ -71,7 +71,44 @@ AFRAME.registerComponent("screen-controls", {
 // disable press "F" to enter fullscreen mode
 //disable WASD controls attached to default camera -->
 
+AFRAME.registerComponent("reproducir", {
+  init: function () {
+    var v1 = document.querySelector("#p-c-e-b1-v");
+    var v2= document.querySelector("#p-c-e-c1-v");
+    var v3 = document.querySelector("#p-c-e-d1-v");
+    var v4 = document.querySelector("#p-c-o-a2-v");
+    var v5 = document.querySelector("#p-c-o-b1-v");
+    var v6 = document.querySelector("#p-c-o-c1-v");
+    var v7 = document.querySelector("#p-c-o-e1-v");
+    var v8 = document.querySelector("#p-e-b1-v");
+    var v9 = document.querySelector("#p-o-a1-v");
+    var v10 = document.querySelector("#p-o-b1-v");
+    var v11 = document.querySelector("#p-cb-e-a2-v");
+    var v12 = document.querySelector("#p-cb-e-b1-v");
+    var v13 = document.querySelector("#p-cb-e-b3-v");
+    var v14 = document.querySelector("#p-cb-e-c1-v");
+    var v15 = document.querySelector("#p-cb-e-d1-v");
+   
 
+      if (v1.paused && v2.paused && v3.paused && v4.paused && v5.paused && v6.paused && v7.paused && v8.paused && v9.paused && v10.paused && v11.paused && v12.paused && v13.paused && v14.paused && v15.paused) {
+        v1.play();
+        v2.play();
+        v3.play();
+        v4.play();
+        v5.play();
+        v6.play();
+        v7.play();
+        v8.play();
+        v9.play();
+        v10.play();
+        v11.play();
+        v12.play();
+        v13.play();
+        v14.play();
+        v15.play();
+      } 
+    }
+});
 
 AFRAME.registerComponent("a1-1a-d1-v1-f-pp", {
   init: function () {
