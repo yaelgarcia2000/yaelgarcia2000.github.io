@@ -1,6 +1,9 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entorno Virtual</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
@@ -17,6 +20,7 @@
     <script src="js/backhome.js"></script>
     <script src="js/examplefunctions.js"></script>
     <script src="js/disappear.js"></script>
+    <script src="js/info-message.js"></script>
     </head>
   
     <body>
@@ -89,11 +93,13 @@
         </div>
       </div>
   
-    <a-scene stats cursor="rayOrigin: mouse" keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"> 
+    <a-scene stats info-message="htmlSrc: #messageText; height: 400" cursor="rayOrigin: mouse" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"> 
      
       <a-entity id="camera" camera="" look-controls mouse-cursor position="116.45514 4.57992 182.70526" extended-wasd-controls="" wasd-controls="acceleration: 10" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
 
       <a-assets>
+        <a-asset-item id="messageText" src="message.html"></a-asset-item>
+
         <img id="starsky" src="https://cdn.glitch.global/d2545b02-f3ae-4194-88f0-44e85ad56eb7/Fondo6.jpg?v=1665757408748">
         <img id="bordeauxtheater" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FOp%C3%A9ra_National_de_Bordeaux%20(1).jpg?1547235572572">
         <img id="img-auditorio" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/sky/auditorio.png">
@@ -225,11 +231,11 @@
     
         <a-assets>
           
-          <video id="p-e-b1-v" preload="auto" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-e-b1-v.mp4" crossorigin="anonymous"></video>
+          <video id="p-e-b1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-e-b1-v.mp4" crossorigin="anonymous"></video>
           
-          <video id="p-o-a1-v" preload="auto" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-o-a1-v.mp4" crossorigin="anonymous"></video>
+          <video id="p-o-a1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-o-a1-v.mp4" crossorigin="anonymous"></video>
           
-          <video id="p-o-b1-v" preload="auto" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-o-b1-v.mp4" crossorigin="anonymous"></video>
+          <video id="p-o-b1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-o-b1-v.mp4" crossorigin="anonymous"></video>
             
         </a-assets>
 
