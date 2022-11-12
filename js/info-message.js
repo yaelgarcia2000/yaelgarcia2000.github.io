@@ -39,9 +39,9 @@ AFRAME.registerComponent('info-message', {
     addStyles: function () {
       var css =
         '.a-info-message{border-radius: 10px; position: absolute; width: ' + this.data.width + 'px;' +
-        'height: ' + this.data.height + 'px; background-color: white; border: 3px solid rgba(0,0,0,0.65);' +
-        'bottom: 22px; left: 22px; color: rgb(51, 51, 51); padding: 20px 15px 0 15px;' +
-        'font-size: 11pt; line-height: 20pt; z-index: 9999}' +
+        'height: ' + this.data.height + 'px; background-color: white; border: 1px solid rgba(0,0,0,0.65);' +
+        'bottom: 22px; left: 22px; color: rgb(51, 51, 51); padding: 40px 10px 0 10px;' +
+        'font-size: 8pt; line-height: 20pt; z-index: 9999}' +
   
         '.a-info-message a{border-bottom: 1px solid rgba(53,196,232,.15); color: #1497b8;' +
         'position: relative; text-decoration: none; transition: .05s ease;}' +
@@ -62,7 +62,7 @@ AFRAME.registerComponent('info-message', {
   
         '.a-close-button-info:hover{background-color: #b32146; color: white}' +
         '.a-info-message-container {position: absolute; left: 100px; bottom: 20px;}' +
-        '.a-info-message-button {background: rgba(0, 0, 0, 0.35) ' + this.infoMessageButtonDataURI + ' 50% 50% no-repeat;}' +
+        '.a-info-message-button {background: rgba(0, 0, 0, 0.35) ' + this.infoMessageButtonDataURI + ' 90% 90% no-repeat;}' +
         '.a-info-message-button {background-size: 92% 90%; border: 0; bottom: 0; cursor: pointer; min-width: 78px; min-height: 34px; padding-right: 0; padding-top: 0; position: absolute; right: 0; transition: background-color .05s ease; -webkit-transition: background-color .05s ease; z-index: 9999; border-radius: 8px; touch-action: manipulation;}' +
         '.a-info-message-button:active, .a-info-message-button:hover {background-color: #ef2d5e;}';
       var style = document.createElement('style');
