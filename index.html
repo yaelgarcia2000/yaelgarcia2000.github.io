@@ -30,57 +30,7 @@
     <body>
       <!-- note: by using red base images for buttons, can tint (HSV) using filter: hue-rotate(); etc. -->
       <div class="mainUI" id="uiDiv" oncontextmenu="return false;">
-        <div class="d-flex justify-content-end p-4">
-          <button style="pointer-events: fill;" type="button" class="btn btn-primary btn-lg justify-content-md-end"
-            data-bs-toggle="modal" data-bs-target="#contenedor-modal">
-            Busqueda
-          </button>
-        </div>
-        <!--Modal content-->
-        <div style="pointer-events: fill;" class="modal fade" id="contenedor-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLabel">Búsqueda rápida</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form class="row g-3">
-                  <div>
-                    <p>Seleccione un filtrado por país</p>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Seleccionar una opción</option>
-                      <option value="1">México</option>
-                      <option value="2">Perú</option>
-                      <option value="3">Ecuador</option>
-                      <option value="4">Colombia</option>
-                    </select>
-                  </div>
-                  <div>
-                    <p>Seleccione un filtrado por sector</p>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Seleccionar una opción</option>
-                      <option value="1">Sector educativo</option>
-                      <option value="2">Sector industrial</option>
-                      <option value="3">Sector inmobiliario</option>
-                      <option value="4">Sector salud</option>
-                    </select>
-                  </div>
-      
-                </form>
-              </div>
-      
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                  Cerrar
-                </button>
-                <button type="button" class="btn btn-primary">
-                  Guardar cambios
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+       
         <!-- bottom-right -->
       
         <div class="regionUI baseColor" style="bottom: 10px; right: 10px">
@@ -97,7 +47,7 @@
         </div>
       </div>
   
-    <a-scene stats info-message="htmlSrc: #messageText; height: 400" cursor="rayOrigin: mouse" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"> 
+    <a-scene stats info-message="htmlSrc: #messageText; height: 400" cursor="rayOrigin: mouse" screen-controls keyboard-shortcuts="enterVR: false;" vr-mode-ui="enabled: false;" loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"> 
      
       <a-entity id="camera" camera="" look-controls mouse-cursor position="116.45514 4.57992 182.70526" extended-wasd-controls="" wasd-controls="acceleration: 10" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera="">
         <!-- Text element for display messaging.  Hide once video is playing. -->

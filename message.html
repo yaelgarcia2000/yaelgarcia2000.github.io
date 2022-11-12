@@ -1,3 +1,55 @@
+<div class="d-flex justify-content-start">
+    <button style="pointer-events: fill;" type="button" class="btn btn-primary btn-lg justify-content-md-end"
+        data-bs-toggle="modal" data-bs-target="#contenedor-modal">
+        Busqueda
+    </button>
+</div>
+<!--Modal content-->
+<div style="pointer-events: fill;" class="modal fade" id="contenedor-modal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Búsqueda rápida</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3">
+                    <div>
+                        <p>Seleccione un filtrado por país</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccionar una opción</option>
+                            <option value="1">México</option>
+                            <option value="2">Perú</option>
+                            <option value="3">Ecuador</option>
+                            <option value="4">Colombia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Seleccione un filtrado por sector</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccionar una opción</option>
+                            <option value="1">Sector educativo</option>
+                            <option value="2">Sector industrial</option>
+                            <option value="3">Sector inmobiliario</option>
+                            <option value="4">Sector salud</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Guardar cambios
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 <p>This example relies on <a href="https://immersive-web.github.io/layers/">WebXR layers API</a>. Browser support is experimental and might vary across vendors.</a></p>
 
 <p>
@@ -13,3 +65,4 @@ Featured comic books:</br>
 - <a href="https://imagecomics.com/comics/series/blackbird">Blackbird</a> by <a href="https://twitter.com/heyjenbartel?lang=en">Jen Bartel</a> and <a href="https://twitter.com/samhumphries">Sam Humphries</a><br>
 - <a href="https://imagecomics.com/comics/series/the-weatherman">The Weather Man</a> by <a href="https://twitter.com/jodyleheup?lang=en">Jody LeHeup</a> and <a href="https://twitter.com/nathanfoxy?s=20">Nathan Fox</a>
 </p>
+
