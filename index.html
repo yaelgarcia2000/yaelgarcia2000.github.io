@@ -21,6 +21,10 @@
     <script src="js/examplefunctions.js"></script>
     <script src="js/disappear.js"></script>
     <script src="js/info-message.js"></script>
+
+
+    <script src="js/hide-once-playing.js"></script>
+    <script src="js/play-on-window-click.js"></script>
     </head>
   
     <body>
@@ -95,7 +99,16 @@
   
     <a-scene stats info-message="htmlSrc: #messageText; height: 400" cursor="rayOrigin: mouse" screen-controls loading-screen="dotsColor: white; backgroundColor: orange" inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"> 
      
-      <a-entity id="camera" camera="" look-controls mouse-cursor position="116.45514 4.57992 182.70526" extended-wasd-controls="" wasd-controls="acceleration: 10" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera=""></a-entity>
+      <a-entity id="camera" camera="" look-controls mouse-cursor position="116.45514 4.57992 182.70526" extended-wasd-controls="" wasd-controls="acceleration: 10" rotation="-1.017000086357211 11.055793614844365 6.896692979989719" data-aframe-inspector-original-camera="">
+        <!-- Text element for display messaging.  Hide once video is playing. -->
+        <a-entity id="msg" position="0 -0.3 -1.5" text="align:center; 
+                 width:3;
+                 wrapCount:100;
+                 color:red;
+                 value:Click window to make the video play, if needed." 
+                 hide-once-playing="#p-cv-e-b1-v">
+        </a-entity>
+      </a-entity>
 
       <a-assets>
         <a-asset-item id="messageText" src="message.html"></a-asset-item>
@@ -159,15 +172,16 @@
       
         <!-- Zona Este-->
         <a-assets>
-          <video id="p-cv-e-b1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-e-b1-v.mp4"></video>
-          <video id="p-cv-e-c1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-e-c1-v.mp4"></video>
-          <video id="p-cv-e-d1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-e-d1-v.mp4"></video>
-          <video id="p-cv-o-a2-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-o-a2-v.mp4"></video>
-          <video id="p-cv-o-b1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-o-b1-v.mp4"></video>
-          <video id="p-cv-o-c1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-o-c1-v.mp4"></video>
-          <video id="p-cv-o-e1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-o-e1-v.mp4"></video>
+          <video id="p-cv-e-b1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline><!-- MP4 video source. --><source type="video/mp4" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-e-b1-v.mp4"/></video>
+          <video id="p-cv-e-c1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline><!-- MP4 video source. --><source type="video/mp4" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-e-c1-v.mp4"/></video>
+          <video id="p-cv-e-d1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline><!-- MP4 video source. --><source type="video/mp4" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-e-d1-v.mp4"/></video>
+          <video id="p-cv-o-a2-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline><!-- MP4 video source. --><source type="video/mp4" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-o-a2-v.mp4"/></video>
+          <video id="p-cv-o-b1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline><!-- MP4 video source. --><source type="video/mp4" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-o-b1-v.mp4"/></video>
+          <video id="p-cv-o-c1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline><!-- MP4 video source. --><source type="video/mp4" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-o-c1-v.mp4"/></video>
+          <video id="p-cv-o-e1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline><!-- MP4 video source. --><source type="video/mp4" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pantalla-curva-1/p-cv-o-e1-v.mp4"/></video>
         </a-assets>
-        <a-curvedimage src="#p-cv-e-b1-v" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0; side: back" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 -92.67821519359119 0" position="266.63849 26.86291 114.04507" visible=""></a-curvedimage>
+
+        <a-curvedimage src="#p-cv-e-b1-v" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0; side: back" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 -92.67821519359119 0" position="266.63849 26.86291 114.04507" visible="" play-on-window-click></a-curvedimage>
         <a-curvedimage src="#p-cv-e-c1-v" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0; side: back" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 -33.154775773040214 0" position="192.58203 16.99016 3.41969" visible=""></a-curvedimage>
         <a-curvedimage src="#p-cv-e-d1-v" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0; side: back" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 44.24723868677295 0" position="114.35859 22.30496 17.34575" visible=""></a-curvedimage>
         <a-curvedimage src="#p-cv-o-a2-v" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0; side: back" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 74.00781248145817 0" position="-164.75408 32.74201 30.6658" visible=""></a-curvedimage>
@@ -195,9 +209,9 @@
   
         <!-- Panacartas -->
         <a-assets>
-          <video id="p-e-b1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-e-b1-v.mp4" crossorigin="anonymous"></video>
-          <video id="p-o-a1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-o-a1-v.mp4" crossorigin="anonymous"></video>
-          <video id="p-o-b1-v" autoplay loop="true" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-o-b1-v.mp4" crossorigin="anonymous"></video>
+          <video id="p-e-b1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-e-b1-v.mp4" crossorigin="anonymous"></video>
+          <video id="p-o-a1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-o-a1-v.mp4" crossorigin="anonymous"></video>
+          <video id="p-o-b1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/pancarta-1/p-o-b1-v.mp4" crossorigin="anonymous"></video>
         </a-assets>
 
         <a-assets>
