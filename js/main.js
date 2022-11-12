@@ -71,10 +71,10 @@ AFRAME.registerComponent("screen-controls", {
 // disable press "F" to enter fullscreen mode
 //disable WASD controls attached to default camera -->
 
-AFRAME.registerComponent("a1-1a-d1-v1-f-pp", {
+AFRAME.registerComponent("s1-1a-d1-v1-f-pp", {
   init: function () {
-    var Video = document.querySelector("#a1-1a-d1-v1");
-    var Controls = document.querySelector("#a1-1a-d1-v1-controls");
+    var Video = document.querySelector("#s1-1a-d1-v1");
+    var Controls = document.querySelector("#s1-1a-d1-v1-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -86,10 +86,10 @@ AFRAME.registerComponent("a1-1a-d1-v1-f-pp", {
     });
   },
 });
-AFRAME.registerComponent("a1-1a-d1-v2-f-pp", {
+AFRAME.registerComponent("s1-1a-d1-v2-f-pp", {
   init: function () {
-    var Video = document.querySelector("#a1-1a-d1-v2");
-    var Controls = document.querySelector("#a1-1a-d1-v2-controls");
+    var Video = document.querySelector("#s1-1a-d1-v2");
+    var Controls = document.querySelector("#s1-1a-d1-v2-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -101,10 +101,10 @@ AFRAME.registerComponent("a1-1a-d1-v2-f-pp", {
     });
   },
 });
-AFRAME.registerComponent("a1-1a-d1-v3-f-pp", {
+AFRAME.registerComponent("s1-1a-d1-v3-f-pp", {
   init: function () {
-    var Video = document.querySelector("#a1-1a-d1-v3");
-    var Controls = document.querySelector("#a1-1a-d1-v3-controls");
+    var Video = document.querySelector("#s1-1a-d1-v3");
+    var Controls = document.querySelector("#s1-1a-d1-v3-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -116,10 +116,10 @@ AFRAME.registerComponent("a1-1a-d1-v3-f-pp", {
     });
   },
 });
-AFRAME.registerComponent("a1-1a-d1-v4-f-pp", {
+AFRAME.registerComponent("s1-1a-d1-v4-f-pp", {
   init: function () {
-    var Video = document.querySelector("#a1-1a-d1-v4");
-    var Controls = document.querySelector("#a1-1a-d1-v4-controls");
+    var Video = document.querySelector("#s1-1a-d1-v4");
+    var Controls = document.querySelector("#s1-1a-d1-v4-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -131,10 +131,10 @@ AFRAME.registerComponent("a1-1a-d1-v4-f-pp", {
     });
   },
 });
-AFRAME.registerComponent("a1-1a-d1-v5-f-pp", {
+AFRAME.registerComponent("s1-1a-d1-v5-f-pp", {
   init: function () {
-    var Video = document.querySelector("#a1-1a-d1-v5");
-    var Controls = document.querySelector("#a1-1a-d1-v5-controls");
+    var Video = document.querySelector("#s1-1a-d1-v5");
+    var Controls = document.querySelector("#s1-1a-d1-v5-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
