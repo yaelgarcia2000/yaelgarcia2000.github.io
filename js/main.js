@@ -71,10 +71,13 @@ AFRAME.registerComponent("screen-controls", {
 // disable press "F" to enter fullscreen mode
 //disable WASD controls attached to default camera -->
 
-AFRAME.registerComponent("s1-1a-d1-v1-f-pp", {
+
+
+//<!--s1--------1a--------Diamante 1-->
+AFRAME.registerComponent("s1-1a-e-d1-v1-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v1");
-    var Controls = document.querySelector("#s1-1a-d1-v1-controls");
+    var Video = document.querySelector("#s1-1a-e-d1-v1");
+    var Controls = document.querySelector("#s1-1a-e-d1-v1-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -86,10 +89,10 @@ AFRAME.registerComponent("s1-1a-d1-v1-f-pp", {
     });
   },
 });
-AFRAME.registerComponent("s1-1a-d1-v2-f-pp", {
+AFRAME.registerComponent("s1-1a-e-d1-v2-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v2");
-    var Controls = document.querySelector("#s1-1a-d1-v2-controls");
+    var Video = document.querySelector("#s1-1a-e-d1-v2");
+    var Controls = document.querySelector("#s1-1a-e-d1-v2-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -101,10 +104,10 @@ AFRAME.registerComponent("s1-1a-d1-v2-f-pp", {
     });
   },
 });
-AFRAME.registerComponent("s1-1a-d1-v3-f-pp", {
+AFRAME.registerComponent("s1-1a-e-d1-v3-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v3");
-    var Controls = document.querySelector("#s1-1a-d1-v3-controls");
+    var Video = document.querySelector("#s1-1a-e-d1-v3");
+    var Controls = document.querySelector("#s1-1a-e-d1-v3-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -116,10 +119,10 @@ AFRAME.registerComponent("s1-1a-d1-v3-f-pp", {
     });
   },
 });
-AFRAME.registerComponent("s1-1a-d1-v4-f-pp", {
+AFRAME.registerComponent("s1-1a-e-d1-v4-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v4");
-    var Controls = document.querySelector("#s1-1a-d1-v4-controls");
+    var Video = document.querySelector("#s1-1a-e-d1-v4");
+    var Controls = document.querySelector("#s1-1a-e-d1-v4-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -131,10 +134,381 @@ AFRAME.registerComponent("s1-1a-d1-v4-f-pp", {
     });
   },
 });
-AFRAME.registerComponent("s1-1a-d1-v5-f-pp", {
+AFRAME.registerComponent("s1-1a-e-d1-v5-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v5");
-    var Controls = document.querySelector("#s1-1a-d1-v5-controls");
+    var Video = document.querySelector("#s1-1a-e-d1-v5");
+    var Controls = document.querySelector("#s1-1a-e-d1-v5-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s2--------2a--------Oro 2-->
+AFRAME.registerComponent("s2-2a-e-o2-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s2-2a-e-o2-v1");
+    var Controls = document.querySelector("#s2-2a-e-o2-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s2-2a-e-o2-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s2-2a-e-o2-v2");
+    var Controls = document.querySelector("#s2-2a-e-o2-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s3--------1b--------Platino 2-->
+AFRAME.registerComponent("s3-1b-e-p2-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s3-1b-e-p2-v1");
+    var Controls = document.querySelector("#s3-1b-e-p2-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s4--------2b--------Platino 1-->
+AFRAME.registerComponent("s4-2b-e-p1-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s4-2b-e-p1-v1");
+    var Controls = document.querySelector("#s4-2b-e-p1-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s4-2b-e-p1-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s4-2b-e-p1-v2");
+    var Controls = document.querySelector("#s4-2b-e-p1-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s4-2b-e-p1-v3-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s4-2b-e-p1-v3");
+    var Controls = document.querySelector("#s4-2b-e-p1-v3-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s5--------3b--------Platino 2-->
+AFRAME.registerComponent("s5-3b-e-p2-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s5-3b-e-p2-v1");
+    var Controls = document.querySelector("#s5-3b-e-p2-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s6--------4b--------Oro 1-->
+AFRAME.registerComponent("s6-4b-e-o1-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s6-4b-e-o1-v1");
+    var Controls = document.querySelector("#s6-4b-e-o1-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s6-4b-e-o1-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s6-4b-e-o1-v2");
+    var Controls = document.querySelector("#s6-4b-e-o1-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s7--------5b--------Diamante 2-->
+AFRAME.registerComponent("s7-5b-e-d2-v5-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s7-5b-e-d2-v5");
+    var Controls = document.querySelector("#s7-5b-e-d2-v5-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s7-5b-e-d2-v6-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s7-5b-e-d2-v6");
+    var Controls = document.querySelector("#s7-5b-e-d2-v6-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s8--------6b--------Platino 1-->
+AFRAME.registerComponent("s8-6b-e-p1-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s8-6b-e-p1-v1");
+    var Controls = document.querySelector("#s8-6b-e-p1-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s8-6b-e-p1-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s8-6b-e-p1-v2");
+    var Controls = document.querySelector("#s8-6b-e-p1-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s8-6b-e-p1-v3-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s8-6b-e-p1-v3");
+    var Controls = document.querySelector("#s8-6b-e-p1-v3-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s9--------7b--------Oro 1-->
+AFRAME.registerComponent("s9-7b-e-o1-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s9-7b-e-o1-v1");
+    var Controls = document.querySelector("#s9-7b-e-o1-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s9-7b-e-o1-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s9-7b-e-o1-v2");
+    var Controls = document.querySelector("#s9-7b-e-o1-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s10--------1c--------Platino 2-->
+AFRAME.registerComponent("s10-1c-e-p2-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s10-1c-e-p2-v1");
+    var Controls = document.querySelector("#s10-1c-e-p2-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s11--------2c--------Diamante 1-->
+AFRAME.registerComponent("s11-2c-e-d1-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s11-2c-e-d1-v1");
+    var Controls = document.querySelector("#s11-2c-e-d1-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s11-2c-e-d1-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s11-2c-e-d1-v2");
+    var Controls = document.querySelector("#s11-2c-e-d1-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s11-2c-e-d1-v3-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s11-2c-e-d1-v3");
+    var Controls = document.querySelector("#s11-2c-e-d1-v3-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s11-2c-e-d1-v4-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s11-2c-e-d1-v4");
+    var Controls = document.querySelector("#s11-2c-e-d1-v4-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s11-2c-e-d1-v5-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s11-2c-e-d1-v5");
+    var Controls = document.querySelector("#s11-2c-e-d1-v5-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+//<!--s12--------3c--------Oro 2-->
+AFRAME.registerComponent("s12-3c-e-o2-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s12-3c-e-o2-v1");
+    var Controls = document.querySelector("#s12-3c-e-o2-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s12-3c-e-o2-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s12-3c-e-o2-v2");
+    var Controls = document.querySelector("#s12-3c-e-o2-v2-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -148,30 +522,37 @@ AFRAME.registerComponent("s1-1a-d1-v5-f-pp", {
 });
 
 
+//<!--s13--------4c--------Diamante 2-->
+
+
+//<!--s14--------5c--------Diamante 2-->
+
+
+//<!--s15--------1d--------Oro 1-->
+
+
+//<!--s16--------2d--------Diamante 1-->
+
+
+//<!--s17--------3d--------Oro 2-->
+
+
+//<!--s32--------1e--------Platino 2-->
+
+
+//<!--s33--------2e--------Oro 1-->
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+//----------------Oeste----------------
 
 
 //S1--------1A--------Diamante 1
-AFRAME.registerComponent("s1-1a-d1-v1-f-pp", {
+AFRAME.registerComponent("s1-1a-o-d1-v1-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v1");
-    var Controls = document.querySelector("#s1-1a-d1-v1-controls");
+    var Video = document.querySelector("#s1-1a-o-d1-v1");
+    var Controls = document.querySelector("#s1-1a-o-d1-v1-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -184,10 +565,10 @@ AFRAME.registerComponent("s1-1a-d1-v1-f-pp", {
   },
 });
 
-AFRAME.registerComponent("s1-1a-d1-v2-f-pp", {
+AFRAME.registerComponent("s1-1a-o-d1-v2-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v2");
-    var Controls = document.querySelector("#s1-1a-d1-v2-controls");
+    var Video = document.querySelector("#s1-1a-o-d1-v2");
+    var Controls = document.querySelector("#s1-1a-o-d1-v2-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -200,10 +581,10 @@ AFRAME.registerComponent("s1-1a-d1-v2-f-pp", {
   },
 });
 
-AFRAME.registerComponent("s1-1a-d1-v3-f-pp", {
+AFRAME.registerComponent("s1-1a-o-d1-v3-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v3");
-    var Controls = document.querySelector("#s1-1a-d1-v3-controls");
+    var Video = document.querySelector("#s1-1a-o-d1-v3");
+    var Controls = document.querySelector("#s1-1a-o-d1-v3-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -216,10 +597,10 @@ AFRAME.registerComponent("s1-1a-d1-v3-f-pp", {
   },
 })
 
-AFRAME.registerComponent("s1-1a-d1-v4-f-pp", {
+AFRAME.registerComponent("s1-1a-o-d1-v4-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v4");
-    var Controls = document.querySelector("#s1-1a-d1-v4-controls");
+    var Video = document.querySelector("#s1-1a-o-d1-v4");
+    var Controls = document.querySelector("#s1-1a-o-d1-v4-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -232,10 +613,10 @@ AFRAME.registerComponent("s1-1a-d1-v4-f-pp", {
   },
 })
 
-AFRAME.registerComponent("s1-1a-d1-v5-f-pp", {
+AFRAME.registerComponent("s1-1a-o-d1-v5-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s1-1a-d1-v5");
-    var Controls = document.querySelector("#s1-1a-d1-v5-controls");
+    var Video = document.querySelector("#s1-1a-o-d1-v5");
+    var Controls = document.querySelector("#s1-1a-o-d1-v5-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -250,10 +631,10 @@ AFRAME.registerComponent("s1-1a-d1-v5-f-pp", {
 
 
 //S2--------2A--------Platino 2 //
-AFRAME.registerComponent("s2-2a-p2-v1-f-pp", {
+AFRAME.registerComponent("s2-2a-o-p2-v1-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s2-2a-p2-v1");
-    var Controls = document.querySelector("#s2-2a-p2-v1-controls");
+    var Video = document.querySelector("#s2-2a-o-p2-v1");
+    var Controls = document.querySelector("#s2-2a-o-p2-v1-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -266,10 +647,10 @@ AFRAME.registerComponent("s2-2a-p2-v1-f-pp", {
   },
 })
 
-AFRAME.registerComponent("s2-2a-p2-v8-f-pp", {
+AFRAME.registerComponent("s2-2a-o-p2-v8-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s2-2a-p2-v8");
-    var Controls = document.querySelector("#s2-2a-p2-v8-controls");
+    var Video = document.querySelector("#s2-2a-o-p2-v8");
+    var Controls = document.querySelector("#s2-2a-o-p2-v8-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -282,10 +663,10 @@ AFRAME.registerComponent("s2-2a-p2-v8-f-pp", {
   },
 })
 
-AFRAME.registerComponent("s2-2a-p2-v9-f-pp", {
+AFRAME.registerComponent("s2-2a-o-p2-v9-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s2-2a-p2-v9");
-    var Controls = document.querySelector("#s2-2a-p2-v9-controls");
+    var Video = document.querySelector("#s2-2a-o-p2-v9");
+    var Controls = document.querySelector("#s2-2a-o-p2-v9-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -298,10 +679,10 @@ AFRAME.registerComponent("s2-2a-p2-v9-f-pp", {
   },
 })
 
-AFRAME.registerComponent("s2-2a-p2-v10-f-pp", {
+AFRAME.registerComponent("s2-2a-o-p2-v10-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s2-2a-p2-v10");
-    var Controls = document.querySelector("#s2-2a-p2-v10-controls");
+    var Video = document.querySelector("#s2-2a-o-p2-v10");
+    var Controls = document.querySelector("#s2-2a-o-p2-v10-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -314,10 +695,10 @@ AFRAME.registerComponent("s2-2a-p2-v10-f-pp", {
   },
 })
 
-AFRAME.registerComponent("s2-2a-p2-v11-f-pp", {
+AFRAME.registerComponent("s2-2a-o-p2-v11-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s2-2a-p2-v11");
-    var Controls = document.querySelector("#s2-2a-p2-v11-controls");
+    var Video = document.querySelector("#s2-2a-o-p2-v11");
+    var Controls = document.querySelector("#s2-2a-o-p2-v11-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -332,10 +713,10 @@ AFRAME.registerComponent("s2-2a-p2-v11-f-pp", {
 
 
 //S3--------3A--------Platino 1 //
-AFRAME.registerComponent("s3-3a-p1-v1-f-pp", {
+AFRAME.registerComponent("s3-3a-o-p1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s3-3a-p1-v1");
-  var Controls = document.querySelector("#s3-3a-p1-v1-controls");
+  var Video = document.querySelector("#s3-3a-o-p1-v1");
+  var Controls = document.querySelector("#s3-3a-o-p1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -348,10 +729,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s3-3a-p1-v2-f-pp", {
+AFRAME.registerComponent("s3-3a-o-p1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s3-3a-p1-v2");
-  var Controls = document.querySelector("#s3-3a-p1-v2-controls");
+  var Video = document.querySelector("#s3-3a-o-p1-v2");
+  var Controls = document.querySelector("#s3-3a-o-p1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -364,10 +745,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s3-3a-p1-v3-f-pp", {
+AFRAME.registerComponent("s3-3a-o-p1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s3-3a-p1-v3");
-  var Controls = document.querySelector("#s3-3a-p1-v3-controls");
+  var Video = document.querySelector("#s3-3a-o-p1-v3");
+  var Controls = document.querySelector("#s3-3a-o-p1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -379,13 +760,11 @@ init: function () {
   });
 },
 })
-
-
 //S4--------4A--------Platino 2 //
-AFRAME.registerComponent("s4-4a-p2-v1-f-pp", {
+AFRAME.registerComponent("s4-4a-o-p2-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s4-4a-p2-v1");
-  var Controls = document.querySelector("#s4-4a-p2-v1-controls");
+  var Video = document.querySelector("#s4-4a-o-p2-v1");
+  var Controls = document.querySelector("#s4-4a-o-p2-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -398,10 +777,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s4-4a-p2-v8-f-pp", {
+AFRAME.registerComponent("s4-4a-o-p2-v8-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s4-4a-p2-v8");
-  var Controls = document.querySelector("#s4-4a-p2-v8-controls");
+  var Video = document.querySelector("#s4-4a-o-p2-v8");
+  var Controls = document.querySelector("#s4-4a-o-p2-v8-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -414,10 +793,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s4-4a-p2-v9-f-pp", {
+AFRAME.registerComponent("s4-4a-o-p2-v9-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s4-4a-p2-v9");
-  var Controls = document.querySelector("#s4-4a-p2-v9-controls");
+  var Video = document.querySelector("#s4-4a-o-p2-v9");
+  var Controls = document.querySelector("#s4-4a-o-p2-v9-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -430,10 +809,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s4-4a-p2-v10-f-pp", {
+AFRAME.registerComponent("s4-4a-o-p2-v10-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s4-4a-p2-v10");
-  var Controls = document.querySelector("#s4-4a-p2-v10-controls");
+  var Video = document.querySelector("#s4-4a-o-p2-v10");
+  var Controls = document.querySelector("#s4-4a-o-p2-v10-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -446,10 +825,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s4-4a-p2-v11-f-pp", {
+AFRAME.registerComponent("s4-4a-o-p2-v11-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s4-4a-p2-v11");
-  var Controls = document.querySelector("#s4-4a-p2-v11-controls");
+  var Video = document.querySelector("#s4-4a-o-p2-v11");
+  var Controls = document.querySelector("#s4-4a-o-p2-v11-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -464,10 +843,10 @@ init: function () {
 
 
 //S5--------5A--------Oro 1//
-AFRAME.registerComponent("s5-5a-o1-v1-f-pp", {
+AFRAME.registerComponent("s5-5a-o-o1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s5-5a-o1-v1");
-  var Controls = document.querySelector("#s5-5a-o1-v1-controls");
+  var Video = document.querySelector("#s5-5a-o-o1-v1");
+  var Controls = document.querySelector("#s5-5a-o-o1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -480,10 +859,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s5-5a-o1-v2-f-pp", {
+AFRAME.registerComponent("s5-5a-o-o1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s5-5a-o1-v2");
-  var Controls = document.querySelector("#s5-5a-o1-v2-controls");
+  var Video = document.querySelector("#s5-5a-o-o1-v2");
+  var Controls = document.querySelector("#s5-5a-o-o1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -496,10 +875,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s5-5a-o1-v3-f-pp", {
+AFRAME.registerComponent("s5-5a-o-o1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s5-5a-o1-v3");
-  var Controls = document.querySelector("#s5-5a-o1-v3-controls");
+  var Video = document.querySelector("#s5-5a-o-o1-v3");
+  var Controls = document.querySelector("#s5-5a-o-o1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -514,10 +893,10 @@ init: function () {
 
 
 //S6--------6A--------Diamante 2//
-AFRAME.registerComponent("s6-6a-d2-v5-f-pp", {
+AFRAME.registerComponent("s6-6a-o-d2-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s6-6a-d2-v5");
-  var Controls = document.querySelector("#s6-6a-d2-v5-controls");
+  var Video = document.querySelector("#s6-6a-o-d2-v5");
+  var Controls = document.querySelector("#s6-6a-o-d2-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -530,10 +909,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s6-6a-d2-v6-f-pp", {
+AFRAME.registerComponent("s6-6a-o-d2-v6-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s6-6a-d2-v6");
-  var Controls = document.querySelector("#s6-6a-d2-v6-controls");
+  var Video = document.querySelector("#s6-6a-o-d2-v6");
+  var Controls = document.querySelector("#s6-6a-o-d2-v6-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -548,10 +927,10 @@ init: function () {
 
 
 //S7--------7A--------Diamante 2//
-AFRAME.registerComponent("s7-7a-d2-v5-f-pp", {
+AFRAME.registerComponent("s7-7a-o-d2-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s7-7a-d2-v5");
-  var Controls = document.querySelector("#s7-7a-d2-v5-controls");
+  var Video = document.querySelector("#s7-7a-o-d2-v5");
+  var Controls = document.querySelector("#s7-7a-o-d2-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -564,10 +943,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s7-7a-d2-v6-f-pp", {
+AFRAME.registerComponent("s7-7a-o-d2-v6-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s7-7a-d2-v6");
-  var Controls = document.querySelector("#s7-7a-d2-v6-controls");
+  var Video = document.querySelector("#s7-7a-o-d2-v6");
+  var Controls = document.querySelector("#s7-7a-o-d2-v6-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -582,10 +961,10 @@ init: function () {
 
 
 //S8--------8A--------Platino 2 //
-AFRAME.registerComponent("s8-8a-p2-v1-f-pp", {
+AFRAME.registerComponent("s8-8a-o-p2-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s8-8a-p2-v1");
-  var Controls = document.querySelector("#s8-8a-p2-v1-controls");
+  var Video = document.querySelector("#s8-8a-o-p2-v1");
+  var Controls = document.querySelector("#s8-8a-o-p2-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -598,10 +977,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s8-8a-p2-v8-f-pp", {
+AFRAME.registerComponent("s8-8a-o-p2-v8-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s8-8a-p2-v8");
-  var Controls = document.querySelector("#s8-8a-p2-v8-controls");
+  var Video = document.querySelector("#s8-8a-o-p2-v8");
+  var Controls = document.querySelector("#s8-8a-o-p2-v8-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -614,10 +993,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s8-8a-p2-v9-f-pp", {
+AFRAME.registerComponent("s8-8a-o-p2-v9-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s8-8a-p2-v9");
-  var Controls = document.querySelector("#s8-8a-p2-v9-controls");
+  var Video = document.querySelector("#s8-8a-o-p2-v9");
+  var Controls = document.querySelector("#s8-8a-o-p2-v9-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -630,10 +1009,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s8-8a-p2-v10-f-pp", {
+AFRAME.registerComponent("s8-8a-o-p2-v10-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s8-8a-p2-v10");
-  var Controls = document.querySelector("#s8-8a-p2-v10-controls");
+  var Video = document.querySelector("#s8-8a-o-p2-v10");
+  var Controls = document.querySelector("#s8-8a-o-p2-v10-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -646,10 +1025,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s8-8a-p2-v11-f-pp", {
+AFRAME.registerComponent("s8-8a-o-p2-v11-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s8-8a-p2-v11");
-  var Controls = document.querySelector("#s8-8a-p2-v11-controls");
+  var Video = document.querySelector("#s8-8a-o-p2-v11");
+  var Controls = document.querySelector("#s8-8a-o-p2-v11-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -664,10 +1043,10 @@ init: function () {
 
 
 //S9--------9A--------Platino 1 //
-AFRAME.registerComponent("s9-9a-p1-v1-f-pp", {
+AFRAME.registerComponent("s9-9a-o-p1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s9-9a-p1-v1");
-  var Controls = document.querySelector("#s9-9a-p1-v1-controls");
+  var Video = document.querySelector("#s9-9a-o-p1-v1");
+  var Controls = document.querySelector("#s9-9a-o-p1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -680,10 +1059,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s9-9a-p1-v2-f-pp", {
+AFRAME.registerComponent("s9-9a-o-p1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s9-9a-p1-v2");
-  var Controls = document.querySelector("#s9-9a-p1-v2-controls");
+  var Video = document.querySelector("#s9-9a-o-p1-v2");
+  var Controls = document.querySelector("#s9-9a-o-p1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -696,10 +1075,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s9-9a-p1-v3-f-pp", {
+AFRAME.registerComponent("s9-9a-o-p1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s9-9a-p1-v3");
-  var Controls = document.querySelector("#s9-9a-p1-v3-controls");
+  var Video = document.querySelector("#s9-9a-o-p1-v3");
+  var Controls = document.querySelector("#s9-9a-o-p1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -713,10 +1092,10 @@ init: function () {
 })
 
 //S10--------10A--------Diamante 1
-AFRAME.registerComponent("s10-10a-d1-v1-f-pp", {
+AFRAME.registerComponent("s10-10a-o-d1-v1-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s10-10a-d1-v1");
-    var Controls = document.querySelector("#s10-10a-d1-v1-controls");
+    var Video = document.querySelector("#s10-10a-o-d1-v1");
+    var Controls = document.querySelector("#s10-10a-o-d1-v1-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -729,10 +1108,10 @@ AFRAME.registerComponent("s10-10a-d1-v1-f-pp", {
   },
 });
 
-AFRAME.registerComponent("s10-10a-d1-v2-f-pp", {
+AFRAME.registerComponent("s10-10a-o-d1-v2-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s10-10a-d1-v2");
-    var Controls = document.querySelector("#s10-10a-d1-v2-controls");
+    var Video = document.querySelector("#s10-10a-o-d1-v2");
+    var Controls = document.querySelector("#s10-10a-o-d1-v2-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -745,10 +1124,10 @@ AFRAME.registerComponent("s10-10a-d1-v2-f-pp", {
   },
 });
 
-AFRAME.registerComponent("s10-10a-d1-v3-f-pp", {
+AFRAME.registerComponent("s10-10a-o-d1-v3-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s10-10a-d1-v3");
-    var Controls = document.querySelector("#s10-10a-d1-v3-controls");
+    var Video = document.querySelector("#s10-10a-o-d1-v3");
+    var Controls = document.querySelector("#s10-10a-o-d1-v3-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -761,10 +1140,10 @@ AFRAME.registerComponent("s10-10a-d1-v3-f-pp", {
   },
 })
 
-AFRAME.registerComponent("s10-10a-d1-v4-f-pp", {
+AFRAME.registerComponent("s10-10a-o-d1-v4-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s10-10a-d1-v4");
-    var Controls = document.querySelector("#s10-10a-d1-v4-controls");
+    var Video = document.querySelector("#s10-10a-o-d1-v4");
+    var Controls = document.querySelector("#s10-10a-o-d1-v4-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -777,10 +1156,10 @@ AFRAME.registerComponent("s10-10a-d1-v4-f-pp", {
   },
 })
 
-AFRAME.registerComponent("s10-10a-d1-v5-f-pp", {
+AFRAME.registerComponent("s10-10a-o-d1-v5-f-pp", {
   init: function () {
-    var Video = document.querySelector("#s10-10a-d1-v5");
-    var Controls = document.querySelector("#s10-10a-d1-v5-controls");
+    var Video = document.querySelector("#s10-10a-o-d1-v5");
+    var Controls = document.querySelector("#s10-10a-o-d1-v5-controls");
     this.el.addEventListener("click", function () {
       if (Video.paused) {
         Video.play();
@@ -795,10 +1174,10 @@ AFRAME.registerComponent("s10-10a-d1-v5-f-pp", {
 
 
 //S11--------11A--------Diamante 2//
-AFRAME.registerComponent("s11-11a-d2-v5-f-pp", {
+AFRAME.registerComponent("s11-11a-o-d2-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s11-11a-d2-v5");
-  var Controls = document.querySelector("#s11-11a-d2-v5-controls");
+  var Video = document.querySelector("#s11-11a-o-d2-v5");
+  var Controls = document.querySelector("#s11-11a-o-d2-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -811,10 +1190,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s11-11a-d2-v6-f-pp", {
+AFRAME.registerComponent("s11-11a-o-d2-v6-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s11-11a-d2-v6");
-  var Controls = document.querySelector("#s11-11a-d2-v6-controls");
+  var Video = document.querySelector("#s11-11a-o-d2-v6");
+  var Controls = document.querySelector("#s11-11a-o-d2-v6-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -829,10 +1208,10 @@ init: function () {
 
 
 //S12--------12A--------Diamante 2//
-AFRAME.registerComponent("s12-12a-d2-v5-f-pp", {
+AFRAME.registerComponent("s12-12a-o-d2-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s12-12a-d2-v5");
-  var Controls = document.querySelector("#s12-12a-d2-v5-controls");
+  var Video = document.querySelector("#s12-12a-o-d2-v5");
+  var Controls = document.querySelector("#s12-12a-o-d2-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -845,10 +1224,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s12-12a-d2-v6-f-pp", {
+AFRAME.registerComponent("s12-12a-o-d2-v6-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s12-12a-d2-v6");
-  var Controls = document.querySelector("#s12-12a-d2-v6-controls");
+  var Video = document.querySelector("#s12-12a-o-d2-v6");
+  var Controls = document.querySelector("#s12-12a-o-d2-v6-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -863,10 +1242,10 @@ init: function () {
 
 
 //S13--------13A--------Oro 1//
-AFRAME.registerComponent("s13-13a-o1-v1-f-pp", {
+AFRAME.registerComponent("s13-13a-o-o1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s13-13a-o1-v1");
-  var Controls = document.querySelector("#s13-13a-o1-v1-controls");
+  var Video = document.querySelector("#s13-13a-o-o1-v1");
+  var Controls = document.querySelector("#s13-13a-o-o1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -879,10 +1258,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s13-13a-o1-v2-f-pp", {
+AFRAME.registerComponent("s13-13a-o-o1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s13-13a-o1-v2");
-  var Controls = document.querySelector("#s13-13a-o1-v2-controls");
+  var Video = document.querySelector("#s13-13a-o-o1-v2");
+  var Controls = document.querySelector("#s13-13a-o-o1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -895,10 +1274,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s13-13a-o1-v3-f-pp", {
+AFRAME.registerComponent("s13-13a-o-o1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s13-13a-o1-v3");
-  var Controls = document.querySelector("#s13-13a-o1-v3-controls");
+  var Video = document.querySelector("#s13-13a-o-o1-v3");
+  var Controls = document.querySelector("#s13-13a-o-o1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -913,10 +1292,10 @@ init: function () {
 
 
 //S14--------14A--------Oro 2//
-AFRAME.registerComponent("s14-14a-o2-v1-f-pp", {
+AFRAME.registerComponent("s14-14a-o-o2-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s14-14a-o2-v1");
-  var Controls = document.querySelector("#s14-14a-o2-v1-controls");
+  var Video = document.querySelector("#s14-14a-o-o2-v1");
+  var Controls = document.querySelector("#s14-14a-o-o2-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -929,10 +1308,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s14-14a-o2-v2-f-pp", {
+AFRAME.registerComponent("s14-14a-o-o2-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s14-14a-o2-v2");
-  var Controls = document.querySelector("#s14-14a-o2-v2-controls");
+  var Video = document.querySelector("#s14-14a-o-o2-v2");
+  var Controls = document.querySelector("#s14-14a-o-o2-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -947,10 +1326,10 @@ init: function () {
 
 
 //S15--------15A--------Platino 1 //
-AFRAME.registerComponent("s15-1b-p1-v1-f-pp", {
+AFRAME.registerComponent("s15-1b-o-p1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s15-1b-p1-v1");
-  var Controls = document.querySelector("#s15-1b-p1-v1-controls");
+  var Video = document.querySelector("#s15-1b-o-p1-v1");
+  var Controls = document.querySelector("#s15-1b-o-p1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -963,10 +1342,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s15-1b-p1-v2-f-pp", {
+AFRAME.registerComponent("s15-1b-o-p1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s15-1b-p1-v2");
-  var Controls = document.querySelector("#s15-1b-p1-v2-controls");
+  var Video = document.querySelector("#s15-1b-o-p1-v2");
+  var Controls = document.querySelector("#s15-1b-o-p1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -979,10 +1358,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s15-1b-p1-v3-f-pp", {
+AFRAME.registerComponent("s15-1b-o-p1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s15-1b-p1-v3");
-  var Controls = document.querySelector("#s15-1b-p1-v3-controls");
+  var Video = document.querySelector("#s15-1b-o-p1-v3");
+  var Controls = document.querySelector("#s15-1b-o-p1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -997,10 +1376,10 @@ init: function () {
 
 
 //S16--------2B--------Platino 2 //
-AFRAME.registerComponent("s16-2b-p2-v1-f-pp", {
+AFRAME.registerComponent("s16-2b-o-p2-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s16-2b-p2-v1");
-  var Controls = document.querySelector("#s16-2b-p2-v1-controls");
+  var Video = document.querySelector("#s16-2b-o-p2-v1");
+  var Controls = document.querySelector("#s16-2b-o-p2-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1013,10 +1392,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s16-2b-p2-v8-f-pp", {
+AFRAME.registerComponent("s16-2b-o-p2-v8-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s16-2b-p2-v8");
-  var Controls = document.querySelector("#s16-2b-p2-v8-controls");
+  var Video = document.querySelector("#s16-2b-o-p2-v8");
+  var Controls = document.querySelector("#s16-2b-o-p2-v8-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1029,10 +1408,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s16-2b-p2-v9-f-pp", {
+AFRAME.registerComponent("s16-2b-o-p2-v9-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s16-2b-p2-v9");
-  var Controls = document.querySelector("#s16-2b-p2-v9-controls");
+  var Video = document.querySelector("#s16-2b-o-p2-v9");
+  var Controls = document.querySelector("#s16-2b-o-p2-v9-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1045,10 +1424,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s16-2b-p2-v10-f-pp", {
+AFRAME.registerComponent("s16-2b-o-p2-v10-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s16-2b-p2-v10");
-  var Controls = document.querySelector("#s16-2b-p2-v10-controls");
+  var Video = document.querySelector("#s16-2b-o-p2-v10");
+  var Controls = document.querySelector("#s16-2b-o-p2-v10-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1061,10 +1440,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s16-2b-p2-v11-f-pp", {
+AFRAME.registerComponent("s16-2b-o-p2-v11-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s16-2b-p2-v11");
-  var Controls = document.querySelector("#s16-2b-p2-v11-controls");
+  var Video = document.querySelector("#s16-2b-o-p2-v11");
+  var Controls = document.querySelector("#s16-2b-o-p2-v11-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1079,10 +1458,10 @@ init: function () {
 
 
 //S17--------3B--------Platino 1 //
-AFRAME.registerComponent("s17-3b-p1-v1-f-pp", {
+AFRAME.registerComponent("s17-3b-o-p1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s17-3b-p1-v1");
-  var Controls = document.querySelector("#s17-3b-p1-v1-controls");
+  var Video = document.querySelector("#s17-3b-o-p1-v1");
+  var Controls = document.querySelector("#s17-3b-o-p1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1095,10 +1474,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s17-3b-p1-v2-f-pp", {
+AFRAME.registerComponent("s17-3b-o-p1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s17-3b-p1-v2");
-  var Controls = document.querySelector("#s17-3b-p1-v2-controls");
+  var Video = document.querySelector("#s17-3b-o-p1-v2");
+  var Controls = document.querySelector("#s17-3b-o-p1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1111,10 +1490,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s17-3b-p1-v3-f-pp", {
+AFRAME.registerComponent("s17-3b-o-p1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s17-3b-p1-v3");
-  var Controls = document.querySelector("#s17-3b-p1-v3-controls");
+  var Video = document.querySelector("#s17-3b-o-p1-v3");
+  var Controls = document.querySelector("#s17-3b-o-p1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1129,10 +1508,10 @@ init: function () {
 
 
 //S18--------4B--------Diamante 2//
-AFRAME.registerComponent("s18-4b-d2-v5-f-pp", {
+AFRAME.registerComponent("s18-4b-o-d2-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s18-4b-d2-v5");
-  var Controls = document.querySelector("#s18-4b-d2-v5-controls");
+  var Video = document.querySelector("#s18-4b-o-d2-v5");
+  var Controls = document.querySelector("#s18-4b-o-d2-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1145,10 +1524,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s18-4b-d2-v6-f-pp", {
+AFRAME.registerComponent("s18-4b-o-d2-v6-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s18-4b-d2-v6");
-  var Controls = document.querySelector("#s18-4b-d2-v6-controls");
+  var Video = document.querySelector("#s18-4b-o-d2-v6");
+  var Controls = document.querySelector("#s18-4b-o-d2-v6-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1163,10 +1542,10 @@ init: function () {
 
 
 //S19--------5B--------Oro 1//
-AFRAME.registerComponent("s19-5b-o1-v1-f-pp", {
+AFRAME.registerComponent("s19-5b-o-o1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s19-5b-o1-v1");
-  var Controls = document.querySelector("#s19-5b-o1-v1-controls");
+  var Video = document.querySelector("#s19-5b-o-o1-v1");
+  var Controls = document.querySelector("#s19-5b-o-o1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1179,10 +1558,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s19-5b-o1-v2-f-pp", {
+AFRAME.registerComponent("s19-5b-o-o1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s19-5b-o1-v2");
-  var Controls = document.querySelector("#s19-5b-o1-v2-controls");
+  var Video = document.querySelector("#s19-5b-o-o1-v2");
+  var Controls = document.querySelector("#s19-5b-o-o1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1195,10 +1574,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s19-5b-o1-v3-f-pp", {
+AFRAME.registerComponent("s19-5b-o-o1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s19-5b-o1-v3");
-  var Controls = document.querySelector("#s19-5b-o1-v3-controls");
+  var Video = document.querySelector("#s19-5b-o-o1-v3");
+  var Controls = document.querySelector("#s19-5b-o-o1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1213,10 +1592,10 @@ init: function () {
 
 
 //S20--------6B--------Diamante 2//
-AFRAME.registerComponent("s20-6b-d2-v5-f-pp", {
+AFRAME.registerComponent("s20-6b-o-d2-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s20-6b-d2-v5");
-  var Controls = document.querySelector("#s20-6b-d2-v5-controls");
+  var Video = document.querySelector("#s20-6b-o-d2-v5");
+  var Controls = document.querySelector("#s20-6b-o-d2-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1229,10 +1608,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s20-6b-d2-v6-f-pp", {
+AFRAME.registerComponent("s20-6b-o-d2-v6-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s20-6b-d2-v6");
-  var Controls = document.querySelector("#s20-6b-d2-v6-controls");
+  var Video = document.querySelector("#s20-6b-o-d2-v6");
+  var Controls = document.querySelector("#s20-6b-o-d2-v6-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1247,10 +1626,10 @@ init: function () {
 
 
 //S21--------7B--------Diamante 1
-AFRAME.registerComponent("s21-7b-d1-v1-f-pp", {
+AFRAME.registerComponent("s21-7b-o-d1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s21-7b-d1-v1");
-  var Controls = document.querySelector("#s21-7b-d1-v1-controls");
+  var Video = document.querySelector("#s21-7b-o-d1-v1");
+  var Controls = document.querySelector("#s21-7b-o-d1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1263,10 +1642,10 @@ init: function () {
 },
 });
 
-AFRAME.registerComponent("s21-7b-d1-v2-f-pp", {
+AFRAME.registerComponent("s21-7b-o-d1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s21-7b-d1-v2");
-  var Controls = document.querySelector("#s21-7b-d1-v2-controls");
+  var Video = document.querySelector("#s21-7b-o-d1-v2");
+  var Controls = document.querySelector("#s21-7b-o-d1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1279,10 +1658,10 @@ init: function () {
 },
 });
 
-AFRAME.registerComponent("s21-7b-d1-v3-f-pp", {
+AFRAME.registerComponent("s21-7b-o-d1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s21-7b-d1-v3");
-  var Controls = document.querySelector("#s21-7b-d1-v3-controls");
+  var Video = document.querySelector("#s21-7b-o-d1-v3");
+  var Controls = document.querySelector("#s21-7b-o-d1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1295,10 +1674,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s21-7b-d1-v4-f-pp", {
+AFRAME.registerComponent("s21-7b-o-d1-v4-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s21-7b-d1-v4");
-  var Controls = document.querySelector("#s21-7b-d1-v4-controls");
+  var Video = document.querySelector("#s21-7b-o-d1-v4");
+  var Controls = document.querySelector("#s21-7b-o-d1-v4-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1311,10 +1690,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s21-7b-d1-v5-f-pp", {
+AFRAME.registerComponent("s21-7b-o-d1-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s21-7b-d1-v5");
-  var Controls = document.querySelector("#s21-7b-d1-v5-controls");
+  var Video = document.querySelector("#s21-7b-o-d1-v5");
+  var Controls = document.querySelector("#s21-7b-o-d1-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1329,10 +1708,10 @@ init: function () {
 
 
 //S22--------8B--------Oro 1//
-AFRAME.registerComponent("s22-8b-o1-v1-f-pp", {
+AFRAME.registerComponent("s22-8b-o-o1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s22-8b-o1-v1");
-  var Controls = document.querySelector("#s22-8b-o1-v1-controls");
+  var Video = document.querySelector("#s22-8b-o-o1-v1");
+  var Controls = document.querySelector("#s22-8b-o-o1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1345,10 +1724,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s22-8b-o1-v2-f-pp", {
+AFRAME.registerComponent("s22-8b-o-o1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s22-8b-o1-v2");
-  var Controls = document.querySelector("#s22-8b-o1-v2-controls");
+  var Video = document.querySelector("#s22-8b-o-o1-v2");
+  var Controls = document.querySelector("#s22-8b-o-o1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1361,10 +1740,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s22-8b-o1-v3-f-pp", {
+AFRAME.registerComponent("s22-8b-o-o1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s22-8b-o1-v3");
-  var Controls = document.querySelector("#s22-8b-o1-v3-controls");
+  var Video = document.querySelector("#s22-8b-o-o1-v3");
+  var Controls = document.querySelector("#s22-8b-o-o1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1379,10 +1758,10 @@ init: function () {
 
 
 //S23--------1C--------Diamante 1
-AFRAME.registerComponent("s23-1c-d1-v1-f-pp", {
+AFRAME.registerComponent("s23-1c-o-d1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s23-1c-d1-v1");
-  var Controls = document.querySelector("#s23-1c-d1-v1-controls");
+  var Video = document.querySelector("#s23-1c-o-d1-v1");
+  var Controls = document.querySelector("#s23-1c-o-d1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1395,10 +1774,10 @@ init: function () {
 },
 });
 
-AFRAME.registerComponent("s23-1c-d1-v2-f-pp", {
+AFRAME.registerComponent("s23-1c-o-d1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s23-1c-d1-v2");
-  var Controls = document.querySelector("#s23-1c-d1-v2-controls");
+  var Video = document.querySelector("#s23-1c-o-d1-v2");
+  var Controls = document.querySelector("#s23-1c-o-d1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1411,10 +1790,10 @@ init: function () {
 },
 });
 
-AFRAME.registerComponent("s23-1c-d1-v3-f-pp", {
+AFRAME.registerComponent("s23-1c-o-d1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s23-1c-d1-v3");
-  var Controls = document.querySelector("#s23-1c-d1-v3-controls");
+  var Video = document.querySelector("#s23-1c-o-d1-v3");
+  var Controls = document.querySelector("#s23-1c-o-d1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1427,10 +1806,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s23-1c-d1-v4-f-pp", {
+AFRAME.registerComponent("s23-1c-o-d1-v4-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s23-1c-d1-v4");
-  var Controls = document.querySelector("#s23-1c-d1-v4-controls");
+  var Video = document.querySelector("#s23-1c-o-d1-v4");
+  var Controls = document.querySelector("#s23-1c-o-d1-v4-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1443,10 +1822,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s23-1c-d1-v5-f-pp", {
+AFRAME.registerComponent("s23-1c-o-d1-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s23-1c-d1-v5");
-  var Controls = document.querySelector("#s23-1c-d1-v5-controls");
+  var Video = document.querySelector("#s23-1c-o-d1-v5");
+  var Controls = document.querySelector("#s23-1c-o-d1-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1461,10 +1840,10 @@ init: function () {
 
 
 //S24--------2C--------Diamante 2//
-AFRAME.registerComponent("s24-2c-d2-v5-f-pp", {
+AFRAME.registerComponent("s24-2c-o-d2-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s24-2c-d2-v5");
-  var Controls = document.querySelector("#s24-2c-d2-v5-controls");
+  var Video = document.querySelector("#s24-2c-o-d2-v5");
+  var Controls = document.querySelector("#s24-2c-o-d2-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1477,10 +1856,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s24-2c-d2-v6-f-pp", {
+AFRAME.registerComponent("s24-2c-o-d2-v6-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s24-2c-d2-v6");
-  var Controls = document.querySelector("#s24-2c-d2-v6-controls");
+  var Video = document.querySelector("#s24-2c-o-d2-v6");
+  var Controls = document.querySelector("#s24-2c-o-d2-v6-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1495,10 +1874,10 @@ init: function () {
 
 
 //S25--------3C--------Oro 2//
-AFRAME.registerComponent("s25-3c-o2-v1-f-pp", {
+AFRAME.registerComponent("s25-3c-o-o2-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s25-3c-o2-v1");
-  var Controls = document.querySelector("#s25-3c-o2-v1-controls");
+  var Video = document.querySelector("#s25-3c-o-o2-v1");
+  var Controls = document.querySelector("#s25-3c-o-o2-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1511,10 +1890,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s25-3c-o2-v2-f-pp", {
+AFRAME.registerComponent("s25-3c-o-o2-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s25-3c-o2-v2");
-  var Controls = document.querySelector("#s25-3c-o2-v2-controls");
+  var Video = document.querySelector("#s25-3c-o-o2-v2");
+  var Controls = document.querySelector("#s25-3c-o-o2-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1529,10 +1908,10 @@ init: function () {
 
 
 //S26--------4C--------Oro 1//
-AFRAME.registerComponent("s26-4c-o1-v1-f-pp", {
+AFRAME.registerComponent("s26-4c-o-o1-v1-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s26-4c-o1-v1");
-  var Controls = document.querySelector("#s26-4c-o1-v1-controls");
+  var Video = document.querySelector("#s26-4c-o-o1-v1");
+  var Controls = document.querySelector("#s26-4c-o-o1-v1-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1545,10 +1924,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s26-4c-o1-v2-f-pp", {
+AFRAME.registerComponent("s26-4c-o-o1-v2-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s26-4c-o1-v2");
-  var Controls = document.querySelector("#s26-4c-o1-v2-controls");
+  var Video = document.querySelector("#s26-4c-o-o1-v2");
+  var Controls = document.querySelector("#s26-4c-o-o1-v2-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1561,10 +1940,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s26-4c-o1-v3-f-pp", {
+AFRAME.registerComponent("s26-4c-o-o1-v3-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s26-4c-o1-v3");
-  var Controls = document.querySelector("#s26-4c-o1-v3-controls");
+  var Video = document.querySelector("#s26-4c-o-o1-v3");
+  var Controls = document.querySelector("#s26-4c-o-o1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1580,10 +1959,10 @@ init: function () {
 
 
 //S27--------5C--------Diamante 2//
-AFRAME.registerComponent("s27-5c-d2-v5-f-pp", {
+AFRAME.registerComponent("s27-5c-o-d2-v5-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s27-5c-d2-v5");
-  var Controls = document.querySelector("#s27-5c-d2-v5-controls");
+  var Video = document.querySelector("#s27-5c-o-d2-v5");
+  var Controls = document.querySelector("#s27-5c-o-d2-v5-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1596,10 +1975,10 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s27-5c-d2-v6-f-pp", {
+AFRAME.registerComponent("s27-5c-o-d2-v6-f-pp", {
 init: function () {
-  var Video = document.querySelector("#s27-5c-d2-v6");
-  var Controls = document.querySelector("#s27-5c-d2-v6-controls");
+  var Video = document.querySelector("#s27-5c-o-d2-v6");
+  var Controls = document.querySelector("#s27-5c-o-d2-v6-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1613,200 +1992,204 @@ init: function () {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//S28--------1D--------Diamante 1
+AFRAME.registerComponent("s28-1d-o-d1-v1-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s28-1d-o-d1-v1");
+  var Controls = document.querySelector("#s28-1d-o-d1-v1-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+});
+
+AFRAME.registerComponent("s28-1d-o-d1-v2-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s28-1d-o-d1-v2");
+  var Controls = document.querySelector("#s28-1d-o-d1-v2-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+});
+
+AFRAME.registerComponent("s28-1d-o-d1-v3-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s28-1d-o-d1-v3");
+  var Controls = document.querySelector("#s28-1d-o-d1-v3-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
+
+AFRAME.registerComponent("s28-1d-o-d1-v4-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s28-1d-o-d1-v4");
+  var Controls = document.querySelector("#s28-1d-o-d1-v4-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
+
+AFRAME.registerComponent("s28-1d-o-d1-v5-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s28-1d-o-d1-v5");
+  var Controls = document.querySelector("#s28-1d-o-d1-v5-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
+
+
+//S29--------2D--------Diamante 2//
+AFRAME.registerComponent("s29-2d-o-d2-v5-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s29-2d-o-d2-v5");
+  var Controls = document.querySelector("#s29-2d-o-d2-v5-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
+
+AFRAME.registerComponent("s29-2d-o-d2-v6-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s29-2d-o-d2-v6");
+  var Controls = document.querySelector("#s29-2d-o-d2-v6-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
+
+
+//S30--------3D--------Oro 1//
+AFRAME.registerComponent("s30-3d-o-o1-v1-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s30-3d-o-o1-v1");
+  var Controls = document.querySelector("#s30-3d-o-o1-v1-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
+
+AFRAME.registerComponent("s30-3d-o-o1-v2-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s30-3d-o-o1-v2");
+  var Controls = document.querySelector("#s30-3d-o-o1-v2-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
+
+AFRAME.registerComponent("s30-3d-o-o1-v3-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s30-3d-o-o1-v3");
+  var Controls = document.querySelector("#s30-3d-o-o1-v3-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
+
+
+//S31--------4D--------Oro 2//
+AFRAME.registerComponent("s31-4d-o-o2-v1-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s31-4d-o-o2-v1");
+  var Controls = document.querySelector("#s31-4d-o-o2-v1-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
+
+AFRAME.registerComponent("s31-4d-o-o2-v2-f-pp", {
+init: function () {
+  var Video = document.querySelector("#s31-4d-o-o2-v2");
+  var Controls = document.querySelector("#s31-4d-o-o2-v2-controls");
+  this.el.addEventListener("click", function () {
+    if (Video.paused) {
+      Video.play();
+      Controls.setAttribute("src", "#play");
+    } else {
+      Video.pause();
+      Controls.setAttribute("src", "#pause");
+    }
+  });
+},
+})
 
 
 
