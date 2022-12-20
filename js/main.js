@@ -520,33 +520,208 @@ AFRAME.registerComponent("s12-3c-e-o2-v2-f-pp", {
     });
   },
 });
-
-
 //<!--s13--------4c--------Diamante 2-->
-
-
+AFRAME.registerComponent("s13-4c-e-d2-v5-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s13-4c-e-d2-v5");
+    var Controls = document.querySelector("#s13-4c-e-d2-v5-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s13-4c-e-d2-v6-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s13-4c-e-d2-v6");
+    var Controls = document.querySelector("#s13-4c-e-d2-v6-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
 //<!--s14--------5c--------Diamante 2-->
-
-
+AFRAME.registerComponent("s14-5c-e-d2-v5-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s14-5c-e-d2-v5");
+    var Controls = document.querySelector("#s14-5c-e-d2-v5-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s14-5c-e-d2-v6-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s14-5c-e-d2-v6");
+    var Controls = document.querySelector("#s14-5c-e-d2-v5-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
 //<!--s15--------1d--------Oro 1-->
-
-
+AFRAME.registerComponent("s15-1d-e-o1-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s15-1d-e-o1-v1");
+    var Controls = document.querySelector("#s15-1d-e-o1-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s15-1d-e-o1-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s15-1d-e-o1-v2");
+    var Controls = document.querySelector("#s15-1d-e-o1-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
 //<!--s16--------2d--------Diamante 1-->
-
-
+AFRAME.registerComponent("s16-2d-e-d1-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s16-2d-e-d1-v1");
+    var Controls = document.querySelector("#s16-2d-e-d1-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s16-2d-e-d1-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s16-2d-e-d1-v2");
+    var Controls = document.querySelector("#s16-2d-e-d1-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s16-2d-e-d1-v3-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s16-2d-e-d1-v3");
+    var Controls = document.querySelector("#s16-2d-e-d1-v3-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s16-2d-e-d1-v4-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s16-2d-e-d1-v4");
+    var Controls = document.querySelector("#s16-2d-e-d1-v4-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s16-2d-e-d1-v5-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s16-2d-e-d1-v5");
+    var Controls = document.querySelector("#s16-2d-e-d1-v5-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
 //<!--s17--------3d--------Oro 2-->
-
-
-//<!--s32--------1e--------Platino 2-->
-
-
-//<!--s33--------2e--------Oro 1-->
-
-
-
+AFRAME.registerComponent("s17-3d-e-o2-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s17-3d-e-o2-v1");
+    var Controls = document.querySelector("#s17-3d-e-o2-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
+AFRAME.registerComponent("s17-3d-e-o2-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s17-3d-e-o2-v2");
+    var Controls = document.querySelector("#s17-3d-e-o2-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+});
 
 //----------------Oeste----------------
-
 
 //S1--------1A--------Diamante 1
 AFRAME.registerComponent("s1-1a-o-d1-v1-f-pp", {
@@ -760,6 +935,8 @@ init: function () {
   });
 },
 })
+
+
 //S4--------4A--------Platino 2 //
 AFRAME.registerComponent("s4-4a-o-p2-v1-f-pp", {
 init: function () {
@@ -875,21 +1052,6 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s5-5a-o-o1-v3-f-pp", {
-init: function () {
-  var Video = document.querySelector("#s5-5a-o-o1-v3");
-  var Controls = document.querySelector("#s5-5a-o-o1-v3-controls");
-  this.el.addEventListener("click", function () {
-    if (Video.paused) {
-      Video.play();
-      Controls.setAttribute("src", "#play");
-    } else {
-      Video.pause();
-      Controls.setAttribute("src", "#pause");
-    }
-  });
-},
-})
 
 
 //S6--------6A--------Diamante 2//
@@ -1274,21 +1436,6 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s13-13a-o-o1-v3-f-pp", {
-init: function () {
-  var Video = document.querySelector("#s13-13a-o-o1-v3");
-  var Controls = document.querySelector("#s13-13a-o-o1-v3-controls");
-  this.el.addEventListener("click", function () {
-    if (Video.paused) {
-      Video.play();
-      Controls.setAttribute("src", "#play");
-    } else {
-      Video.pause();
-      Controls.setAttribute("src", "#pause");
-    }
-  });
-},
-})
 
 
 //S14--------14A--------Oro 2//
@@ -1574,22 +1721,6 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s19-5b-o-o1-v3-f-pp", {
-init: function () {
-  var Video = document.querySelector("#s19-5b-o-o1-v3");
-  var Controls = document.querySelector("#s19-5b-o-o1-v3-controls");
-  this.el.addEventListener("click", function () {
-    if (Video.paused) {
-      Video.play();
-      Controls.setAttribute("src", "#play");
-    } else {
-      Video.pause();
-      Controls.setAttribute("src", "#pause");
-    }
-  });
-},
-})
-
 
 //S20--------6B--------Diamante 2//
 AFRAME.registerComponent("s20-6b-o-d2-v5-f-pp", {
@@ -1728,22 +1859,6 @@ AFRAME.registerComponent("s22-8b-o-o1-v2-f-pp", {
 init: function () {
   var Video = document.querySelector("#s22-8b-o-o1-v2");
   var Controls = document.querySelector("#s22-8b-o-o1-v2-controls");
-  this.el.addEventListener("click", function () {
-    if (Video.paused) {
-      Video.play();
-      Controls.setAttribute("src", "#play");
-    } else {
-      Video.pause();
-      Controls.setAttribute("src", "#pause");
-    }
-  });
-},
-})
-
-AFRAME.registerComponent("s22-8b-o-o1-v3-f-pp", {
-init: function () {
-  var Video = document.querySelector("#s22-8b-o-o1-v3");
-  var Controls = document.querySelector("#s22-8b-o-o1-v3-controls");
   this.el.addEventListener("click", function () {
     if (Video.paused) {
       Video.play();
@@ -1940,23 +2055,6 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s26-4c-o-o1-v3-f-pp", {
-init: function () {
-  var Video = document.querySelector("#s26-4c-o-o1-v3");
-  var Controls = document.querySelector("#s26-4c-o-o1-v3-controls");
-  this.el.addEventListener("click", function () {
-    if (Video.paused) {
-      Video.play();
-      Controls.setAttribute("src", "#play");
-    } else {
-      Video.pause();
-      Controls.setAttribute("src", "#pause");
-    }
-  });
-},
-})
-
-
 
 //S27--------5C--------Diamante 2//
 AFRAME.registerComponent("s27-5c-o-d2-v5-f-pp", {
@@ -2141,22 +2239,6 @@ init: function () {
 },
 })
 
-AFRAME.registerComponent("s30-3d-o-o1-v3-f-pp", {
-init: function () {
-  var Video = document.querySelector("#s30-3d-o-o1-v3");
-  var Controls = document.querySelector("#s30-3d-o-o1-v3-controls");
-  this.el.addEventListener("click", function () {
-    if (Video.paused) {
-      Video.play();
-      Controls.setAttribute("src", "#play");
-    } else {
-      Video.pause();
-      Controls.setAttribute("src", "#pause");
-    }
-  });
-},
-})
-
 
 //S31--------4D--------Oro 2//
 AFRAME.registerComponent("s31-4d-o-o2-v1-f-pp", {
@@ -2192,41 +2274,132 @@ init: function () {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.querySelector("a-scene").object3D;
-
-AFRAME.registerComponent("foo", {
+//<!--s32--------1e--------Platino 2-->
+AFRAME.registerComponent("s32-1e-o-p2-v1-f-pp", {
   init: function () {
-    var scene = this.el.sceneEl.object3D; // THREE.Scene
-    renderer = new THREE.WebGLRenderer({ antialias: false });
-    scene.renderer.setPixelRatio(window.devicePixelRatio * 0.2);
+    var Video = document.querySelector("#s32-1e-o-p2-v1");
+    var Controls = document.querySelector("#s32-1e-o-p2-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
   },
-});
+  })
+  
+  AFRAME.registerComponent("s32-1e-o-p2-v8-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s32-1e-o-p2-v8");
+    var Controls = document.querySelector("#s32-1e-o-p2-v8-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+  })
+  
+  AFRAME.registerComponent("s32-1e-o-p2-v9-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s32-1e-o-p2-v2-v9");
+    var Controls = document.querySelector("#s32-1e-o-p2-v9-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+  })
+  
+  AFRAME.registerComponent("s32-1e-o-p2-v10-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s32-1e-o-p2-v10");
+    var Controls = document.querySelector("#s32-1e-o-p2-v10-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+  })
+  
+  AFRAME.registerComponent("s32-1e-o-p2-v11-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s32-1e-o-p2-v11");
+    var Controls = document.querySelector("#s32-1e-o-p2-v11-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+  })
 
-AFRAME.registerComponent("pixel-ratio", {
-  schema: {
-    type: "number",
+//<!--s33--------2e--------Oro 1-->
+AFRAME.registerComponent("s33-2e-o-o1-v1-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s33-2e-o-o1-v1");
+    var Controls = document.querySelector("#s33-2e-o-o1-v1-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
   },
-  update: function () {
-    this.el.sceneEl.renderer.setPixelRatio(this.data);
+  })
+  
+  AFRAME.registerComponent("s33-2e-o-o1-v2-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s33-2e-o-o1-v2");
+    var Controls = document.querySelector("#s33-2e-o-o1-v2-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
   },
-});
+  })
+  
+  AFRAME.registerComponent("s33-2e-o-o1-v3-f-pp", {
+  init: function () {
+    var Video = document.querySelector("#s33-2e-o-o1-v3");
+    var Controls = document.querySelector("#s33-2e-o-o1-v3-controls");
+    this.el.addEventListener("click", function () {
+      if (Video.paused) {
+        Video.play();
+        Controls.setAttribute("src", "#play");
+      } else {
+        Video.pause();
+        Controls.setAttribute("src", "#pause");
+      }
+    });
+  },
+  })
