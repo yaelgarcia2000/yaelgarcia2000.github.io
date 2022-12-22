@@ -9,7 +9,7 @@
             //console.log("éxito");
             let data = JSON.parse(xhr.responseText);
 
-            for(i=0;i<=48;i++){
+            for(i=0;i<=47;i++){
 
                 document.getElementById(`${data[i].id_obj_entorno}`).setAttribute("src", data[i].id_pub_sis);
 
