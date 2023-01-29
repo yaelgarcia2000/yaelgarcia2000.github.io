@@ -41,15 +41,18 @@
       </div>
     </div>
   </div>
-  <a-scene 
-    stats 
+  <!--  
+    stats
+    inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
+  -->
+  <a-scene
     info-message="htmlSrc: #messageText; height: 400" 
     cursor="rayOrigin: mouse" 
     screen-controls
     keyboard-shortcuts="enterVR: false;" 
     vr-mode-ui="enabled: false;"
     loading-screen="dotsColor: white; backgroundColor: orange"
-    inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+    >
     <a-entity 
       id="camera" 
       camera="" 
@@ -109,19 +112,19 @@
     <!--Pantalla Curva-->
     <a-assets>
       <img id="p-cv-e-a1-i">
-      <video id="p-cv-e-b1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-cv-e-b1-v" autoplay loop></video>
       <img id="p-cv-e-b2-i">
-      <video id="p-cv-e-c1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-cv-e-c1-v" autoplay loop></video>
       <img id="p-cv-e-c2-i">
-      <video id="p-cv-e-d1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-cv-e-d1-v" autoplay loop></video>
       <img id="p-cv-o-a1-i">
-      <video id="p-cv-o-a2-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-cv-o-a2-v" autoplay loop></video>
       <img id="p-cv-o-a3-i">
-      <video id="p-cv-o-b1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-cv-o-b1-v" autoplay loop></video>
       <img id="p-cv-o-b2-i">
-      <video id="p-cv-o-c1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-cv-o-c1-v" autoplay loop></video>
       <img id="p-cv-o-d1-i">
-      <video id="p-cv-o-e1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-cv-o-e1-v" autoplay loop></video>
     </a-assets>
     <a-curvedimage src="#p-cv-e-a1-i" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0; side: back" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 -138.12981116572914 0" position="182.646 15.5238 138.45548" visible=""></a-curvedimage>
     <a-curvedimage src="#p-cv-e-b1-v" height="6.5907" radius="5" theta-length="90" theta-start="135" material="height: 0; side: back" geometry="height: 21.15; radius: 45.69; segmentsRadial: 100; thetaLength: 61; thetaStart: 135; segmentsHeight: 100" rotation="0 -92.67821519359119 0" position="266.63849 26.86291 114.04507" visible="" play-on-window-click></a-curvedimage>
@@ -140,11 +143,11 @@
     <!-- Panacartas -->
     <a-assets>
       <img id="p-e-a1-i">
-      <video id="p-e-b1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-e-b1-v" autoplay loop></video>
       <img id="p-e-c1-i">
-      <video id="p-o-a1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-o-a1-v" autoplay loop></video>
       <img id="p-o-a2-i">
-      <video id="p-o-b1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p-o-b1-v" autoplay loop></video>
       <img id="p-o-e1-i">
     </a-assets>
     <a-cylinder color="black" height="3" radius="1.5" material="" geometry="height: 30; radius: 0.2" position="245.52119 15 190.44928"></a-cylinder>
@@ -171,16 +174,33 @@
     <!--Pantalla Cubo Este-->
     <a-assets timeout="1000">
       <img id="p1-cb-e-a1-i">
-      <video id="p2-cb-e-a2-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p2-cb-e-a2-v" autoplay loop></video>
       <img id="p3-cb-e-a3-i">
-      <video id="p4-cb-e-b1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p4-cb-e-b1-v" autoplay loop></video>
       <img id="p5-cb-e-b2-i">
-      <video id="p6-cb-e-b3-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p6-cb-e-b3-v" autoplay loop></video>
       <img id="p7-cb-e-b4-i">
-      <video id="p8-cb-e-c1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p8-cb-e-c1-v" autoplay loop></video>
       <img id="p9-cb-e-c2-i">
-      <video id="p10-cb-e-d1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+      <video id="p10-cb-e-d1-v" autoplay loop></video>
       <img id="p11-cb-e-d2-i">
+      <video id="p12-cb-o-a1-v" autoplay loop></video>
+      <img id="p13-cb-o-a2-i">
+      <video id="p14-cb-o-a3-v" autoplay loop></video>
+      <img id="p15-cb-o-a4-i">
+      <video id="p16-cb-o-a5-v" autoplay loop></video>
+      <img id="p17-cb-o-a6-i">
+      <video id="p18-cb-o-a7-v" autoplay loop></video>
+      <img id="p19-cb-o-b1-i">
+      <video id="p20-cb-o-b2-v" autoplay loop></video>
+      <img id="p21-cb-o-b3-i">
+      <video id="p22-cb-o-b4-v" autoplay loop></video>
+      <img id="p23-cb-o-c1-i">
+      <video id="p24-cb-o-c2-v" autoplay loop></video>
+      <img id="p25-cb-o-d1-i">
+      <video id="p26-cb-o-e1-v" autoplay loop></video>
+      <img id="p27-cb-o-e2-i">
+      <!--Pantalla Cubo Oeste-->
     </a-assets>
     <a-image src="#p1-cb-e-a1-i" transparent="false" width="5" height="2.45" position="207.62153 7.675 151.71374" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 184.98975375431098 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
     <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="207.629 1.640 151.71458"></a-cylinder>
@@ -205,56 +225,38 @@
     <a-image src="#p11-cb-e-d2-i" transparent="false" width="5" height="2.45" position="140.78988 7.675 28.30481" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 139.87206686285293 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
     <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="140.7922 1.64 28.29171"></a-cylinder>
     <!--Pantalla Cubo Oeste-->
-    <a-assets timeout="1000"></a-assets>
-    <video id="p12-cb-o-a1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
-    <img id="p13-cb-o-a2-i">
-    <video id="p14-cb-o-a3-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
-    <img id="p15-cb-o-a4-i">
-    <video id="p16-cb-o-a5-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
-    <img id="p17-cb-o-a6-i">
-    <video id="p18-cb-o-a7-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
-    <img id="p19-cb-o-b1-i">
-    <video id="p20-cb-o-b2-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
-    <img id="p21-cb-o-b3-i">
-    <video id="p22-cb-o-b4-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
-    <img id="p23-cb-o-c1-i">
-    <video id="p24-cb-o-c2-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
-    <img id="p25-cb-o-d1-i">
-    <video id="p26-cb-o-e1-v" style="display:none" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline></video>
-    <img id="p27-cb-o-e2-i">
-  </a-assets>
-  <a-image src="#p12-cb-o-a1-v" transparent="false" width="5" height="2.45" position="-83.52069 7.675 -23.32328" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 222.87046942967493 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-83.52069 1.64 -23.32328"></a-cylinder>
-  <a-image src="#p13-cb-o-a2-i" transparent="false" width="5" height="2.45" position="-138.46989 7.675 7.43943" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 152.07022019091272 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-138.46989 1.64 7.43943"></a-cylinder>
-  <a-video src="#p14-cb-o-a3-v" transparent="false" width="5" height="2.45" position="-167.92305 7.675 62.4827" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 163.98546606280436 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-167.92305 1.64 62.4827"></a-cylinder>
-  <a-video src="#p15-cb-o-a4-i" transparent="false" width="5" height="2.45" position="-162.75593 7.675 126.38491" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 157.39257133963469 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-162.75593 1.64 126.38491"></a-cylinder>
-  <a-image src="#p16-cb-o-a5-v" transparent="false" width="5" height="2.45" position="-83.56257 7.675 30.53886" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 178.4822604962955 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-83.56257 1.64 30.53886"></a-cylinder>
-  <a-video src="#p17-cb-o-a6-i" transparent="false" width="5" height="2.45" position="-91.85325 7.675 68.5460627663" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 162.32458577671136 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-91.85325 1.64 68.54606"></a-cylinder>
-  <a-video src="#p18-cb-o-a7-v" transparent="false" width="5" height="2.45" position="-24.0589 7.675 99.92863" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 174.66928466383482 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-24.0589 1.64 99.92863"></a-cylinder>
-  <a-image src="#p19-cb-o-b1-i" transparent="false" width="5" height="2.45" position="-93.11226 7.675 200.48688" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 308.4106935835121 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-93.11226 1.64 200.48688"></a-cylinder>
-  <a-video src="#p20-cb-o-b2-v" transparent="false" width="5" height="2.45" position="-39.74206 7.675 175.31883" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 294.6892273382433 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-39.74206 1.64 175.31883"></a-cylinder>
-  <a-image src="#p21-cb-o-b3-i" transparent="false" width="5" height="2.45" position="-76.55624 7.675 129.59428" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 167.80213633266885 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-76.55624 1.64 129.59428"></a-cylinder>
-  <a-video src="#p22-cb-o-b4-v" transparent="false" width="5" height="2.45" position="-40.47027 7.675 133.02511" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 174.66928466383482 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-40.47027 1.64 133.02511"></a-cylinder>
-  <a-image src="#p23-cb-o-c1-i" transparent="false" width="5" height="2.45" position="56.81468 7.675 199.13126" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 187.51844086810746 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="56.81468 1.64 199.13126"></a-cylinder>
-  <a-video src="#p24-cb-o-c2-v" transparent="false" width="5" height="2.45" position="-0.02076 7.675 184.05246" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 174.66928466383482 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-0.02076 1.64 184.05246"></a-cylinder>
-  <a-image src="#p25-cb-o-d1-i" transparent="false" width="5" height="2.45" position="59.38507 7.675 89.72843" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 187.51844086810746 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="59.38507 1.64 89.72843"></a-cylinder>
-  <a-video src="#p26-cb-o-e1-v" transparent="false" width="5" height="2.45" position="20.9655 7.675 3.74577" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 174.66928466383482 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="20.9655 1.64 3.74577"></a-cylinder>
-  <a-image src="#p27-cb-o-e2-i" transparent="false" width="5" height="2.45" position="-13.41869 7.675 55.93768" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 187.51844086810746 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
-  <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-13.41869 1.64 55.93768"></a-cylinder>
+    <a-image src="#p12-cb-o-a1-v" transparent="false" width="5" height="2.45" position="-83.52069 7.675 -23.32328" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 222.87046942967493 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-83.52069 1.64 -23.32328"></a-cylinder>
+    <a-image src="#p13-cb-o-a2-i" transparent="false" width="5" height="2.45" position="-138.46989 7.675 7.43943" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 152.07022019091272 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-138.46989 1.64 7.43943"></a-cylinder>
+    <a-video src="#p14-cb-o-a3-v" transparent="false" width="5" height="2.45" position="-167.92305 7.675 62.4827" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 163.98546606280436 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-167.92305 1.64 62.4827"></a-cylinder>
+    <a-video src="#p15-cb-o-a4-i" transparent="false" width="5" height="2.45" position="-162.75593 7.675 126.38491" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 157.39257133963469 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-162.75593 1.64 126.38491"></a-cylinder>
+    <a-image src="#p16-cb-o-a5-v" transparent="false" width="5" height="2.45" position="-83.56257 7.675 30.53886" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 178.4822604962955 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-83.56257 1.64 30.53886"></a-cylinder>
+    <a-video src="#p17-cb-o-a6-i" transparent="false" width="5" height="2.45" position="-91.85325 7.675 68.5460627663" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 162.32458577671136 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-91.85325 1.64 68.54606"></a-cylinder>
+    <a-video src="#p18-cb-o-a7-v" transparent="false" width="5" height="2.45" position="-24.0589 7.675 99.92863" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 174.66928466383482 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-24.0589 1.64 99.92863"></a-cylinder>
+    <a-image src="#p19-cb-o-b1-i" transparent="false" width="5" height="2.45" position="-93.11226 7.675 200.48688" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 308.4106935835121 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-93.11226 1.64 200.48688"></a-cylinder>
+    <a-video src="#p20-cb-o-b2-v" transparent="false" width="5" height="2.45" position="-39.74206 7.675 175.31883" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 294.6892273382433 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-39.74206 1.64 175.31883"></a-cylinder>
+    <a-image src="#p21-cb-o-b3-i" transparent="false" width="5" height="2.45" position="-76.55624 7.675 129.59428" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 167.80213633266885 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-76.55624 1.64 129.59428"></a-cylinder>
+    <a-video src="#p22-cb-o-b4-v" transparent="false" width="5" height="2.45" position="-40.47027 7.675 133.02511" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 174.66928466383482 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-40.47027 1.64 133.02511"></a-cylinder>
+    <a-image src="#p23-cb-o-c1-i" transparent="false" width="5" height="2.45" position="56.81468 7.675 199.13126" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 187.51844086810746 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="56.81468 1.64 199.13126"></a-cylinder>
+    <a-video src="#p24-cb-o-c2-v" transparent="false" width="5" height="2.45" position="-0.02076 7.675 184.05246" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 174.66928466383482 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-0.02076 1.64 184.05246"></a-cylinder>
+    <a-image src="#p25-cb-o-d1-i" transparent="false" width="5" height="2.45" position="59.38507 7.675 89.72843" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 187.51844086810746 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="59.38507 1.64 89.72843"></a-cylinder>
+    <a-video src="#p26-cb-o-e1-v" transparent="false" width="5" height="2.45" position="20.9655 7.675 3.74577" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 174.66928466383482 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0" play-on-window-click=""></a-video>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="20.9655 1.64 3.74577"></a-cylinder>
+    <a-image src="#p27-cb-o-e2-i" transparent="false" width="5" height="2.45" position="-13.41869 7.675 55.93768" geometry="primitive: box; height: 5; depth: 5" visible="" rotation="0 187.51844086810746 0" opacity="1" scale="2.3 2 2.3" material="" animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"></a-image>
+    <a-cylinder color="#4A4A4A" height="3" radius="1.5" material="" geometry="height: 3.3; radius: 5" position="-13.41869 1.64 55.93768"></a-cylinder>
 
 
     <!-- --------------------COLOCACIÓN DE STANDS----------------------- -->
@@ -277,8 +279,8 @@
       <video id="s1-1a-e-d1-v7" autoplay="false" loop="false" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/assets-vn/video3.mp4"></video>
       <video id="s1-1a-e-d1-v8" autoplay="false" loop="false" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/assets-vn/video3.mp4"></video>
       <video id="s1-1a-e-d1-v9" autoplay="false" loop="false" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/assets-vn/video3.mp4"></video>
-      <img id="s1-1a-e-d1-anuncio1" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/assets-vn/iroman1.png"></img>
-      <img id="s1-1a-e-d1-anuncio2" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/assets-vn/facebook1.png"></img>
+      <img id="s1-1a-e-d1-anuncio1"></img>
+      <img id="s1-1a-e-d1-anuncio2"></img>
       <img id="s1-1a-e-d1-u1" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/assets-vn/google-maps.png"></img>
       <img id="s1-1a-e-d1-f1" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/assets-vn/pdf.png"></img>
       <img id="s1-1a-e-d1-f2" src="https://entornovirtual.fra1.digitaloceanspaces.com/Desarrollo-entorno-virtual/assets-vn/pdf.png"></img>
